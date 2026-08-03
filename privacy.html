@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xstreamflex | Launch Your Venture in Minutes, Not Months</title>
+    <meta name="description" content="Xstreamflex &amp; Xsite empower creators, solopreneurs, and absolute beginners to deploy full-scale, customizable live websites from a single brain dump. No black box, complete ownership.">
+    
+    <!-- TailWind CSS & Config -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        xbox: {
+                            DEFAULT: '#107C11',
+                            hover: '#189e1a',
+                            light: '#22c55e',
+                            glow: '#39ff14',
+                            dark: '#0b520b',
+                            deep: '#073007'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'Inter', 'sans-serif'],
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 6s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;family=Space+Grotesk:wght@500;700&amp;display=swap" rel="stylesheet">
+    
+    <!-- Inline styles for scrollbar & custom focus states -->
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .heading-font {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+        /* Custom scrollbar to match Xbox Theme */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0f172a;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #107C11;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #22c55e;
+        }
+    </style>
+</head>
+<body class="bg-zinc-950 text-zinc-100 min-h-screen flex flex-col selection:bg-xbox selection:text-white">
+
+    <!-- Header Navigation -->
+    <header class="border-b border-zinc-900 bg-zinc-950/80 backdrop-blur-md sticky top-0 z-50">
+        <div class="mx-auto max-w-7xl px-4 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Branding Left -->
+            <a href="index.html" class="flex items-center gap-2 group">
+                <div class="flex h-10 w-10 items-center justify-center rounded-xl bg-xbox text-white font-bold transition-transform group-hover:scale-105 shadow-[0_0_15px_rgba(16,124,17,0.3)]">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="h-5 w-5 animate-pulse-slow">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.59 14.37a6 6 0 0 1-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 0 0 6.16-12.12A14.98 14.98 0 0 0 9.63 8.41m5.96 5.96a14.96 14.96 0 0 1-10.43 3.42L12 12m0 0h-.01M21 3s-1.8 3.6-4 4.5"></path>
+                    </svg>
+                </div>
+                <div class="flex flex-col">
+                    <span class="heading-font text-xl font-extrabold text-white tracking-wider leading-none">Xstreamflex</span>
+                    <span class="text-[10px] text-xbox font-semibold uppercase tracking-widest mt-1">Xsite Ecosystem</span>
+                </div>
+            </a>
+            
+            <!-- GLOBAL HEADER NAVIGATION (Mandatory) -->
+            <nav class="hidden md:flex items-center gap-1 lg:gap-2">
+                <a href="index.html" class="rounded-lg px-3 py-2 text-sm font-semibold text-xbox dark:text-xbox-light bg-xbox/10">Home</a>
+                <a href="about.html" class="rounded-lg px-3 py-2 text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-100 dark:text-zinc-300 dark:hover:text-white dark:hover:bg-neutral-900 transition-all">About Us</a>
+                <a href="products.html" class="rounded-lg px-3 py-2 text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-100 dark:text-zinc-300 dark:hover:text-white dark:hover:bg-neutral-900 transition-all">Products</a>
+                <a href="blog.html" class="rounded-lg px-3 py-2 text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-100 dark:text-zinc-300 dark:hover:text-white dark:hover:bg-neutral-900 transition-all">Blog</a>
+                <a href="contact.html" class="rounded-lg px-3 py-2 text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-100 dark:text-zinc-300 dark:hover:text-white dark:hover:bg-neutral-900 transition-all">Contact</a>
+            </nav>
+
+            <!-- Launch CTA Right -->
+            <div class="flex items-center gap-3">
+                <a href="products.html" class="hidden sm:inline-flex items-center gap-2 rounded-lg bg-xbox hover:bg-xbox-hover px-4 py-2 text-sm font-bold text-white transition-all shadow-[0_0_20px_rgba(16,124,17,0.4)] hover:shadow-[0_0_30px_rgba(16,124,17,0.7)] group">
+                    <span>Deploy Now</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4 group-hover:translate-x-0.5 transition-transform">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                    </svg>
+                </a>
+                
+                <!-- Mobile Navigation Button -->
+                <button id="nav-toggle" class="md:hidden p-2 rounded-lg text-zinc-400 hover:text-white hover:bg-zinc-900 focus:outline-none transition-colors">
+                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Nav Menu (Toggled via JavaScript) -->
+        <div id="mobile-menu" class="hidden md:hidden border-t border-zinc-900 bg-zinc-950 px-4 py-4 space-y-2">
+            <a href="index.html" class="block rounded-lg px-3 py-2 text-sm font-semibold text-xbox bg-xbox/10">Home</a>
+            <a href="about.html" class="block rounded-lg px-3 py-2 text-sm font-medium text-zinc-300 hover:text-white hover:bg-zinc-900">About Us</a>
+            <a href="products.html" class="block rounded-lg px-3 py-2 text-sm font-medium text-zinc-300 hover:text-white hover:bg-zinc-900">Products</a>
+            <a href="blog.html" class="block rounded-lg px-3 py-2 text-sm font-medium text-zinc-300 hover:text-white hover:bg-zinc-900">Blog</a>
+            <a href="contact.html" class="block rounded-lg px-3 py-2 text-sm font-medium text-zinc-300 hover:text-white hover:bg-zinc-900">Contact</a>
+            <a href="products.html" class="block text-center rounded-lg bg-xbox py-2 text-sm font-bold text-white">Deploy Now</a>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="flex-grow">
+        
+        <!-- Hero Section -->
+        <section class="relative py-20 overflow-hidden border-b border-zinc-900 bg-radial-at-t from-xbox-deep via-zinc-950 to-zinc-950">
+            <!-- Rocket Cyber Background Glow -->
+            <div class="absolute inset-y-0 right-0 w-1/2 bg-gradient-to-l from-xbox/5 to-transparent pointer-events-none"></div>
+            
+            <div class="mx-auto max-w-7xl px-4 lg:px-8 relative z-10">
+                <div class="flex flex-col items-center text-center max-w-3xl mx-auto">
+                    <!-- Shield Icon -->
+                    <div class="mb-4 inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-xbox/10 border border-xbox/30 text-xbox-glow text-xs font-bold uppercase tracking-widest">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.57-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />
+                        </svg>
+                        Ownership & Privacy Blueprint
+                    </div>
+                    
+                    <h1 class="heading-font text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-none">
+                        Your Code, Your Codebase, <br>
+                        <span class="text-xbox-glow">Your Privacy.</span>
+                    </h1>
+                    
+                    <p class="mt-6 text-base sm:text-lg text-zinc-400 max-w-2xl leading-relaxed">
+                        At Xstreamflex, we disrupt the traditional closed SaaS blueprint. When we build your site with Xsite, you own every single asset, line of HTML, and client data transaction. Read how we protect you and your users.
+                    </p>
+
+                    <!-- Fast Info Badges -->
+                    <div class="mt-8 grid grid-cols-2 md:grid-cols-4 gap-4 w-full">
+                        <div class="p-4 rounded-xl bg-zinc-900/50 border border-zinc-800 text-center">
+                            <div class="text-xs text-zinc-500 uppercase tracking-wider font-bold">Zero Data Lock-In</div>
+                            <div class="text-sm font-semibold text-white mt-1">100% Exportable</div>
+                        </div>
+                        <div class="p-4 rounded-xl bg-zinc-900/50 border border-zinc-800 text-center">
+                            <div class="text-xs text-zinc-500 uppercase tracking-wider font-bold">No Hidden Trackers</div>
+                            <div class="text-sm font-semibold text-white mt-1">Ad-Free Infrastructure</div>
+                        </div>
+                        <div class="p-4 rounded-xl bg-zinc-900/50 border border-zinc-800 text-center">
+                            <div class="text-xs text-zinc-500 uppercase tracking-wider font-bold">GitHub Integration</div>
+                            <div class="text-sm font-semibold text-white mt-1">Secure Deployment</div>
+                        </div>
+                        <div class="p-4 rounded-xl bg-zinc-900/50 border border-zinc-800 text-center">
+                            <div class="text-xs text-zinc-500 uppercase tracking-wider font-bold">Last Updated</div>
+                            <div class="text-sm font-semibold text-xbox-glow mt-1">October 24, 2024</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Policy Explorer -->
+        <section class="py-16 bg-zinc-950">
+            <div class="mx-auto max-w-7xl px-4 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
+                    
+                    <!-- Sticky Sidebar Navigation -->
+                    <div class="lg:col-span-4 space-y-6">
+                        <div class="sticky top-28 bg-zinc-900/40 p-6 rounded-2xl border border-zinc-800/80 backdrop-blur-sm space-y-4">
+                            <h3 class="heading-font text-sm font-bold uppercase tracking-widest text-zinc-400">Policy Contents</h3>
+                            <nav class="space-y-1">
+                                <a href="#philosophy" class="block px-3 py-2.5 rounded-lg text-sm font-medium text-xbox-glow bg-xbox/10 border-l-2 border-xbox transition-all">1. Disruptive Privacy Philosophy</a>
+                                <a href="#data-collection" class="block px-3 py-2.5 rounded-lg text-sm font-medium text-zinc-400 hover:text-white hover:bg-zinc-800/40 border-l-2 border-transparent transition-all">2. Information We Collect</a>
+                                <a href="#code-ownership" class="block px-3 py-2.5 rounded-lg text-sm font-medium text-zinc-400 hover:text-white hover:bg-zinc-800/40 border-l-2 border-transparent transition-all">3. Code Ownership & GitHub Autonomy</a>
+                                <a href="#third-parties" class="block px-3 py-2.5 rounded-lg text-sm font-medium text-zinc-400 hover:text-white hover:bg-zinc-800/40 border-l-2 border-transparent transition-all">4. Stripe & Integrations</a>
+                                <a href="#cookies" class="block px-3 py-2.5 rounded-lg text-sm font-medium text-zinc-400 hover:text-white hover:bg-zinc-800/40 border-l-2 border-transparent transition-all">5. Cookies & Tracking Control</a>
+                                <a href="#accessibility" class="block px-3 py-2.5 rounded-lg text-sm font-medium text-zinc-400 hover:text-white hover:bg-zinc-800/40 border-l-2 border-transparent transition-all">6. Accessibility & Inclusivity Policy</a>
+                                <a href="#retention" class="block px-3 py-2.5 rounded-lg text-sm font-medium text-zinc-400 hover:text-white hover:bg-zinc-800/40 border-l-2 border-transparent transition-all">7. Data Retention & Portability</a>
+                            </nav>
+                            
+                            <!-- Support / Help Callout -->
+                            <div class="p-4 rounded-xl bg-xbox/5 border border-xbox/20">
+                                <h4 class="text-xs font-bold text-white flex items-center gap-1.5 uppercase tracking-wide">
+                                    <span class="inline-block w-2 h-2 rounded-full bg-xbox animate-ping"></span>
+                                    Have Questions?
+                                </h4>
+                                <p class="text-[11px] text-zinc-400 mt-2">
+                                    Our compliance crew is dedicated to ensuring you feel absolutely secure about your custom setups.
+                                </p>
+                                <a href="contact.html" class="block text-center mt-3 py-1.5 px-3 rounded bg-zinc-850 hover:bg-zinc-800 text-xs font-semibold text-xbox-glow border border-zinc-700/60 transition-colors">
+                                    Contact Security Lead
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Main Policy Content -->
+                    <div class="lg:col-span-8 space-y-12 text-zinc-300">
+                        
+                        <!-- Block 1: Philosophy -->
+                        <div id="philosophy" class="scroll-mt-28 space-y-4">
+                            <h2 class="heading-font text-2xl font-bold text-white flex items-center gap-3">
+                                <span class="flex h-8 w-8 items-center justify-center rounded bg-xbox/20 text-xbox-glow text-sm font-mono">01</span>
+                                Disruptive Privacy Philosophy
+                            </h2>
+                            <p class="leading-relaxed">
+                                Xstreamflex is founded on the principles of complete digital democratization, simplicity, and total autonomy. Unlike closed-off web platforms or drag-and-drop systems that lock your visitors’ telemetry inside proprietary "black boxes", Xstreamflex ensures you retain total control of all source configurations.
+                            </p>
+                            <p class="leading-relaxed">
+                                Our flagship project, <span class="text-white font-semibold">Xsite</span>, delivers fully realized HTML/CSS layouts straight to your storage systems or private code repositories. We believe that what is built on your computer or configured by our rapid generator is yours—and yours alone. 
+                            </p>
+                            <div class="p-4 rounded-xl border border-zinc-800 bg-zinc-900/30 font-serif italic text-zinc-400">
+                                "Our mission is designed with absolute love for the least capable, least knowledgeable, and least experienced user to find rapid success without compromising their intellectual property or visitor integrity."
+                            </div>
+                        </div>
+
+                        <!-- Block 2: Data Collection -->
+                        <div id="data-collection" class="scroll-mt-28 space-y-4">
+                            <h2 class="heading-font text-2xl font-bold text-white flex items-center gap-3">
+                                <span class="flex h-8 w-8 items-center justify-center rounded bg-xbox/20 text-xbox-glow text-sm font-mono">02</span>
+                                Information We Collect
+                            </h2>
+                            <p class="leading-relaxed">
+                                We prioritize simplicity. Because we are designed to facilitate immediate launches with minimal technical hurdles, we gather only the minimum telemetry necessary to support automated services:
+                            </p>
+                            <ul class="space-y-3 pl-5 list-disc text-zinc-300">
+                                <li>
+                                    <strong class="text-white">Account Credentials:</strong> Basic contact details (such as names, emails, and phone numbers) needed for authentication and portal setup.
+                                </li>
+                                <li>
+                                    <strong class="text-white">Brain Dump Configurations:</strong> The core inputs, company summaries, styles, goals, and content suggestions you provide to customize your Xsite template layouts.
+                                </li>
+                                <li>
+                                    <strong class="text-white">System Diagnostics:</strong> Server error logs and platform diagnostics to ensure our visual layouts display reliably for users of all technical and cognitive levels.
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Block 3: Code Ownership -->
+                        <div id="code-ownership" class="scroll-mt-28 space-y-4">
+                            <h2 class="heading-font text-2xl font-bold text-white flex items-center gap-3">
+                                <span class="flex h-8 w-8 items-center justify-center rounded bg-xbox/20 text-xbox-glow text-sm font-mono">03</span>
+                                Code Ownership & GitHub Autonomy
+                            </h2>
+                            <p class="leading-relaxed">
+                                Traditional builders hide your code behind subscription walls, retaining backend configurations and templates on their platform. Xstreamflex takes the exact opposite approach.
+                            </p>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
+                                <div class="p-5 rounded-xl bg-zinc-900/50 border border-zinc-800 space-y-2">
+                                    <div class="text-xs font-bold text-xbox-glow uppercase tracking-wide">The Traditional Builder way:</div>
+                                    <p class="text-xs text-zinc-400">They control your servers, obscure your code, demand recurring fees to stay live, and limit your ability to migrate your site structure elsewhere.</p>
+                                </div>
+                                <div class="p-5 rounded-xl bg-xbox/5 border border-xbox/30 space-y-2">
+                                    <div class="text-xs font-bold text-xbox uppercase tracking-wide">The Xstreamflex Blueprint:</div>
+                                    <p class="text-xs text-zinc-300">We request tokenized access to push layouts to your custom GitHub repository. You possess total code ownership and can host it wherever you like.</p>
+                                </div>
+                            </div>
+                            <p class="leading-relaxed text-sm">
+                                To deploy code on your behalf, we leverage highly secured GitHub OAuth tokens. We access only the designated public or private repository assigned for your deployment. We never read your other personal codebases, credentials, or private keys.
+                            </p>
+                        </div>
+
+                        <!-- Block 4: Third-Party Integrations -->
+                        <div id="third-parties" class="scroll-mt-28 space-y-4">
+                            <h2 class="heading-font text-2xl font-bold text-white flex items-center gap-3">
+                                <span class="flex h-8 w-8 items-center justify-center rounded bg-xbox/20 text-xbox-glow text-sm font-mono">04</span>
+                                Stripe & Integrations
+                            </h2>
+                            <p class="leading-relaxed">
+                                Our expansion roadmap includes features that hook your sites up to key external modules, like Stripe for checkout and external email responders for automations.
+                            </p>
+                            <p class="leading-relaxed">
+                                Once you follow our clear configuration tutorials to connect custom Stripe portals, Xstreamflex acts purely as an infrastructure coordinator. Your customer's payment details, billing flows, and secure transaction data are routed directly through your dedicated payment provider—we never capture, store, or sell checkout metrics.
+                            </p>
+                        </div>
+
+                        <!-- Block 5: Cookies & Tracking Control -->
+                        <div id="cookies" class="scroll-mt-28 space-y-4">
+                            <h2 class="heading-font text-2xl font-bold text-white flex items-center gap-3">
+                                <span class="flex h-8 w-8 items-center justify-center rounded bg-xbox/20 text-xbox-glow text-sm font-mono">05</span>
+                                Cookies & Tracking Control
+                            </h2>
+                            <p class="leading-relaxed">
+                                Xstreamflex uses functional, non-persistent cookies exclusively to preserve your workspace layout, active developer settings, and authentication states. We do not integrate third-party data tracking matrices, cross-context marketing engines, or invasive demographic mapping software on your live, deployed sites.
+                            </p>
+                        </div>
+
+                        <!-- Block 6: Accessibility & Inclusivity Policy -->
+                        <div id="accessibility" class="scroll-mt-28 space-y-4">
+                            <h2 class="heading-font text-2xl font-bold text-white flex items-center gap-3">
+                                <span class="flex h-8 w-8 items-center justify-center rounded bg-xbox/20 text-xbox-glow text-sm font-mono">06</span>
+                                Accessibility & Inclusivity Policy
+                            </h2>
+                            <p class="leading-relaxed">
+                                Part of protecting our users is making sure our system remains fully accessible. Our platforms are designed with care to ensure individuals with cognitive, visual, or physical differences can operate our tools and access our legal documentation with ease.
+                            </p>
+                            <p class="leading-relaxed">
+                                Whether you are a senior citizen, a youngster starting a first project, or using helper devices to browse, our clean, standard layout protocols ensure you are never locked out of your digital rights.
+                            </p>
+                        </div>
+
+                        <!-- Block 7: Data Retention & Portability -->
+                        <div id="retention" class="scroll-mt-28 space-y-4">
+                            <h2 class="heading-font text-2xl font-bold text-white flex items-center gap-3">
+                                <span class="flex h-8 w-8 items-center justify-center rounded bg-xbox/20 text-xbox-glow text-sm font-mono">07</span>
+                                Data Retention & Portability
+                            </h2>
+                            <p class="leading-relaxed">
+                                You can demand the deletion of your account and layout assets at any time. When you request a removal, we clear your OAuth access tokens and deployment configurations from our platform database. 
+                            </p>
+                            <p class="leading-relaxed">
+                                Because you own the live pages on your personal GitHub and web hosting system, your live websites remain fully yours to maintain even if you close your account with Xstreamflex.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Compliance Banner CTA -->
+        <section class="py-16 border-t border-zinc-900 bg-zinc-900/20">
+            <div class="mx-auto max-w-5xl px-4 lg:px-8 text-center space-y-6">
+                <div class="inline-flex h-12 w-12 items-center justify-center rounded-full bg-xbox/10 text-xbox border border-xbox/30 mx-auto">
+                    <!-- Check icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                    </svg>
+                </div>
+                <h2 class="heading-font text-2xl sm:text-3xl font-bold text-white">
+                    Fully Compliant, User-Owned Web Architecture
+                </h2>
+                <p class="text-zinc-400 max-w-xl mx-auto text-sm">
+                    Empowering you to launch to the moon with total freedom, speed, and privacy. You handle the concept; we make sure your technical foundation is modern, clean, and completely in your control.
+                </p>
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
+                    <a href="products.html" class="px-6 py-3 rounded-lg bg-xbox hover:bg-xbox-hover text-sm font-bold text-white transition-all shadow-[0_0_20px_rgba(16,124,17,0.4)]">
+                        Launch Your First Project
+                    </a>
+                    <a href="contact.html" class="px-6 py-3 rounded-lg bg-zinc-800 hover:bg-zinc-700 text-sm font-bold text-white transition-all">
+                        Talk To Our Privacy Officer
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Global Footer (Mandatory) -->
+    <footer class="bg-zinc-950 text-zinc-400 py-12 border-t border-zinc-900">
+        <div class="mx-auto max-w-7xl px-4 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-8">
+            <!-- Branding & Description -->
+            <div class="space-y-4 md:col-span-2">
+                <div class="flex items-center gap-2">
+                    <div class="flex h-8 w-8 items-center justify-center rounded-lg bg-xbox text-white font-bold">
+                        <!-- Tiny Rocket -->
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="h-4 w-4">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.59 14.37a6 6 0 0 1-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 0 0 6.16-12.12A14.98 14.98 0 0 0 9.63 8.41m5.96 5.96a14.96 14.96 0 0 1-10.43 3.42L12 12m0 0h-.01M21 3s-1.8 3.6-4 4.5"></path>
+                        </svg>
+                    </div>
+                    <span class="heading-font text-lg font-bold text-white tracking-wider">Xstreamflex</span>
+                </div>
+                <p class="text-xs text-zinc-500 max-w-sm leading-relaxed">
+                    Xstreamflex is on a mission to democratize the web. We build tools that bypass technical boundaries, enabling anybody to establish their digital footprint with total code and structural ownership.
+                </p>
+            </div>
+
+            <!-- Page Navigation -->
+            <div class="space-y-3">
+                <h4 class="text-xs font-bold uppercase tracking-widest text-white">Ecosystem Links</h4>
+                <ul class="space-y-2 text-xs">
+                    <li><a href="index.html" class="hover:text-white transition-colors">Home Landing</a></li>
+                    <li><a href="about.html" class="hover:text-white transition-colors">About Mission</a></li>
+                    <li><a href="products.html" class="hover:text-white transition-colors">Xsite Products</a></li>
+                    <li><a href="blog.html" class="hover:text-white transition-colors">Resource Blog</a></li>
+                    <li><a href="contact.html" class="hover:text-white transition-colors">Launch Crew Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Legal Documents -->
+            <div class="space-y-3">
+                <h4 class="text-xs font-bold uppercase tracking-widest text-white">Trust &amp; Compliance</h4>
+                <ul class="space-y-2 text-xs">
+                    <li><a href="terms.html" class="hover:text-white transition-colors">Terms of Service</a></li>
+                    <li><a href="privacy.html" class="hover:text-white transition-colors">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="mx-auto max-w-7xl px-4 lg:px-8 mt-12 pt-8 border-t border-zinc-900 flex flex-col sm:flex-row items-center justify-between text-xs text-zinc-600 gap-4">
+            <p>© <span id="current-year"></span> Xstreamflex Network. Built with absolute love for independent creators.</p>
+            <div class="flex gap-4">
+                <span class="hover:text-zinc-400">Version 1.4 Live</span>
+                <span>•</span>
+                <span class="hover:text-zinc-400">Deploy Status: Active</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Interactive Navigation Scripts -->
+    <script>
+        // Set dynamic year in footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // Responsive mobile menu toggling
+        const toggleBtn = document.getElementById('nav-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        toggleBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Smooth Scrolling logic for sidebar contents
+        const sideLinks = document.querySelectorAll('nav a[href^="#"]');
+        sideLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const targetId = link.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    // Smooth scroll to element
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 100,
+                        behavior: 'smooth'
+                    });
+
+                    // Update active state visual feedback
+                    sideLinks.forEach(item => {
+                        item.classList.remove('text-xbox-glow', 'bg-xbox/10', 'border-xbox');
+                        item.classList.add('text-zinc-400', 'border-transparent');
+                    });
+                    link.classList.remove('text-zinc-400', 'border-transparent');
+                    link.classList.add('text-xbox-glow', 'bg-xbox/10', 'border-xbox');
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
