@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth dark"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xstreamflex | Launch Your Venture in Minutes, Not Months</title>
+    <meta name="description" content="Xstreamflex &amp; Xsite empower creators, solopreneurs, and absolute beginners to deploy full-scale, customizable live websites from a single brain dump. No black box, complete ownership.">
+    
+    <!-- TailWind CSS & Config -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        xbox: {
+                            DEFAULT: '#107C11',
+                            hover: '#189e1a',
+                            light: '#22c55e',
+                            glow: '#39ff14',
+                            dark: '#0b520b',
+                            deep: '#073007'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'Inter', 'sans-serif'],
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 6s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;family=Space+Grotesk:wght@500;700&amp;display=swap" rel="stylesheet">
+    
+    <!-- Inline styles for scrollbar & custom focus states -->
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .heading-font {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+        /* Custom scrollbar to match Xbox Theme */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0f172a;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #107C11;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #22c55e;
+        }
+    </style>
+<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:Plus Jakarta Sans, Inter, sans-serif;font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.pointer-events-none{pointer-events:none}.absolute{position:absolute}.relative{position:relative}.sticky{position:sticky}.inset-0{inset:0px}.inset-x-0{left:0px;right:0px}.-top-40{top:-10rem}.left-\[calc\(50\%-11rem\)\]{left:calc(50% - 11rem)}.top-0{top:0px}.-z-10{z-index:-10}.z-10{z-index:10}.z-50{z-index:50}.order-last{order:9999}.mx-auto{margin-left:auto;margin-right:auto}.-mt-1{margin-top:-0.25rem}.mt-0\.5{margin-top:0.125rem}.mt-12{margin-top:3rem}.mt-2{margin-top:0.5rem}.mt-4{margin-top:1rem}.mt-6{margin-top:1.5rem}.line-clamp-2{overflow:hidden;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2}.block{display:block}.inline-block{display:inline-block}.flex{display:flex}.inline-flex{display:inline-flex}.grid{display:grid}.hidden{display:none}.aspect-\[1155\/678\]{aspect-ratio:1155/678}.h-1\.5{height:0.375rem}.h-10{height:2.5rem}.h-12{height:3rem}.h-2{height:0.5rem}.h-3{height:0.75rem}.h-3\.5{height:0.875rem}.h-4{height:1rem}.h-5{height:1.25rem}.h-6{height:1.5rem}.h-8{height:2rem}.min-h-\[320px\]{min-height:320px}.w-1\.5{width:0.375rem}.w-10{width:2.5rem}.w-12{width:3rem}.w-2{width:0.5rem}.w-3{width:0.75rem}.w-3\.5{width:0.875rem}.w-4{width:1rem}.w-5{width:1.25rem}.w-6{width:1.5rem}.w-8{width:2rem}.w-\[36rem\]{width:36rem}.w-full{width:100%}.max-w-2xl{max-width:42rem}.max-w-3xl{max-width:48rem}.max-w-4xl{max-width:56rem}.max-w-5xl{max-width:64rem}.max-w-7xl{max-width:80rem}.max-w-\[380px\]{max-width:380px}.max-w-\[420px\]{max-width:420px}.max-w-md{max-width:28rem}.max-w-sm{max-width:24rem}.max-w-xl{max-width:36rem}.flex-1{flex:1 1 0%}.-translate-x-1\/2{--tw-translate-x:-50%;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.rotate-\[30deg\]{--tw-rotate:30deg;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.transform-gpu{transform:translate3d(var(--tw-translate-x), var(--tw-translate-y), 0) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}@keyframes float{0%, 100%{transform:translateY(0px)}50%{transform:translateY(-10px)}}.animate-float{animation:float 6s ease-in-out infinite}@keyframes pulse{50%{opacity:.5}}.animate-pulse{animation:pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite}@keyframes pulse{50%{opacity:.5}}.animate-pulse-slow{animation:pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite}.grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}.grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-center{align-items:center}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-1{gap:0.25rem}.gap-1\.5{gap:0.375rem}.gap-12{gap:3rem}.gap-2{gap:0.5rem}.gap-2\.5{gap:0.625rem}.gap-3{gap:0.75rem}.gap-4{gap:1rem}.gap-6{gap:1.5rem}.gap-8{gap:2rem}.space-y-1\.5 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.375rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.375rem * var(--tw-space-y-reverse))}.space-y-12 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(3rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(3rem * var(--tw-space-y-reverse))}.space-y-2 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.5rem * var(--tw-space-y-reverse))}.space-y-3 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.75rem * var(--tw-space-y-reverse))}.space-y-3\.5 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.875rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.875rem * var(--tw-space-y-reverse))}.space-y-4 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem * var(--tw-space-y-reverse))}.space-y-6 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.5rem * var(--tw-space-y-reverse))}.space-y-8 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(2rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(2rem * var(--tw-space-y-reverse))}.overflow-hidden{overflow:hidden}.scroll-smooth{scroll-behavior:smooth}.rounded{border-radius:0.25rem}.rounded-2xl{border-radius:1rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:0.5rem}.rounded-xl{border-radius:0.75rem}.border{border-width:1px}.border-y{border-top-width:1px;border-bottom-width:1px}.border-b{border-bottom-width:1px}.border-t{border-top-width:1px}.border-slate-100{--tw-border-opacity:1;border-color:rgb(241 245 249 / var(--tw-border-opacity, 1))}.border-slate-200{--tw-border-opacity:1;border-color:rgb(226 232 240 / var(--tw-border-opacity, 1))}.border-slate-200\/80{border-color:rgb(226 232 240 / 0.8)}.border-slate-300{--tw-border-opacity:1;border-color:rgb(203 213 225 / var(--tw-border-opacity, 1))}.border-xbox\/30{border-color:rgb(16 124 17 / 0.3)}.border-zinc-700{--tw-border-opacity:1;border-color:rgb(63 63 70 / var(--tw-border-opacity, 1))}.border-zinc-800{--tw-border-opacity:1;border-color:rgb(39 39 42 / var(--tw-border-opacity, 1))}.border-zinc-900{--tw-border-opacity:1;border-color:rgb(24 24 27 / var(--tw-border-opacity, 1))}.bg-slate-50{--tw-bg-opacity:1;background-color:rgb(248 250 252 / var(--tw-bg-opacity, 1))}.bg-red-500{--tw-bg-opacity:1;background-color:rgb(239 68 68 / var(--tw-bg-opacity, 1))}.bg-slate-100{--tw-bg-opacity:1;background-color:rgb(241 245 249 / var(--tw-bg-opacity, 1))}.bg-slate-950{--tw-bg-opacity:1;background-color:rgb(2 6 23 / var(--tw-bg-opacity, 1))}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.bg-white\/5{background-color:rgb(255 255 255 / 0.05)}.bg-white\/50{background-color:rgb(255 255 255 / 0.5)}.bg-white\/80{background-color:rgb(255 255 255 / 0.8)}.bg-xbox{--tw-bg-opacity:1;background-color:rgb(16 124 17 / var(--tw-bg-opacity, 1))}.bg-xbox-glow{--tw-bg-opacity:1;background-color:rgb(57 255 20 / var(--tw-bg-opacity, 1))}.bg-xbox\/10{background-color:rgb(16 124 17 / 0.1)}.bg-xbox\/5{background-color:rgb(16 124 17 / 0.05)}.bg-yellow-500{--tw-bg-opacity:1;background-color:rgb(234 179 8 / var(--tw-bg-opacity, 1))}.bg-zinc-800{--tw-bg-opacity:1;background-color:rgb(39 39 42 / var(--tw-bg-opacity, 1))}.bg-zinc-900{--tw-bg-opacity:1;background-color:rgb(24 24 27 / var(--tw-bg-opacity, 1))}.bg-zinc-950{--tw-bg-opacity:1;background-color:rgb(9 9 11 / var(--tw-bg-opacity, 1))}.bg-\[linear-gradient\(to_right\2c \#8080800a_1px\2c transparent_1px\)\2c linear-gradient\(to_bottom\2c \#8080800a_1px\2c transparent_1px\)\]{background-image:linear-gradient(to right,#8080800a 1px,transparent 1px),linear-gradient(to bottom,#8080800a 1px,transparent 1px)}.bg-gradient-to-br{background-image:linear-gradient(to bottom right, var(--tw-gradient-stops))}.bg-gradient-to-r{background-image:linear-gradient(to right, var(--tw-gradient-stops))}.bg-gradient-to-tr{background-image:linear-gradient(to top right, var(--tw-gradient-stops))}.from-xbox{--tw-gradient-from:#107C11 var(--tw-gradient-from-position);--tw-gradient-to:rgb(16 124 17 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-zinc-950{--tw-gradient-from:#09090b var(--tw-gradient-from-position);--tw-gradient-to:rgb(9 9 11 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.via-zinc-900{--tw-gradient-to:rgb(24 24 27 / 0)  var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), #18181b var(--tw-gradient-via-position), var(--tw-gradient-to)}.to-black{--tw-gradient-to:#000 var(--tw-gradient-to-position)}.to-emerald-400{--tw-gradient-to:#34d399 var(--tw-gradient-to-position)}.to-emerald-500{--tw-gradient-to:#10b981 var(--tw-gradient-to-position)}.bg-\[size\:40px_40px\]{background-size:40px 40px}.bg-clip-text{-webkit-background-clip:text;background-clip:text}.p-2{padding:0.5rem}.p-3{padding:0.75rem}.p-4{padding:1rem}.p-6{padding:1.5rem}.px-1\.5{padding-left:0.375rem;padding-right:0.375rem}.px-2{padding-left:0.5rem;padding-right:0.5rem}.px-3{padding-left:0.75rem;padding-right:0.75rem}.px-3\.5{padding-left:0.875rem;padding-right:0.875rem}.px-4{padding-left:1rem;padding-right:1rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.px-8{padding-left:2rem;padding-right:2rem}.py-0\.5{padding-top:0.125rem;padding-bottom:0.125rem}.py-1{padding-top:0.25rem;padding-bottom:0.25rem}.py-12{padding-top:3rem;padding-bottom:3rem}.py-16{padding-top:4rem;padding-bottom:4rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.py-2\.5{padding-top:0.625rem;padding-bottom:0.625rem}.py-20{padding-top:5rem;padding-bottom:5rem}.py-3{padding-top:0.75rem;padding-bottom:0.75rem}.py-4{padding-top:1rem;padding-bottom:1rem}.pb-1\.5{padding-bottom:0.375rem}.pb-2{padding-bottom:0.5rem}.pb-20{padding-bottom:5rem}.pb-3{padding-bottom:0.75rem}.pb-4{padding-bottom:1rem}.pt-1\.5{padding-top:0.375rem}.pt-12{padding-top:3rem}.pt-2{padding-top:0.5rem}.pt-4{padding-top:1rem}.pt-6{padding-top:1.5rem}.pt-8{padding-top:2rem}.text-left{text-align:left}.text-center{text-align:center}.font-mono{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace}.text-2xl{font-size:1.5rem;line-height:2rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-4xl{font-size:2.25rem;line-height:2.5rem}.text-\[10px\]{font-size:10px}.text-\[11px\]{font-size:11px}.text-\[9px\]{font-size:9px}.text-base{font-size:1rem;line-height:1.5rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:0.75rem;line-height:1rem}.font-bold{font-weight:700}.font-extrabold{font-weight:800}.font-medium{font-weight:500}.font-semibold{font-weight:600}.uppercase{text-transform:uppercase}.italic{font-style:italic}.leading-\[1\.1\]{line-height:1.1}.leading-relaxed{line-height:1.625}.leading-tight{line-height:1.25}.tracking-tight{letter-spacing:-0.025em}.tracking-wider{letter-spacing:0.05em}.tracking-widest{letter-spacing:0.1em}.text-slate-900{--tw-text-opacity:1;color:rgb(15 23 42 / var(--tw-text-opacity, 1))}.text-emerald-400{--tw-text-opacity:1;color:rgb(52 211 153 / var(--tw-text-opacity, 1))}.text-slate-400{--tw-text-opacity:1;color:rgb(148 163 184 / var(--tw-text-opacity, 1))}.text-slate-500{--tw-text-opacity:1;color:rgb(100 116 139 / var(--tw-text-opacity, 1))}.text-slate-600{--tw-text-opacity:1;color:rgb(71 85 105 / var(--tw-text-opacity, 1))}.text-slate-700{--tw-text-opacity:1;color:rgb(51 65 85 / var(--tw-text-opacity, 1))}.text-slate-800{--tw-text-opacity:1;color:rgb(30 41 59 / var(--tw-text-opacity, 1))}.text-transparent{color:transparent}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.text-xbox{--tw-text-opacity:1;color:rgb(16 124 17 / var(--tw-text-opacity, 1))}.text-xbox-glow{--tw-text-opacity:1;color:rgb(57 255 20 / var(--tw-text-opacity, 1))}.text-xbox-light{--tw-text-opacity:1;color:rgb(34 197 94 / var(--tw-text-opacity, 1))}.text-zinc-300{--tw-text-opacity:1;color:rgb(212 212 216 / var(--tw-text-opacity, 1))}.text-zinc-400{--tw-text-opacity:1;color:rgb(161 161 170 / var(--tw-text-opacity, 1))}.text-zinc-500{--tw-text-opacity:1;color:rgb(113 113 122 / var(--tw-text-opacity, 1))}.text-zinc-600{--tw-text-opacity:1;color:rgb(82 82 91 / var(--tw-text-opacity, 1))}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.opacity-20{opacity:0.2}.shadow-2xl{--tw-shadow:0 25px 50px -12px rgb(0 0 0 / 0.25);--tw-shadow-colored:0 25px 50px -12px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-lg{--tw-shadow:0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-md{--tw-shadow:0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-xl{--tw-shadow:0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-xbox\/20{--tw-shadow-color:rgb(16 124 17 / 0.2);--tw-shadow:var(--tw-shadow-colored)}.shadow-xbox\/30{--tw-shadow-color:rgb(16 124 17 / 0.3);--tw-shadow:var(--tw-shadow-colored)}.shadow-xbox\/45{--tw-shadow-color:rgb(16 124 17 / 0.45);--tw-shadow:var(--tw-shadow-colored)}.blur-3xl{--tw-blur:blur(64px);filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.backdrop-blur-md{--tw-backdrop-blur:blur(12px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition-colors{transition-property:color, background-color, border-color, fill, stroke, -webkit-text-decoration-color;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, -webkit-text-decoration-color;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-transform{transition-property:transform;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.duration-300{transition-duration:300ms}.duration-200{transition-duration:200ms}.\[mask-image\:radial-gradient\(ellipse_60\%_50\%_at_50\%_0\%\2c \#000_70\%\2c transparent_100\%\)\]{-webkit-mask-image:radial-gradient(ellipse 60% 50% at 50% 0%,#000 70%,transparent 100%);mask-image:radial-gradient(ellipse 60% 50% at 50% 0%,#000 70%,transparent 100%)}.selection\:bg-xbox *::selection{--tw-bg-opacity:1;background-color:rgb(16 124 17 / var(--tw-bg-opacity, 1))}.selection\:text-white *::selection{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.selection\:bg-xbox::selection{--tw-bg-opacity:1;background-color:rgb(16 124 17 / var(--tw-bg-opacity, 1))}.selection\:text-white::selection{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.hover\:-translate-y-0\.5:hover{--tw-translate-y:-0.125rem;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.hover\:border-xbox:hover{--tw-border-opacity:1;border-color:rgb(16 124 17 / var(--tw-border-opacity, 1))}.hover\:bg-slate-100:hover{--tw-bg-opacity:1;background-color:rgb(241 245 249 / var(--tw-bg-opacity, 1))}.hover\:bg-white\/10:hover{background-color:rgb(255 255 255 / 0.1)}.hover\:bg-xbox-hover:hover{--tw-bg-opacity:1;background-color:rgb(24 158 26 / var(--tw-bg-opacity, 1))}.hover\:text-slate-900:hover{--tw-text-opacity:1;color:rgb(15 23 42 / var(--tw-text-opacity, 1))}.hover\:text-white:hover{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.hover\:text-xbox:hover{--tw-text-opacity:1;color:rgb(16 124 17 / var(--tw-text-opacity, 1))}.hover\:text-zinc-400:hover{--tw-text-opacity:1;color:rgb(161 161 170 / var(--tw-text-opacity, 1))}.hover\:underline:hover{-webkit-text-decoration-line:underline;text-decoration-line:underline}.hover\:shadow-xl:hover{--tw-shadow:0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.focus\:outline-none:focus{outline:2px solid transparent;outline-offset:2px}.focus\:ring-2:focus{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000)}.focus\:ring-xbox:focus{--tw-ring-opacity:1;--tw-ring-color:rgb(16 124 17 / var(--tw-ring-opacity, 1))}.group:hover .group-hover\:translate-x-0\.5{--tw-translate-x:0.125rem;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.group:hover .group-hover\:scale-105{--tw-scale-x:1.05;--tw-scale-y:1.05;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.group:hover .group-hover\:text-xbox{--tw-text-opacity:1;color:rgb(16 124 17 / var(--tw-text-opacity, 1))}.group:hover .group-hover\:underline{-webkit-text-decoration-line:underline;text-decoration-line:underline}.dark\:border-neutral-800:is(.dark *){--tw-border-opacity:1;border-color:rgb(38 38 38 / var(--tw-border-opacity, 1))}.dark\:border-neutral-800\/80:is(.dark *){border-color:rgb(38 38 38 / 0.8)}.dark\:border-neutral-900:is(.dark *){--tw-border-opacity:1;border-color:rgb(23 23 23 / var(--tw-border-opacity, 1))}.dark\:bg-neutral-950:is(.dark *){--tw-bg-opacity:1;background-color:rgb(10 10 10 / var(--tw-bg-opacity, 1))}.dark\:bg-neutral-900:is(.dark *){--tw-bg-opacity:1;background-color:rgb(23 23 23 / var(--tw-bg-opacity, 1))}.dark\:bg-neutral-900\/50:is(.dark *){background-color:rgb(23 23 23 / 0.5)}.dark\:bg-neutral-950\/80:is(.dark *){background-color:rgb(10 10 10 / 0.8)}.dark\:bg-zinc-900:is(.dark *){--tw-bg-opacity:1;background-color:rgb(24 24 27 / var(--tw-bg-opacity, 1))}.dark\:bg-zinc-900\/50:is(.dark *){background-color:rgb(24 24 27 / 0.5)}.dark\:bg-zinc-950:is(.dark *){--tw-bg-opacity:1;background-color:rgb(9 9 11 / var(--tw-bg-opacity, 1))}.dark\:text-zinc-50:is(.dark *){--tw-text-opacity:1;color:rgb(250 250 250 / var(--tw-text-opacity, 1))}.dark\:text-white:is(.dark *){--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.dark\:text-xbox-light:is(.dark *){--tw-text-opacity:1;color:rgb(34 197 94 / var(--tw-text-opacity, 1))}.dark\:text-zinc-300:is(.dark *){--tw-text-opacity:1;color:rgb(212 212 216 / var(--tw-text-opacity, 1))}.dark\:text-zinc-400:is(.dark *){--tw-text-opacity:1;color:rgb(161 161 170 / var(--tw-text-opacity, 1))}.dark\:text-zinc-500:is(.dark *){--tw-text-opacity:1;color:rgb(113 113 122 / var(--tw-text-opacity, 1))}.dark\:hover\:bg-neutral-800:hover:is(.dark *){--tw-bg-opacity:1;background-color:rgb(38 38 38 / var(--tw-bg-opacity, 1))}.dark\:hover\:bg-neutral-900:hover:is(.dark *){--tw-bg-opacity:1;background-color:rgb(23 23 23 / var(--tw-bg-opacity, 1))}.dark\:hover\:text-white:hover:is(.dark *){--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.dark\:hover\:text-xbox-light:hover:is(.dark *){--tw-text-opacity:1;color:rgb(34 197 94 / var(--tw-text-opacity, 1))}.group:hover .dark\:group-hover\:text-xbox-light:is(.dark *){--tw-text-opacity:1;color:rgb(34 197 94 / var(--tw-text-opacity, 1))}@media (min-width: 640px){.sm\:-top-80{top:-20rem}.sm\:left-\[calc\(50\%-30rem\)\]{left:calc(50% - 30rem)}.sm\:inline-flex{display:inline-flex}.sm\:w-\[72\.1875rem\]{width:72.1875rem}.sm\:w-auto{width:auto}.sm\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.sm\:flex-row{flex-direction:row}.sm\:p-8{padding:2rem}.sm\:text-4xl{font-size:2.25rem;line-height:2.5rem}.sm\:text-5xl{font-size:3rem;line-height:1}.sm\:text-base{font-size:1rem;line-height:1.5rem}.sm\:text-lg{font-size:1.125rem;line-height:1.75rem}.sm\:text-sm{font-size:0.875rem;line-height:1.25rem}.sm\:leading-\[1\.15\]{line-height:1.15}}@media (min-width: 768px){.md\:col-span-2{grid-column:span 2 / span 2}.md\:col-span-4{grid-column:span 4 / span 4}.md\:flex{display:flex}.md\:hidden{display:none}.md\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.md\:grid-cols-4{grid-template-columns:repeat(4, minmax(0, 1fr))}.md\:grid-cols-6{grid-template-columns:repeat(6, minmax(0, 1fr))}.md\:py-24{padding-top:6rem;padding-bottom:6rem}.md\:pt-20{padding-top:5rem}}@media (min-width: 1024px){.lg\:order-first{order:-9999}.lg\:col-span-5{grid-column:span 5 / span 5}.lg\:col-span-7{grid-column:span 7 / span 7}.lg\:mx-0{margin-left:0px;margin-right:0px}.lg\:max-w-none{max-width:none}.lg\:grid-cols-12{grid-template-columns:repeat(12, minmax(0, 1fr))}.lg\:grid-cols-4{grid-template-columns:repeat(4, minmax(0, 1fr))}.lg\:justify-start{justify-content:flex-start}.lg\:gap-2{gap:0.5rem}.lg\:px-8{padding-left:2rem;padding-right:2rem}.lg\:py-28{padding-top:7rem;padding-bottom:7rem}.lg\:pt-28{padding-top:7rem}.lg\:text-left{text-align:left}.lg\:text-6xl{font-size:3.75rem;line-height:1}}</style><style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:Plus Jakarta Sans, Inter, sans-serif;font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.pointer-events-none{pointer-events:none}.absolute{position:absolute}.relative{position:relative}.sticky{position:sticky}.inset-0{inset:0px}.inset-x-0{left:0px;right:0px}.-top-40{top:-10rem}.left-\[calc\(50\%-11rem\)\]{left:calc(50% - 11rem)}.top-0{top:0px}.-z-10{z-index:-10}.z-10{z-index:10}.z-50{z-index:50}.order-last{order:9999}.mx-auto{margin-left:auto;margin-right:auto}.-mt-1{margin-top:-0.25rem}.mt-0\.5{margin-top:0.125rem}.mt-12{margin-top:3rem}.mt-2{margin-top:0.5rem}.mt-4{margin-top:1rem}.mt-6{margin-top:1.5rem}.line-clamp-2{overflow:hidden;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2}.block{display:block}.inline-block{display:inline-block}.flex{display:flex}.inline-flex{display:inline-flex}.grid{display:grid}.hidden{display:none}.aspect-\[1155\/678\]{aspect-ratio:1155/678}.h-1\.5{height:0.375rem}.h-10{height:2.5rem}.h-12{height:3rem}.h-2{height:0.5rem}.h-3{height:0.75rem}.h-3\.5{height:0.875rem}.h-4{height:1rem}.h-5{height:1.25rem}.h-6{height:1.5rem}.h-8{height:2rem}.min-h-\[320px\]{min-height:320px}.w-1\.5{width:0.375rem}.w-10{width:2.5rem}.w-12{width:3rem}.w-2{width:0.5rem}.w-3{width:0.75rem}.w-3\.5{width:0.875rem}.w-4{width:1rem}.w-5{width:1.25rem}.w-6{width:1.5rem}.w-8{width:2rem}.w-\[36rem\]{width:36rem}.w-full{width:100%}.max-w-2xl{max-width:42rem}.max-w-3xl{max-width:48rem}.max-w-4xl{max-width:56rem}.max-w-5xl{max-width:64rem}.max-w-7xl{max-width:80rem}.max-w-\[380px\]{max-width:380px}.max-w-\[420px\]{max-width:420px}.max-w-md{max-width:28rem}.max-w-sm{max-width:24rem}.max-w-xl{max-width:36rem}.flex-1{flex:1 1 0%}.-translate-x-1\/2{--tw-translate-x:-50%;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.rotate-\[30deg\]{--tw-rotate:30deg;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.transform-gpu{transform:translate3d(var(--tw-translate-x), var(--tw-translate-y), 0) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}@keyframes float{0%, 100%{transform:translateY(0px)}50%{transform:translateY(-10px)}}.animate-float{animation:float 6s ease-in-out infinite}@keyframes pulse{50%{opacity:.5}}.animate-pulse{animation:pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite}@keyframes pulse{50%{opacity:.5}}.animate-pulse-slow{animation:pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite}.grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}.grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-center{align-items:center}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-1{gap:0.25rem}.gap-1\.5{gap:0.375rem}.gap-12{gap:3rem}.gap-2{gap:0.5rem}.gap-2\.5{gap:0.625rem}.gap-3{gap:0.75rem}.gap-4{gap:1rem}.gap-6{gap:1.5rem}.gap-8{gap:2rem}.space-y-1\.5 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.375rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.375rem * var(--tw-space-y-reverse))}.space-y-12 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(3rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(3rem * var(--tw-space-y-reverse))}.space-y-2 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.5rem * var(--tw-space-y-reverse))}.space-y-3 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.75rem * var(--tw-space-y-reverse))}.space-y-3\.5 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.875rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.875rem * var(--tw-space-y-reverse))}.space-y-4 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem * var(--tw-space-y-reverse))}.space-y-6 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.5rem * var(--tw-space-y-reverse))}.space-y-8 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(2rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(2rem * var(--tw-space-y-reverse))}.overflow-hidden{overflow:hidden}.scroll-smooth{scroll-behavior:smooth}.rounded{border-radius:0.25rem}.rounded-2xl{border-radius:1rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:0.5rem}.rounded-xl{border-radius:0.75rem}.border{border-width:1px}.border-y{border-top-width:1px;border-bottom-width:1px}.border-b{border-bottom-width:1px}.border-t{border-top-width:1px}.border-slate-100{--tw-border-opacity:1;border-color:rgb(241 245 249 / var(--tw-border-opacity, 1))}.border-slate-200{--tw-border-opacity:1;border-color:rgb(226 232 240 / var(--tw-border-opacity, 1))}.border-slate-200\/80{border-color:rgb(226 232 240 / 0.8)}.border-slate-300{--tw-border-opacity:1;border-color:rgb(203 213 225 / var(--tw-border-opacity, 1))}.border-xbox\/30{border-color:rgb(16 124 17 / 0.3)}.border-zinc-700{--tw-border-opacity:1;border-color:rgb(63 63 70 / var(--tw-border-opacity, 1))}.border-zinc-800{--tw-border-opacity:1;border-color:rgb(39 39 42 / var(--tw-border-opacity, 1))}.border-zinc-900{--tw-border-opacity:1;border-color:rgb(24 24 27 / var(--tw-border-opacity, 1))}.bg-slate-50{--tw-bg-opacity:1;background-color:rgb(248 250 252 / var(--tw-bg-opacity, 1))}.bg-red-500{--tw-bg-opacity:1;background-color:rgb(239 68 68 / var(--tw-bg-opacity, 1))}.bg-slate-100{--tw-bg-opacity:1;background-color:rgb(241 245 249 / var(--tw-bg-opacity, 1))}.bg-slate-950{--tw-bg-opacity:1;background-color:rgb(2 6 23 / var(--tw-bg-opacity, 1))}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.bg-white\/5{background-color:rgb(255 255 255 / 0.05)}.bg-white\/50{background-color:rgb(255 255 255 / 0.5)}.bg-white\/80{background-color:rgb(255 255 255 / 0.8)}.bg-xbox{--tw-bg-opacity:1;background-color:rgb(16 124 17 / var(--tw-bg-opacity, 1))}.bg-xbox-glow{--tw-bg-opacity:1;background-color:rgb(57 255 20 / var(--tw-bg-opacity, 1))}.bg-xbox\/10{background-color:rgb(16 124 17 / 0.1)}.bg-xbox\/5{background-color:rgb(16 124 17 / 0.05)}.bg-yellow-500{--tw-bg-opacity:1;background-color:rgb(234 179 8 / var(--tw-bg-opacity, 1))}.bg-zinc-800{--tw-bg-opacity:1;background-color:rgb(39 39 42 / var(--tw-bg-opacity, 1))}.bg-zinc-900{--tw-bg-opacity:1;background-color:rgb(24 24 27 / var(--tw-bg-opacity, 1))}.bg-zinc-950{--tw-bg-opacity:1;background-color:rgb(9 9 11 / var(--tw-bg-opacity, 1))}.bg-\[linear-gradient\(to_right\2c \#8080800a_1px\2c transparent_1px\)\2c linear-gradient\(to_bottom\2c \#8080800a_1px\2c transparent_1px\)\]{background-image:linear-gradient(to right,#8080800a 1px,transparent 1px),linear-gradient(to bottom,#8080800a 1px,transparent 1px)}.bg-gradient-to-br{background-image:linear-gradient(to bottom right, var(--tw-gradient-stops))}.bg-gradient-to-r{background-image:linear-gradient(to right, var(--tw-gradient-stops))}.bg-gradient-to-tr{background-image:linear-gradient(to top right, var(--tw-gradient-stops))}.from-xbox{--tw-gradient-from:#107C11 var(--tw-gradient-from-position);--tw-gradient-to:rgb(16 124 17 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-zinc-950{--tw-gradient-from:#09090b var(--tw-gradient-from-position);--tw-gradient-to:rgb(9 9 11 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.via-zinc-900{--tw-gradient-to:rgb(24 24 27 / 0)  var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), #18181b var(--tw-gradient-via-position), var(--tw-gradient-to)}.to-black{--tw-gradient-to:#000 var(--tw-gradient-to-position)}.to-emerald-400{--tw-gradient-to:#34d399 var(--tw-gradient-to-position)}.to-emerald-500{--tw-gradient-to:#10b981 var(--tw-gradient-to-position)}.bg-\[size\:40px_40px\]{background-size:40px 40px}.bg-clip-text{-webkit-background-clip:text;background-clip:text}.p-2{padding:0.5rem}.p-3{padding:0.75rem}.p-4{padding:1rem}.p-6{padding:1.5rem}.px-1\.5{padding-left:0.375rem;padding-right:0.375rem}.px-2{padding-left:0.5rem;padding-right:0.5rem}.px-3{padding-left:0.75rem;padding-right:0.75rem}.px-3\.5{padding-left:0.875rem;padding-right:0.875rem}.px-4{padding-left:1rem;padding-right:1rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.px-8{padding-left:2rem;padding-right:2rem}.py-0\.5{padding-top:0.125rem;padding-bottom:0.125rem}.py-1{padding-top:0.25rem;padding-bottom:0.25rem}.py-12{padding-top:3rem;padding-bottom:3rem}.py-16{padding-top:4rem;padding-bottom:4rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.py-2\.5{padding-top:0.625rem;padding-bottom:0.625rem}.py-20{padding-top:5rem;padding-bottom:5rem}.py-3{padding-top:0.75rem;padding-bottom:0.75rem}.py-4{padding-top:1rem;padding-bottom:1rem}.pb-1\.5{padding-bottom:0.375rem}.pb-2{padding-bottom:0.5rem}.pb-20{padding-bottom:5rem}.pb-3{padding-bottom:0.75rem}.pb-4{padding-bottom:1rem}.pt-1\.5{padding-top:0.375rem}.pt-12{padding-top:3rem}.pt-2{padding-top:0.5rem}.pt-4{padding-top:1rem}.pt-6{padding-top:1.5rem}.pt-8{padding-top:2rem}.text-left{text-align:left}.text-center{text-align:center}.font-mono{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace}.text-2xl{font-size:1.5rem;line-height:2rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-4xl{font-size:2.25rem;line-height:2.5rem}.text-\[10px\]{font-size:10px}.text-\[11px\]{font-size:11px}.text-\[9px\]{font-size:9px}.text-base{font-size:1rem;line-height:1.5rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:0.75rem;line-height:1rem}.font-bold{font-weight:700}.font-extrabold{font-weight:800}.font-medium{font-weight:500}.font-semibold{font-weight:600}.uppercase{text-transform:uppercase}.italic{font-style:italic}.leading-\[1\.1\]{line-height:1.1}.leading-relaxed{line-height:1.625}.leading-tight{line-height:1.25}.tracking-tight{letter-spacing:-0.025em}.tracking-wider{letter-spacing:0.05em}.tracking-widest{letter-spacing:0.1em}.text-slate-900{--tw-text-opacity:1;color:rgb(15 23 42 / var(--tw-text-opacity, 1))}.text-emerald-400{--tw-text-opacity:1;color:rgb(52 211 153 / var(--tw-text-opacity, 1))}.text-slate-400{--tw-text-opacity:1;color:rgb(148 163 184 / var(--tw-text-opacity, 1))}.text-slate-500{--tw-text-opacity:1;color:rgb(100 116 139 / var(--tw-text-opacity, 1))}.text-slate-600{--tw-text-opacity:1;color:rgb(71 85 105 / var(--tw-text-opacity, 1))}.text-slate-700{--tw-text-opacity:1;color:rgb(51 65 85 / var(--tw-text-opacity, 1))}.text-slate-800{--tw-text-opacity:1;color:rgb(30 41 59 / var(--tw-text-opacity, 1))}.text-transparent{color:transparent}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.text-xbox{--tw-text-opacity:1;color:rgb(16 124 17 / var(--tw-text-opacity, 1))}.text-xbox-glow{--tw-text-opacity:1;color:rgb(57 255 20 / var(--tw-text-opacity, 1))}.text-xbox-light{--tw-text-opacity:1;color:rgb(34 197 94 / var(--tw-text-opacity, 1))}.text-zinc-300{--tw-text-opacity:1;color:rgb(212 212 216 / var(--tw-text-opacity, 1))}.text-zinc-400{--tw-text-opacity:1;color:rgb(161 161 170 / var(--tw-text-opacity, 1))}.text-zinc-500{--tw-text-opacity:1;color:rgb(113 113 122 / var(--tw-text-opacity, 1))}.text-zinc-600{--tw-text-opacity:1;color:rgb(82 82 91 / var(--tw-text-opacity, 1))}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.opacity-20{opacity:0.2}.shadow-2xl{--tw-shadow:0 25px 50px -12px rgb(0 0 0 / 0.25);--tw-shadow-colored:0 25px 50px -12px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-lg{--tw-shadow:0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-md{--tw-shadow:0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-xl{--tw-shadow:0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-xbox\/20{--tw-shadow-color:rgb(16 124 17 / 0.2);--tw-shadow:var(--tw-shadow-colored)}.shadow-xbox\/30{--tw-shadow-color:rgb(16 124 17 / 0.3);--tw-shadow:var(--tw-shadow-colored)}.shadow-xbox\/45{--tw-shadow-color:rgb(16 124 17 / 0.45);--tw-shadow:var(--tw-shadow-colored)}.blur-3xl{--tw-blur:blur(64px);filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.backdrop-blur-md{--tw-backdrop-blur:blur(12px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition-colors{transition-property:color, background-color, border-color, fill, stroke, -webkit-text-decoration-color;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, -webkit-text-decoration-color;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-transform{transition-property:transform;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.duration-300{transition-duration:300ms}.duration-200{transition-duration:200ms}.\[mask-image\:radial-gradient\(ellipse_60\%_50\%_at_50\%_0\%\2c \#000_70\%\2c transparent_100\%\)\]{-webkit-mask-image:radial-gradient(ellipse 60% 50% at 50% 0%,#000 70%,transparent 100%);mask-image:radial-gradient(ellipse 60% 50% at 50% 0%,#000 70%,transparent 100%)}.selection\:bg-xbox *::selection{--tw-bg-opacity:1;background-color:rgb(16 124 17 / var(--tw-bg-opacity, 1))}.selection\:text-white *::selection{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.selection\:bg-xbox::selection{--tw-bg-opacity:1;background-color:rgb(16 124 17 / var(--tw-bg-opacity, 1))}.selection\:text-white::selection{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.hover\:-translate-y-0\.5:hover{--tw-translate-y:-0.125rem;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.hover\:border-xbox:hover{--tw-border-opacity:1;border-color:rgb(16 124 17 / var(--tw-border-opacity, 1))}.hover\:bg-slate-100:hover{--tw-bg-opacity:1;background-color:rgb(241 245 249 / var(--tw-bg-opacity, 1))}.hover\:bg-white\/10:hover{background-color:rgb(255 255 255 / 0.1)}.hover\:bg-xbox-hover:hover{--tw-bg-opacity:1;background-color:rgb(24 158 26 / var(--tw-bg-opacity, 1))}.hover\:text-slate-900:hover{--tw-text-opacity:1;color:rgb(15 23 42 / var(--tw-text-opacity, 1))}.hover\:text-white:hover{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.hover\:text-xbox:hover{--tw-text-opacity:1;color:rgb(16 124 17 / var(--tw-text-opacity, 1))}.hover\:text-zinc-400:hover{--tw-text-opacity:1;color:rgb(161 161 170 / var(--tw-text-opacity, 1))}.hover\:underline:hover{-webkit-text-decoration-line:underline;text-decoration-line:underline}.hover\:shadow-xl:hover{--tw-shadow:0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.focus\:outline-none:focus{outline:2px solid transparent;outline-offset:2px}.focus\:ring-2:focus{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000)}.focus\:ring-xbox:focus{--tw-ring-opacity:1;--tw-ring-color:rgb(16 124 17 / var(--tw-ring-opacity, 1))}.group:hover .group-hover\:translate-x-0\.5{--tw-translate-x:0.125rem;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.group:hover .group-hover\:scale-105{--tw-scale-x:1.05;--tw-scale-y:1.05;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.group:hover .group-hover\:text-xbox{--tw-text-opacity:1;color:rgb(16 124 17 / var(--tw-text-opacity, 1))}.group:hover .group-hover\:underline{-webkit-text-decoration-line:underline;text-decoration-line:underline}.dark\:border-neutral-800:is(.dark *){--tw-border-opacity:1;border-color:rgb(38 38 38 / var(--tw-border-opacity, 1))}.dark\:border-neutral-800\/80:is(.dark *){border-color:rgb(38 38 38 / 0.8)}.dark\:border-neutral-900:is(.dark *){--tw-border-opacity:1;border-color:rgb(23 23 23 / var(--tw-border-opacity, 1))}.dark\:bg-neutral-950:is(.dark *){--tw-bg-opacity:1;background-color:rgb(10 10 10 / var(--tw-bg-opacity, 1))}.dark\:bg-neutral-900:is(.dark *){--tw-bg-opacity:1;background-color:rgb(23 23 23 / var(--tw-bg-opacity, 1))}.dark\:bg-neutral-900\/50:is(.dark *){background-color:rgb(23 23 23 / 0.5)}.dark\:bg-neutral-950\/80:is(.dark *){background-color:rgb(10 10 10 / 0.8)}.dark\:bg-zinc-900:is(.dark *){--tw-bg-opacity:1;background-color:rgb(24 24 27 / var(--tw-bg-opacity, 1))}.dark\:bg-zinc-900\/50:is(.dark *){background-color:rgb(24 24 27 / 0.5)}.dark\:bg-zinc-950:is(.dark *){--tw-bg-opacity:1;background-color:rgb(9 9 11 / var(--tw-bg-opacity, 1))}.dark\:text-zinc-50:is(.dark *){--tw-text-opacity:1;color:rgb(250 250 250 / var(--tw-text-opacity, 1))}.dark\:text-white:is(.dark *){--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.dark\:text-xbox-light:is(.dark *){--tw-text-opacity:1;color:rgb(34 197 94 / var(--tw-text-opacity, 1))}.dark\:text-zinc-300:is(.dark *){--tw-text-opacity:1;color:rgb(212 212 216 / var(--tw-text-opacity, 1))}.dark\:text-zinc-400:is(.dark *){--tw-text-opacity:1;color:rgb(161 161 170 / var(--tw-text-opacity, 1))}.dark\:text-zinc-500:is(.dark *){--tw-text-opacity:1;color:rgb(113 113 122 / var(--tw-text-opacity, 1))}.dark\:hover\:bg-neutral-800:hover:is(.dark *){--tw-bg-opacity:1;background-color:rgb(38 38 38 / var(--tw-bg-opacity, 1))}.dark\:hover\:bg-neutral-900:hover:is(.dark *){--tw-bg-opacity:1;background-color:rgb(23 23 23 / var(--tw-bg-opacity, 1))}.dark\:hover\:text-white:hover:is(.dark *){--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.dark\:hover\:text-xbox-light:hover:is(.dark *){--tw-text-opacity:1;color:rgb(34 197 94 / var(--tw-text-opacity, 1))}.group:hover .dark\:group-hover\:text-xbox-light:is(.dark *){--tw-text-opacity:1;color:rgb(34 197 94 / var(--tw-text-opacity, 1))}@media (min-width: 640px){.sm\:-top-80{top:-20rem}.sm\:left-\[calc\(50\%-30rem\)\]{left:calc(50% - 30rem)}.sm\:inline-flex{display:inline-flex}.sm\:w-\[72\.1875rem\]{width:72.1875rem}.sm\:w-auto{width:auto}.sm\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.sm\:flex-row{flex-direction:row}.sm\:p-8{padding:2rem}.sm\:text-4xl{font-size:2.25rem;line-height:2.5rem}.sm\:text-5xl{font-size:3rem;line-height:1}.sm\:text-base{font-size:1rem;line-height:1.5rem}.sm\:text-lg{font-size:1.125rem;line-height:1.75rem}.sm\:text-sm{font-size:0.875rem;line-height:1.25rem}.sm\:leading-\[1\.15\]{line-height:1.15}}@media (min-width: 768px){.md\:col-span-2{grid-column:span 2 / span 2}.md\:col-span-4{grid-column:span 4 / span 4}.md\:flex{display:flex}.md\:hidden{display:none}.md\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.md\:grid-cols-4{grid-template-columns:repeat(4, minmax(0, 1fr))}.md\:grid-cols-6{grid-template-columns:repeat(6, minmax(0, 1fr))}.md\:py-24{padding-top:6rem;padding-bottom:6rem}.md\:pt-20{padding-top:5rem}}@media (min-width: 1024px){.lg\:order-first{order:-9999}.lg\:col-span-5{grid-column:span 5 / span 5}.lg\:col-span-7{grid-column:span 7 / span 7}.lg\:mx-0{margin-left:0px;margin-right:0px}.lg\:max-w-none{max-width:none}.lg\:grid-cols-12{grid-template-columns:repeat(12, minmax(0, 1fr))}.lg\:grid-cols-4{grid-template-columns:repeat(4, minmax(0, 1fr))}.lg\:justify-start{justify-content:flex-start}.lg\:gap-2{gap:0.5rem}.lg\:px-8{padding-left:2rem;padding-right:2rem}.lg\:py-28{padding-top:7rem;padding-bottom:7rem}.lg\:pt-28{padding-top:7rem}.lg\:text-left{text-align:left}.lg\:text-6xl{font-size:3.75rem;line-height:1}}</style></head>
+<body class="bg-slate-50 text-slate-900 dark:bg-neutral-950 dark:text-zinc-50 transition-colors duration-300 antialiased selection:bg-xbox selection:text-white">
+
+    <!-- STICKY HEADER / NAVIGATION -->
+    <header class="sticky top-0 z-50 w-full border-b border-slate-200/80 bg-white/80 backdrop-blur-md dark:border-neutral-800/80 dark:bg-neutral-950/80 transition-colors duration-300">
+        <div class="mx-auto flex max-w-7xl items-center justify-between p-4 lg:px-8">
+            <!-- Logo Section -->
+            <a href="index.html" class="flex items-center gap-2 group">
+                <div class="relative flex h-10 w-10 items-center justify-center rounded-xl bg-xbox text-white shadow-lg shadow-xbox/20 transition-transform group-hover:scale-105">
+                    <!-- Rocket SVG -->
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="h-5 w-5 animate-float">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.59 14.37a6 6 0 0 1-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 0 0 6.16-12.12A14.98 14.98 0 0 0 9.63 8.41m5.96 5.96a14.96 14.96 0 0 1-10.43 3.42L12 12m0 0h-.01M21 3s-1.8 3.6-4 4.5"></path>
+                    </svg>
+                </div>
+                <div class="flex flex-col">
+                    <span class="heading-font text-xl font-bold tracking-tight text-slate-900 dark:text-white">Xstreamflex</span>
+                    <span class="text-[10px] font-semibold uppercase tracking-widest text-xbox dark:text-xbox-light -mt-1">Xsite Ecosystem</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav Menu -->
+            <nav class="hidden md:flex items-center gap-1 lg:gap-2">
+                <a href="index.html" class="rounded-lg px-3 py-2 text-sm font-semibold text-xbox dark:text-xbox-light bg-xbox/10">Home</a>
+                <a href="about.html" class="rounded-lg px-3 py-2 text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-100 dark:text-zinc-300 dark:hover:text-white dark:hover:bg-neutral-900 transition-all">About Us</a>
+                <a href="products.html" class="rounded-lg px-3 py-2 text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-100 dark:text-zinc-300 dark:hover:text-white dark:hover:bg-neutral-900 transition-all">Products</a>
+                <a href="blog.html" class="rounded-lg px-3 py-2 text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-100 dark:text-zinc-300 dark:hover:text-white dark:hover:bg-neutral-900 transition-all">Blog</a>
+                <a href="contact.html" class="rounded-lg px-3 py-2 text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-100 dark:text-zinc-300 dark:hover:text-white dark:hover:bg-neutral-900 transition-all">Contact</a>
+            </nav>
+
+            <!-- Actions Block -->
+            <div class="flex items-center gap-4">
+                <!-- Theme Toggle Button -->
+                <button id="theme-toggle" type="button" aria-label="Toggle theme" class="rounded-xl border border-slate-200 p-2 text-slate-500 hover:bg-slate-100 dark:border-neutral-800 dark:text-zinc-400 dark:hover:bg-neutral-900 transition-all">
+                    <!-- Sun Icon (Hidden by default, shown in dark mode) -->
+                    <svg id="theme-toggle-light-icon" class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 100 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path>
+                    </svg>
+                    <!-- Moon Icon (Shown by default, hidden in dark mode) -->
+                    <svg id="theme-toggle-dark-icon" class="h-5 w-5 hidden" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+                    </svg>
+                </button>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" type="button" class="md:hidden rounded-xl border border-slate-200 p-2 text-slate-500 hover:bg-slate-100 dark:border-neutral-800 dark:text-zinc-400 dark:hover:bg-neutral-900 transition-all">
+                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+
+                <!-- Launch Button -->
+                <a href="products.html" class="hidden sm:inline-flex items-center gap-2 rounded-xl bg-xbox px-4 py-2.5 text-sm font-bold text-white shadow-lg shadow-xbox/30 hover:bg-xbox-hover transition-all duration-200 hover:-translate-y-0.5">
+                    <span>Launch Free</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-4 w-4">
+                        <path fill-rule="evenodd" d="M3 10a.75.75 0 0 1 .75-.75h10.638L10.23 5.29a.75.75 0 1 1 1.04-1.08l5.5 5.25a.75.75 0 0 1 0 1.08l-5.5 5.25a.75.75 0 1 1-1.04-1.08l4.158-3.96H3.75A.75.75 0 0 1 3 10Z" clip-rule="evenodd"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+        <!-- Mobile Nav Menu (JS Toggled) -->
+        <div id="mobile-menu" class="hidden md:hidden border-t border-slate-200 dark:border-neutral-800 bg-white dark:bg-neutral-950 px-4 py-4 space-y-2">
+            <a href="index.html" class="block rounded-lg px-3 py-2 text-base font-semibold text-xbox bg-xbox/10">Home</a>
+            <a href="about.html" class="block rounded-lg px-3 py-2 text-base font-medium text-slate-600 hover:text-slate-900 dark:text-zinc-300 dark:hover:text-white">About Us</a>
+            <a href="products.html" class="block rounded-lg px-3 py-2 text-base font-medium text-slate-600 hover:text-slate-900 dark:text-zinc-300 dark:hover:text-white">Products</a>
+            <a href="blog.html" class="block rounded-lg px-3 py-2 text-base font-medium text-slate-600 hover:text-slate-900 dark:text-zinc-300 dark:hover:text-white">Blog</a>
+            <a href="contact.html" class="block rounded-lg px-3 py-2 text-base font-medium text-slate-600 hover:text-slate-900 dark:text-zinc-300 dark:hover:text-white">Contact</a>
+            <div class="pt-4 border-t border-slate-100 dark:border-neutral-900">
+                <a href="products.html" class="flex w-full justify-center items-center gap-2 rounded-xl bg-xbox py-3 text-sm font-bold text-white shadow-lg shadow-xbox/30">
+                    <span>Launch Your Xsite</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-4 w-4">
+                        <path fill-rule="evenodd" d="M3 10a.75.75 0 0 1 .75-.75h10.638L10.23 5.29a.75.75 0 1 1 1.04-1.08l5.5 5.25a.75.75 0 0 1 0 1.08l-5.5 5.25a.75.75 0 1 1-1.04-1.08l4.158-3.96H3.75A.75.75 0 0 1 3 10Z" clip-rule="evenodd"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="relative overflow-hidden pt-12 pb-20 md:pt-20 lg:pt-28">
+        <!-- Background Grid & Glowing Rocket Trail Elements -->
+        <div class="absolute inset-0 -z-10 bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:40px_40px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]"></div>
+        <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80" aria-hidden="true">
+            <div class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-xbox to-emerald-500 opacity-20 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"></div>
+        </div>
+
+        <div class="mx-auto max-w-7xl px-4 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <!-- Hero Left: Sales Copy -->
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 rounded-full border border-xbox/30 bg-xbox/5 px-3.5 py-1 text-xs font-semibold text-xbox dark:text-xbox-light animate-pulse-slow">
+                        <span class="flex h-2 w-2 rounded-full bg-xbox-glow"></span>
+                        <span>Now Launching: Xsite Flagship</span>
+                    </div>
+                    
+                    <h1 class="heading-font text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-slate-900 dark:text-white leading-[1.1] sm:leading-[1.15]">
+                        Launch your business in record time from a <span class="text-transparent bg-clip-text bg-gradient-to-r from-xbox to-emerald-400">single brain dump.</span>
+                    </h1>
+                    
+                    <p class="mx-auto lg:mx-0 max-w-xl text-base sm:text-lg text-slate-600 dark:text-zinc-300 leading-relaxed">
+                        No code, no builders, no black-box restrictions. Drop your details, connect GitHub, and witness a complete, fully-linked live system launch immediately. Simple enough for your grandmother, robust enough for scale.
+                    </p>
+
+                    <!-- Interactive CTAs -->
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+                        <a href="products.html" class="w-full sm:w-auto inline-flex justify-center items-center gap-2.5 rounded-xl bg-xbox px-6 py-4 text-base font-bold text-white shadow-xl shadow-xbox/20 hover:bg-xbox-hover transition-all hover:-translate-y-0.5">
+                            <span>Get Started Instantly</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-5 w-5">
+                                <path fill-rule="evenodd" d="M3 10a.75.75 0 0 1 .75-.75h10.638L10.23 5.29a.75.75 0 1 1 1.04-1.08l5.5 5.25a.75.75 0 0 1 0 1.08l-5.5 5.25a.75.75 0 1 1-1.04-1.08l4.158-3.96H3.75A.75.75 0 0 1 3 10Z" clip-rule="evenodd"></path>
+                            </svg>
+                        </a>
+                        <a href="#demotool" class="w-full sm:w-auto inline-flex justify-center items-center gap-2 rounded-xl border border-slate-300 bg-white/50 px-6 py-4 text-base font-semibold text-slate-700 hover:bg-slate-100 hover:text-slate-900 dark:border-neutral-800 dark:bg-neutral-900/50 dark:text-zinc-300 dark:hover:bg-neutral-800 dark:hover:text-white transition-all">
+                            <span>Try Mini-Demo</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-5 w-5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.347a1.125 1.125 0 0 1 0 1.972l-11.54 6.347a1.125 1.125 0 0 1-1.667-.986V5.653Z"></path>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <!-- Trust Stats Mini Grid -->
+                    <div class="grid grid-cols-3 gap-4 pt-6 max-w-md mx-auto lg:mx-0 border-t border-slate-200 dark:border-neutral-800">
+                        <div>
+                            <div class="heading-font text-2xl font-bold text-xbox dark:text-xbox-light">100%</div>
+                            <div class="text-xs text-slate-500 dark:text-zinc-400">Code Ownership</div>
+                        </div>
+                        <div>
+                            <div class="heading-font text-2xl font-bold text-xbox dark:text-xbox-light">5 Min</div>
+                            <div class="text-xs text-slate-500 dark:text-zinc-400">Avg. Launch Time</div>
+                        </div>
+                        <div>
+                            <div class="heading-font text-2xl font-bold text-xbox dark:text-xbox-light">$0</div>
+                            <div class="text-xs text-slate-500 dark:text-zinc-400">Hosting Lock-in</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Right: Interactive UI Showcase (Xsite Generation Engine representation) -->
+                <div class="lg:col-span-5 relative">
+                    <div class="relative mx-auto max-w-[420px] lg:max-w-none rounded-2xl border border-slate-200 dark:border-neutral-800 bg-white dark:bg-zinc-900 p-4 shadow-2xl transition-all">
+                        <!-- Top Bar UI -->
+                        <div class="flex items-center justify-between pb-3 border-b border-slate-100 dark:border-neutral-800">
+                            <div class="flex items-center gap-1.5">
+                                <span class="h-3 w-3 rounded-full bg-red-500"></span>
+                                <span class="h-3 w-3 rounded-full bg-yellow-500"></span>
+                                <span class="h-3 w-3 rounded-full bg-xbox"></span>
+                            </div>
+                            <span class="text-xs font-semibold text-slate-400 dark:text-zinc-500">xsite-terminal-v1.0.exe</span>
+                            <span class="rounded bg-xbox/10 px-2 py-0.5 text-[10px] font-bold text-xbox uppercase">Live</span>
+                        </div>
+
+                        <!-- Code Sandbox Simulated Window -->
+                        <div class="mt-4 rounded-xl bg-slate-950 p-4 text-xs font-mono text-zinc-300 space-y-3 min-h-[320px]">
+                            <div class="flex items-center justify-between text-zinc-500 border-b border-zinc-800 pb-2">
+                                <span>Output Feed</span>
+                                <span>git clone live</span>
+                            </div>
+                            <div class="space-y-1.5">
+                                <p class="text-zinc-500">&gt;_ initialise xsite --brain-dump</p>
+                                <p class="text-xbox-light font-bold">✔ Loaded solopreneur intent: "Luxury Coffee Hub"</p>
+                                <p class="text-zinc-400">⚡ Instantiating semantic structures...</p>
+                                <p class="text-zinc-400">⚡ Injecting Terms, Privacy, &amp; About blocks...</p>
+                                <p class="text-zinc-400">⚡ Linking dynamic portfolio &amp; responsive contact nodes...</p>
+                                <p class="text-xbox">✔ Created standard-compliant HTML5 package</p>
+                                <p class="text-zinc-400">⚡ Connecting GitHub repositories...</p>
+                                <p class="text-emerald-400">✔ Repository 'github.com/user/coffee-hub' linked</p>
+                                <p class="text-xbox-glow font-bold tracking-widest animate-pulse">🚀 DEPLOYMENT COMPLETED IN 4.2 SECONDS</p>
+                            </div>
+                            
+                            <!-- Visual Site Mockup Element -->
+                            <div class="mt-4 rounded-lg bg-zinc-900 p-3 border border-zinc-800">
+                                <div class="flex items-center justify-between text-[10px] text-zinc-400 pb-1.5 border-b border-zinc-800">
+                                    <span>🌐 luxurycoffee.xsite.live</span>
+                                    <span class="text-emerald-400">● Live Domain</span>
+                                </div>
+                                <div class="pt-2 text-[11px]">
+                                    <p class="font-bold text-white text-xs">Seattle Single-Origin Beans</p>
+                                    <p class="text-zinc-400 line-clamp-2 mt-0.5">Crafted with precision, sourced responsibly, launched in records times.</p>
+                                    <div class="mt-2 flex gap-1.5">
+                                        <span class="px-1.5 py-0.5 bg-zinc-800 rounded text-[9px] text-white">Home</span>
+                                        <span class="px-1.5 py-0.5 bg-zinc-800 rounded text-[9px]">About</span>
+                                        <span class="px-1.5 py-0.5 bg-zinc-800 rounded text-[9px]">Products</span>
+                                        <span class="px-1.5 py-0.5 bg-zinc-800 rounded text-[9px]">Contact</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TRUST & FREEDOM MANIFESTO SECTION (Contrast Background Block) -->
+    <section class="py-16 bg-zinc-900 text-white relative">
+        <div class="absolute inset-0 bg-xbox/5 pointer-events-none"></div>
+        <div class="mx-auto max-w-7xl px-4 lg:px-8">
+            <div class="max-w-3xl mx-auto text-center space-y-6">
+                <span class="text-xs font-bold uppercase tracking-widest text-xbox-light">The Xstreamflex Manifesto</span>
+                <h2 class="heading-font text-3xl sm:text-4xl font-extrabold tracking-tight">
+                    The Freedom Cry: No templates, no restrictive boxes.
+                </h2>
+                <p class="text-zinc-300 text-base sm:text-lg leading-relaxed">
+                    Unlike traditional web builders that trap your idea behind proprietary editors, expensive black-boxes, and five different subscriptions, Xstreamflex gives you the full, unrestrained raw power of modern web architectures out-of-the-box. Your code, your layout, your rules.
+                </p>
+                <div class="flex flex-wrap justify-center gap-6 pt-4 text-sm font-semibold">
+                    <span class="flex items-center gap-1.5 text-xbox-light">
+                        <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path></svg>
+                        Full Code Ownership
+                    </span>
+                    <span class="flex items-center gap-1.5 text-xbox-light">
+                        <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path></svg>
+                        Zero Setup Hosting
+                    </span>
+                    <span class="flex items-center gap-1.5 text-xbox-light">
+                        <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path></svg>
+                        Stripe Integration Ready
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CORE OFFERINGS BENTO GRID -->
+    <section class="py-20 lg:py-28">
+        <div class="mx-auto max-w-7xl px-4 lg:px-8 space-y-12">
+            <!-- Section Header -->
+            <div class="text-center max-w-3xl mx-auto space-y-4">
+                <h2 class="heading-font text-3xl sm:text-4xl font-extrabold tracking-tight text-slate-900 dark:text-white">
+                    One Stop Shop to Launch Any Side Hustle
+                </h2>
+                <p class="text-slate-600 dark:text-zinc-400">
+                    Everything you need to claim your space online, automate transactions, and command complete structural control without complex tools.
+                </p>
+            </div>
+
+            <!-- Bento Grid Elements -->
+            <div class="grid grid-cols-1 md:grid-cols-6 gap-6">
+                
+                <!-- Card 1: Xsite Flagship (Spans 4 Cols on large) -->
+                <div class="md:col-span-4 rounded-2xl border border-slate-200 dark:border-neutral-800 bg-white dark:bg-zinc-900 p-6 sm:p-8 flex flex-col justify-between hover:shadow-xl transition-all group">
+                    <div class="space-y-4">
+                        <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-xbox/10 text-xbox dark:text-xbox-light">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="h-6 w-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-.554-8.243-1.556m16.486 0A11.962 11.962 0 0 1 15 15c-1.499 0-2.884-.277-4.122-.778M3.757 9a11.962 11.962 0 0 0 3.243 6c1.156 0 2.22-.193 3.197-.538"></path>
+                            </svg>
+                        </div>
+                        <h3 class="heading-font text-2xl font-bold tracking-tight text-slate-900 dark:text-white">Xsite Flagship Engine</h3>
+                        <p class="text-slate-600 dark:text-zinc-400 text-sm sm:text-base leading-relaxed">
+                            No dragging boxes or coding elements. Input a simple brain dump of your business goals, and watch as Xsite constructs fully connected index, about, products, contact, terms, privacy, and blog pages out of the box.
+                        </p>
+                    </div>
+                    <div class="pt-6 border-t border-slate-100 dark:border-neutral-800 mt-6 flex justify-between items-center">
+                        <span class="text-xs font-semibold uppercase tracking-wider text-xbox dark:text-xbox-light">Flagship Standard</span>
+                        <a href="products.html" class="inline-flex items-center gap-1.5 text-xs font-bold text-slate-800 dark:text-white hover:text-xbox dark:hover:text-xbox-light transition-colors">
+                            Explore Xsite
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="h-3.5 w-3.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 2: GitHub Deploy (Spans 2 Cols) -->
+                <div class="md:col-span-2 rounded-2xl border border-slate-200 dark:border-neutral-800 bg-white dark:bg-zinc-900 p-6 flex flex-col justify-between hover:shadow-xl transition-all">
+                    <div class="space-y-3">
+                        <div class="flex h-10 w-10 items-center justify-center rounded-xl bg-xbox/10 text-xbox dark:text-xbox-light">
+                            <!-- GitHub Icon placeholder representation -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="heading-font text-lg font-bold text-slate-900 dark:text-white">Seamless GitHub Pipeline</h3>
+                        <p class="text-slate-600 dark:text-zinc-400 text-xs sm:text-sm leading-relaxed">
+                            Deploy instantly. Xsite compiles, commits, and pushes clean site builds directly to GitHub so your website is live instantly.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-slate-100 dark:border-neutral-800 mt-4 text-[11px] text-zinc-500">
+                        1-Click Deployment Setup
+                    </div>
+                </div>
+
+                <!-- Card 3: No Black Box (Spans 2 Cols) -->
+                <div class="md:col-span-2 rounded-2xl border border-slate-200 dark:border-neutral-800 bg-white dark:bg-zinc-900 p-6 flex flex-col justify-between hover:shadow-xl transition-all">
+                    <div class="space-y-3">
+                        <div class="flex h-10 w-10 items-center justify-center rounded-xl bg-xbox/10 text-xbox dark:text-xbox-light">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="h-6 w-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 10.5V6.75a4.5 4.5 0 1 1 9 0v3.75M3.75 21.75h10.5a2.25 2.25 0 0 0 2.25-2.25v-6.75a2.25 2.25 0 0 0-2.25-2.25H3.75a2.25 2.25 0 0 0-2.25 2.25v6.75a2.25 2.25 0 0 0 2.25 2.25Z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="heading-font text-lg font-bold text-slate-900 dark:text-white">Complete Digital Control</h3>
+                        <p class="text-slate-600 dark:text-zinc-400 text-xs sm:text-sm leading-relaxed">
+                            No limits or system restrictions. Bring your assets, modify layouts directly, and transition to heavier custom structures seamlessly whenever you are ready to scale.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-slate-100 dark:border-neutral-800 mt-4 text-[11px] text-zinc-500">
+                        Zero Platform Restrictions
+                    </div>
+                </div>
+
+                <!-- Card 4: Next-Gen Systems (Spans 4 Cols on large) -->
+                <div class="md:col-span-4 rounded-2xl border border-slate-200 dark:border-neutral-800 bg-white dark:bg-zinc-900 p-6 sm:p-8 flex flex-col justify-between hover:shadow-xl transition-all">
+                    <div class="space-y-4">
+                        <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-xbox/10 text-xbox dark:text-xbox-light">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="h-6 w-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m-3-2.818.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="heading-font text-2xl font-bold tracking-tight text-slate-900 dark:text-white">Autopilots &amp; Secure Integrations</h3>
+                        <p class="text-slate-600 dark:text-zinc-400 text-sm sm:text-base leading-relaxed">
+                            Coming soon: Simple integrations with stripe processing and custom email responders. XSite maps a full web identity complete with sales systems, payment guides, and automated responses.
+                        </p>
+                    </div>
+                    <div class="pt-6 border-t border-slate-100 dark:border-neutral-800 mt-6 flex justify-between items-center">
+                        <span class="text-xs font-semibold uppercase tracking-wider text-xbox dark:text-xbox-light">Upcoming modules</span>
+                        <a href="products.html" class="inline-flex items-center gap-1.5 text-xs font-bold text-slate-800 dark:text-white hover:text-xbox dark:hover:text-xbox-light transition-colors">
+                            Upcoming Integrations
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="h-3.5 w-3.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path></svg>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- LIVE INTERACTIVE GENERATOR SIMULATOR -->
+    <section id="demotool" class="py-16 bg-slate-100 dark:bg-neutral-900 border-y border-slate-200 dark:border-neutral-800 transition-colors">
+        <div class="mx-auto max-w-4xl px-4 text-center space-y-8">
+            <div class="space-y-3">
+                <span class="inline-block px-3 py-1 text-xs font-bold bg-xbox text-white rounded-full">Interactive Tool</span>
+                <h2 class="heading-font text-3xl font-bold text-slate-900 dark:text-white">Preview Xsite's AI Generation Flow</h2>
+                <p class="text-slate-600 dark:text-zinc-400 max-w-xl mx-auto text-sm">
+                    Type details of your hustle concept to preview how fast Xsite generates full identity suites.
+                </p>
+            </div>
+
+            <!-- Simulator Widget Frame -->
+            <div class="bg-white dark:bg-zinc-950 rounded-2xl border border-slate-200 dark:border-neutral-800 p-6 text-left shadow-lg space-y-4">
+                <label class="block text-sm font-bold text-slate-700 dark:text-zinc-300">Your Business Brand Brain-Dump:</label>
+                <div class="flex flex-col sm:flex-row gap-3">
+                    <input id="concept-input" type="text" class="flex-1 px-4 py-3 bg-slate-50 dark:bg-neutral-900 border border-slate-300 dark:border-neutral-800 rounded-xl focus:outline-none focus:ring-2 focus:ring-xbox text-sm font-medium dark:text-white" placeholder="e.g. Handmade ceramic mugs for coffee nerds based out of Austin Texas. Minimalist vibe.">
+                    <button id="simulate-btn" class="px-6 py-3 bg-xbox text-white font-bold rounded-xl hover:bg-xbox-hover shadow-md shadow-xbox/20 transition-all text-sm flex items-center justify-center gap-2">
+                        <span>Launch Simulation</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="h-4 w-4"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path></svg>
+                    </button>
+                </div>
+
+                <!-- Simulation Output Terminal -->
+                <div id="simulation-box" class="hidden mt-4 bg-zinc-950 p-4 rounded-xl text-xs font-mono text-zinc-300 space-y-2 border border-zinc-800">
+                    <div class="flex items-center justify-between border-b border-zinc-800 pb-2 text-zinc-500">
+                        <span>XSite Virtual Log Output</span>
+                        <span>v1.2-simulation</span>
+                    </div>
+                    <div id="logs-container" class="space-y-1.5 pt-1.5">
+                        <!-- Simulated lines will append dynamically here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- COHESIVE MULTI-PAGE HUB / NAVIGATION LINK SHOWCASE -->
+    <section class="py-20 lg:py-28 relative">
+        <div class="mx-auto max-w-7xl px-4 lg:px-8 space-y-12">
+            <!-- Headers -->
+            <div class="text-center max-w-2xl mx-auto space-y-4">
+                <span class="text-xs font-bold uppercase tracking-widest text-xbox dark:text-xbox-light">Multi-Page Ecosystem</span>
+                <h2 class="heading-font text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white">
+                    Explore the Entire Xstreamflex Network
+                </h2>
+                <p class="text-slate-600 dark:text-zinc-400">
+                    Xsite launches comprehensive full-scale domains containing all core customer confidence pages. Navigate through our official core layouts.
+                </p>
+            </div>
+
+            <!-- Page Summary Cards Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- About Card -->
+                <a href="about.html" class="group relative rounded-2xl border border-slate-200 dark:border-neutral-800 bg-white dark:bg-zinc-900 p-6 flex flex-col justify-between hover:border-xbox hover:shadow-xl transition-all duration-300">
+                    <div class="space-y-3">
+                        <div class="text-xbox dark:text-xbox-light">
+                            <!-- SVG -->
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M11.25 11.25l.041-.02a.75.75 0 111.063.852l-.708 2.836a.75.75 0 001.063.852l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="heading-font text-lg font-bold text-slate-900 dark:text-white group-hover:text-xbox dark:group-hover:text-xbox-light transition-colors">Our Mission</h3>
+                        <p class="text-slate-500 dark:text-zinc-400 text-xs sm:text-sm">
+                            Learn about our journey to build the ultimate accessible launcher for independent creators worldwide.
+                        </p>
+                    </div>
+                    <span class="mt-4 text-xs font-bold text-xbox group-hover:underline inline-flex items-center gap-1">
+                        Read About Us <span class="group-hover:translate-x-0.5 transition-transform">→</span>
+                    </span>
+                </a>
+
+                <!-- Products Card -->
+                <a href="products.html" class="group relative rounded-2xl border border-slate-200 dark:border-neutral-800 bg-white dark:bg-zinc-900 p-6 flex flex-col justify-between hover:border-xbox hover:shadow-xl transition-all duration-300">
+                    <div class="space-y-3">
+                        <div class="text-xbox dark:text-xbox-light">
+                            <!-- SVG -->
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="heading-font text-lg font-bold text-slate-900 dark:text-white group-hover:text-xbox dark:group-hover:text-xbox-light transition-colors">Products &amp; Features</h3>
+                        <p class="text-slate-500 dark:text-zinc-400 text-xs sm:text-sm">
+                            Explore the core features of Xsite including custom domains, auto-Stripe connect and deployment nodes.
+                        </p>
+                    </div>
+                    <span class="mt-4 text-xs font-bold text-xbox group-hover:underline inline-flex items-center gap-1">
+                        View Products <span class="group-hover:translate-x-0.5 transition-transform">→</span>
+                    </span>
+                </a>
+
+                <!-- Blog Card -->
+                <a href="blog.html" class="group relative rounded-2xl border border-slate-200 dark:border-neutral-800 bg-white dark:bg-zinc-900 p-6 flex flex-col justify-between hover:border-xbox hover:shadow-xl transition-all duration-300">
+                    <div class="space-y-3">
+                        <div class="text-xbox dark:text-xbox-light">
+                            <!-- SVG -->
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 7.5h1.5m-1.5 3h1.5m-7.5 3h7.5m-7.5 3h7.5m3-9h3.375c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125H3.375A1.125 1.125 0 012.25 18V5.625c0-.621.504-1.125 1.125-1.125H9.75M9 7.5h.008v.008H9V7.5zm0 3h.008v.008H9v-.008zm0 3h.008v.008H9v-.008z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="heading-font text-lg font-bold text-slate-900 dark:text-white group-hover:text-xbox dark:group-hover:text-xbox-light transition-colors">Digital Independence</h3>
+                        <p class="text-slate-500 dark:text-zinc-400 text-xs sm:text-sm">
+                            Discover strategies, business templates, tips, and step-by-step guides on rapid launching your idea.
+                        </p>
+                    </div>
+                    <span class="mt-4 text-xs font-bold text-xbox group-hover:underline inline-flex items-center gap-1">
+                        Read Blog <span class="group-hover:translate-x-0.5 transition-transform">→</span>
+                    </span>
+                </a>
+
+                <!-- Contact Card -->
+                <a href="contact.html" class="group relative rounded-2xl border border-slate-200 dark:border-neutral-800 bg-white dark:bg-zinc-900 p-6 flex flex-col justify-between hover:border-xbox hover:shadow-xl transition-all duration-300">
+                    <div class="space-y-3">
+                        <div class="text-xbox dark:text-xbox-light">
+                            <!-- SVG -->
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 8.511c.084.29.124.597.124.913v9.378a3 3 0 01-3 3H6.75a3 3 0 01-3-3V9.424c0-.316.04-.623.124-.913m16.5 0a9.001 9.001 0 00-16.5 0m16.5 0l-7.5 4.545-7.5-4.545"></path>
+                            </svg>
+                        </div>
+                        <h3 class="heading-font text-lg font-bold text-slate-900 dark:text-white group-hover:text-xbox dark:group-hover:text-xbox-light transition-colors">Elite Launch Support</h3>
+                        <p class="text-slate-500 dark:text-zinc-400 text-xs sm:text-sm">
+                            Connect with our team to request features, get custom help, or provide valuable feedback.
+                        </p>
+                    </div>
+                    <span class="mt-4 text-xs font-bold text-xbox group-hover:underline inline-flex items-center gap-1">
+                        Get In Touch <span class="group-hover:translate-x-0.5 transition-transform">→</span>
+                    </span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ACCESSIBILITY FOCUS / "GRANDMOTHER TESTED" SECTION -->
+    <section class="py-16 bg-slate-100 dark:bg-zinc-900/50 border-t border-slate-200 dark:border-neutral-800 transition-colors">
+        <div class="mx-auto max-w-7xl px-4 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <!-- Graphic/Visual Representation -->
+                <div class="lg:col-span-5 order-last lg:order-first">
+                    <div class="relative mx-auto max-w-[380px] rounded-2xl bg-white dark:bg-zinc-900 p-6 shadow-xl border border-slate-200 dark:border-neutral-800">
+                        <div class="flex items-center gap-3 pb-4 border-b border-slate-100 dark:border-neutral-800">
+                            <div class="flex h-10 w-10 items-center justify-center rounded-full bg-xbox/10 text-xbox">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M10.05 4.575a1.5 1.5 0 0 1 1.9 0l6.385 5.747a1.5 1.5 0 0 1 .515 1.125V18a3 3 0 0 1-3 3h-1.5a1.5 1.5 0 0 1-1.5-1.5v-3a.75.75 0 0 0-.75-.75h-1.5a.75.75 0 0 0-.75.75v3A1.5 1.5 0 0 1 7.5 21H6a3 3 0 0 1-3-3v-6.553a1.5 1.5 0 0 1 .515-1.125l6.385-5.747Z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="text-xs font-bold text-slate-500 dark:text-zinc-400">GRANDMOTHER-PROOF RATING</h4>
+                                <p class="text-sm font-extrabold text-slate-900 dark:text-white">A11y Compliant Excellence</p>
+                            </div>
+                        </div>
+                        <ul class="pt-4 space-y-3.5 text-xs text-slate-600 dark:text-zinc-400">
+                            <li class="flex items-center gap-2.5">
+                                <span class="h-1.5 w-1.5 rounded-full bg-xbox"></span>
+                                High-contrast visual focus elements
+                            </li>
+                            <li class="flex items-center gap-2.5">
+                                <span class="h-1.5 w-1.5 rounded-full bg-xbox"></span>
+                                Fully dynamic screen reader compatibility
+                            </li>
+                            <li class="flex items-center gap-2.5">
+                                <span class="h-1.5 w-1.5 rounded-full bg-xbox"></span>
+                                Keyboard-navigable generation engines
+                            </li>
+                            <li class="flex items-center gap-2.5">
+                                <span class="h-1.5 w-1.5 rounded-full bg-xbox"></span>
+                                Clear typographic hierarchies with no jargon
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Text Description -->
+                <div class="lg:col-span-7 space-y-6">
+                    <span class="text-xs font-bold uppercase tracking-wider text-xbox dark:text-xbox-light">No User Left Behind</span>
+                    <h3 class="heading-font text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white leading-tight">
+                        Designed with ultimate simplicity for absolutely everyone.
+                    </h3>
+                    <p class="text-slate-600 dark:text-zinc-400 text-base leading-relaxed">
+                        Accessibility is not an afterthought at Xstreamflex. Whether you're a 12-year-old kid setting up your first neighborhood project, or a grandma launching her handmade knitting site, our interface requires absolute zero tech experience. Clear prompts, readable texts, and single-click structures let anyone find immediate success online.
+                    </p>
+                    <div class="pt-2">
+                        <a href="about.html" class="inline-flex items-center gap-2 text-sm font-bold text-xbox dark:text-xbox-light hover:underline">
+                            Read about our accessibility mission
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="h-4 w-4"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOCIAL PROOF / TESTIMONIALS -->
+    <section class="py-20 lg:py-28">
+        <div class="mx-auto max-w-7xl px-4 lg:px-8 space-y-12">
+            <div class="text-center max-w-3xl mx-auto space-y-4">
+                <h2 class="heading-font text-3xl font-extrabold tracking-tight text-slate-900 dark:text-white">
+                    Built for Real Pioneers
+                </h2>
+                <p class="text-slate-600 dark:text-zinc-400">
+                    See how real solopreneurs bypassed the traditional weeks of coding gridlock with Xsite.
+                </p>
+            </div>
+
+            <!-- Testimonial Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Testimonial 1 -->
+                <div class="rounded-2xl border border-slate-200 dark:border-neutral-800 bg-white dark:bg-zinc-900 p-6 flex flex-col justify-between">
+                    <p class="text-slate-600 dark:text-zinc-300 text-sm leading-relaxed italic">
+                        "I spent three weekends fighting complex web layout software. With Xstreamflex, I input my consulting details, linked GitHub with one click, and my site was live in 5 minutes. Amazing!"
+                    </p>
+                    <div class="pt-4 border-t border-slate-100 dark:border-neutral-800 mt-6 flex items-center gap-3">
+                        <div class="h-10 w-10 rounded-full bg-xbox/10 text-xbox flex items-center justify-center font-bold text-sm">
+                            HM
+                        </div>
+                        <div>
+                            <p class="text-xs font-bold text-slate-900 dark:text-white">Hassan Miller</p>
+                            <p class="text-[10px] text-zinc-500">Finance Consultant</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="rounded-2xl border border-slate-200 dark:border-neutral-800 bg-white dark:bg-zinc-900 p-6 flex flex-col justify-between">
+                    <p class="text-slate-600 dark:text-zinc-300 text-sm leading-relaxed italic">
+                        "My twelve-year-old daughter wanted to sell her clay jewelry. We sat down, brainstormed into the box, and she had her official live page and Terms ready without us buying expensive subscriptions."
+                    </p>
+                    <div class="pt-4 border-t border-slate-100 dark:border-neutral-800 mt-6 flex items-center gap-3">
+                        <div class="h-10 w-10 rounded-full bg-xbox/10 text-xbox flex items-center justify-center font-bold text-sm">
+                            SR
+                        </div>
+                        <div>
+                            <p class="text-xs font-bold text-slate-900 dark:text-white">Sarah Ramirez</p>
+                            <p class="text-[10px] text-zinc-500">Parent &amp; Entrepreneur</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="rounded-2xl border border-slate-200 dark:border-neutral-800 bg-white dark:bg-zinc-900 p-6 flex flex-col justify-between">
+                    <p class="text-slate-600 dark:text-zinc-300 text-sm leading-relaxed italic">
+                        "The freedom of having clean HTML code exported automatically is unmatched. No black boxes holding my projects hostage. I own my site from day one."
+                    </p>
+                    <div class="pt-4 border-t border-slate-100 dark:border-neutral-800 mt-6 flex items-center gap-3">
+                        <div class="h-10 w-10 rounded-full bg-xbox/10 text-xbox flex items-center justify-center font-bold text-sm">
+                            DC
+                        </div>
+                        <div>
+                            <p class="text-xs font-bold text-slate-900 dark:text-white">David Chen</p>
+                            <p class="text-[10px] text-zinc-500">Technical Writer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FINAL CTA CONVERTING SECTION -->
+    <section class="py-16 md:py-24 bg-gradient-to-br from-zinc-950 via-zinc-900 to-black text-white relative overflow-hidden">
+        <div class="absolute inset-0 bg-xbox/5 pointer-events-none"></div>
+        <div class="mx-auto max-w-5xl px-4 text-center space-y-8 relative z-10">
+            <h2 class="heading-font text-3xl sm:text-5xl font-extrabold tracking-tight">
+                Ready to Deploy to the Moon?
+            </h2>
+            <p class="text-zinc-300 max-w-xl mx-auto text-base sm:text-lg">
+                Create a stunning, responsive layout in minutes. Stop over-paying for tools you don't control. Complete digital freedom awaits you.
+            </p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="products.html" class="w-full sm:w-auto inline-flex justify-center items-center gap-2 rounded-xl bg-xbox px-8 py-4 text-base font-bold text-white shadow-xl shadow-xbox/45 hover:bg-xbox-hover transition-all hover:-translate-y-0.5">
+                    <span>Deploy Your Xsite Now</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-5 w-5">
+                        <path fill-rule="evenodd" d="M3 10a.75.75 0 0 1 .75-.75h10.638L10.23 5.29a.75.75 0 1 1 1.04-1.08l5.5 5.25a.75.75 0 0 1 0 1.08l-5.5 5.25a.75.75 0 1 1-1.04-1.08l4.158-3.96H3.75A.75.75 0 0 1 3 10Z" clip-rule="evenodd"></path>
+                    </svg>
+                </a>
+                <a href="contact.html" class="w-full sm:w-auto inline-flex justify-center items-center gap-2 rounded-xl border border-zinc-700 bg-white/5 px-8 py-4 text-base font-semibold text-zinc-300 hover:bg-white/10 hover:text-white transition-all">
+                    <span>Talk to Team</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-zinc-950 text-zinc-400 py-12 border-t border-zinc-900">
+        <div class="mx-auto max-w-7xl px-4 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-8">
+            <!-- Branding & Description -->
+            <div class="space-y-4 md:col-span-2">
+                <div class="flex items-center gap-2">
+                    <div class="flex h-8 w-8 items-center justify-center rounded-lg bg-xbox text-white font-bold">
+                        <!-- Tiny Rocket -->
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="h-4 w-4">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.59 14.37a6 6 0 0 1-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 0 0 6.16-12.12A14.98 14.98 0 0 0 9.63 8.41m5.96 5.96a14.96 14.96 0 0 1-10.43 3.42L12 12m0 0h-.01M21 3s-1.8 3.6-4 4.5"></path>
+                        </svg>
+                    </div>
+                    <span class="heading-font text-lg font-bold text-white tracking-wider">Xstreamflex</span>
+                </div>
+                <p class="text-xs text-zinc-500 max-w-sm leading-relaxed">
+                    Xstreamflex is on a mission to democratize the web. We build tools that bypass technical boundaries, enabling anybody to establish their digital footprint with total code and structural ownership.
+                </p>
+            </div>
+
+            <!-- Page Navigation -->
+            <div class="space-y-3">
+                <h4 class="text-xs font-bold uppercase tracking-widest text-white">Ecosystem Links</h4>
+                <ul class="space-y-2 text-xs">
+                    <li><a href="index.html" class="hover:text-white transition-colors">Home Landing</a></li>
+                    <li><a href="about.html" class="hover:text-white transition-colors">About Mission</a></li>
+                    <li><a href="products.html" class="hover:text-white transition-colors">Xsite Products</a></li>
+                    <li><a href="blog.html" class="hover:text-white transition-colors">Resource Blog</a></li>
+                    <li><a href="contact.html" class="hover:text-white transition-colors">Launch Crew Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Legal Documents -->
+            <div class="space-y-3">
+                <h4 class="text-xs font-bold uppercase tracking-widest text-white">Trust &amp; Compliance</h4>
+                <ul class="space-y-2 text-xs">
+                    <li><a href="terms.html" class="hover:text-white transition-colors">Terms of Service</a></li>
+                    <li><a href="privacy.html" class="hover:text-white transition-colors">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="mx-auto max-w-7xl px-4 lg:px-8 mt-12 pt-8 border-t border-zinc-900 flex flex-col sm:flex-row items-center justify-between text-xs text-zinc-600 gap-4">
+            <p>© <span id="current-year">2026</span> Xstreamflex Network. Built with absolute love for independent creators.</p>
+            <div class="flex gap-4">
+                <span class="hover:text-zinc-400">Version 1.4 Live</span>
+                <span>•</span>
+                <span class="hover:text-zinc-400">Deploy Status: Active</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- LIGHT/DARK THEME TOGGLE JS & INTERACTIVE WIDGET JS -->
+    <script>
+        // Set dynamic current year in footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Dark/Light Mode Theme Toggle Logic
+        const themeToggleBtn = document.getElementById('theme-toggle');
+        const themeToggleDarkIcon = document.getElementById('theme-toggle-dark-icon');
+        const themeToggleLightIcon = document.getElementById('theme-toggle-light-icon');
+
+        // Check Local Storage or Preferences
+        if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+            themeToggleLightIcon.classList.remove('hidden');
+            themeToggleDarkIcon.classList.add('hidden');
+        } else {
+            document.documentElement.classList.remove('dark');
+            themeToggleDarkIcon.classList.remove('hidden');
+            themeToggleLightIcon.classList.add('hidden');
+        }
+
+        themeToggleBtn.addEventListener('click', function() {
+            // Toggle icons
+            themeToggleDarkIcon.classList.toggle('hidden');
+            themeToggleLightIcon.classList.toggle('hidden');
+
+            // If state set in local storage
+            if (localStorage.getItem('color-theme')) {
+                if (localStorage.getItem('color-theme') === 'light') {
+                    document.documentElement.classList.add('dark');
+                    localStorage.setItem('color-theme', 'dark');
+                } else {
+                    document.documentElement.classList.remove('dark');
+                    localStorage.setItem('color-theme', 'light');
+                }
+            } else {
+                if (document.documentElement.classList.contains('dark')) {
+                    document.documentElement.classList.remove('dark');
+                    localStorage.setItem('color-theme', 'light');
+                } else {
+                    document.documentElement.classList.add('dark');
+                    localStorage.setItem('color-theme', 'dark');
+                }
+            }
+        });
+
+        // INTERACTIVE WIDGET SIMULATOR SCRIPT
+        const simulateBtn = document.getElementById('simulate-btn');
+        const conceptInput = document.getElementById('concept-input');
+        const simulationBox = document.getElementById('simulation-box');
+        const logsContainer = document.getElementById('logs-container');
+
+        const mockLogs = [
+            "✔ Loaded Solopreneur idea successfully.",
+            "⚙ Structuring pages mapping (Home, About, Products, Contact, Terms)...",
+            "⚙ Tailoring dynamic metadata & responsive layouts for mobile systems...",
+            "✔ Auto-compiling custom semantic HTML5 elements & standard-style sheets...",
+            "⚙ Preparing connection nodes for Stripe processing modules...",
+            "⚙ Establishing live pipeline on user's personal GitHub workspace...",
+            "🚀 Deployed to: project-xsite.live successfully! Active in record time."
+        ];
+
+        simulateBtn.addEventListener('click', () => {
+            const inputVal = conceptInput.value.trim();
+            if(!inputVal) {
+                alert("Please write a quick business concept in the field first!");
+                return;
+            }
+
+            // Show log window
+            simulationBox.classList.remove('hidden');
+            logsContainer.innerHTML = `<p class="text-zinc-500">&gt;_ Generating custom files for: "${inputVal}"</p>`;
+
+            let logIndex = 0;
+            simulateBtn.disabled = true;
+            simulateBtn.classList.add('opacity-50', 'cursor-not-allowed');
+
+            const interval = setInterval(() => {
+                if(logIndex < mockLogs.length) {
+                    const logParagraph = document.createElement('p');
+                    if (mockLogs[logIndex].startsWith('✔') || mockLogs[logIndex].startsWith('🚀')) {
+                        logParagraph.className = "text-xbox-light font-semibold";
+                    } else {
+                        logParagraph.className = "text-zinc-400";
+                    }
+                    logParagraph.textContent = mockLogs[logIndex];
+                    logsContainer.appendChild(logParagraph);
+                    logIndex++;
+                } else {
+                    clearInterval(interval);
+                    simulateBtn.disabled = false;
+                    simulateBtn.classList.remove('opacity-50', 'cursor-not-allowed');
+                }
+            }, 800);
+        });
+    </script>
+
+</body></html>
