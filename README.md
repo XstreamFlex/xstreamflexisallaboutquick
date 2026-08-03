@@ -2,4 +2,4 @@
 
 Generated via XSITES Engine.
 
-🌐 **Live Site Endpoint:** https://xstreamflex.github.io/xstreamflexisallaboutquick/index.html
+🌐 **Live Site Endpoint:** https://xstreamflex.com
