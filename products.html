@@ -1,589 +1,753 @@
 <!DOCTYPE html>
-<html lang="en" class="dark"><head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Xstreamflex | Launch Your Venture in Minutes, Not Months</title>
-    <meta name="description" content="Xstreamflex &amp; Xsite empower creators, solopreneurs, and absolute beginners to deploy full-scale, customizable live websites from a single brain dump. No black box, complete ownership.">
-    
-    <!-- TailWind CSS & Config -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            darkMode: 'class',
-            theme: {
-                extend: {
-                    colors: {
-                        xbox: {
-                            DEFAULT: '#107C11',
-                            hover: '#189e1a',
-                            light: '#22c55e',
-                            glow: '#39ff14',
-                            dark: '#0b520b',
-                            deep: '#073007'
-                        }
-                    },
-                    fontFamily: {
-                        sans: ['Plus Jakarta Sans', 'Inter', 'sans-serif'],
-                    },
-                    animation: {
-                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
-                        'float': 'float 6s ease-in-out infinite',
-                    },
-                    keyframes: {
-                        float: {
-                            '0%, 100%': { transform: 'translateY(0px)' },
-                            '50%': { transform: 'translateY(-10px)' },
-                        }
-                    }
-                }
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Xstreamflex - Pricing &amp; Products Tiers</title>
+  <meta name="description" content="Launch instantly with Xsite. Pick a tier that fits your hustle—from free starter sites to full lifetime power with custom domains, automated deployments, and zero limitations.">
+  <link rel="canonical" href="https://xstreamflex.com/products.html" />
+  
+  <!-- Tailwind CSS Play CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            xbox: {
+              DEFAULT: '#107C11',
+              dark: '#0e6b0e',
+              light: '#1cd11c',
+              neon: '#22c55e',
+              glow: '#00ff00'
             }
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            display: ['Space Grotesk', 'sans-serif'],
+          }
         }
-    </script>
+      }
+    }
+  </script>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght=300;400;500;600;700;800&amp;family=Space+Grotesk:wght=500;600;700&amp;display=swap" rel="stylesheet">
+
+  <style>
+    /* Premium glow effects and smooth transitions */
+    .glow-hover:hover {
+      box-shadow: 0 0 25px rgba(16, 124, 17, 0.45);
+    }
+    .text-glow {
+      text-shadow: 0 0 12px rgba(34, 197, 94, 0.4);
+    }
+    /* Simple interactive slider/fade transition helper */
+    .fade-in {
+      animation: fadeIn 0.4s ease-in-out forwards;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    /* Custom Scrollbar for modern touch */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #09090b;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #1c1c1e;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #107C11;
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-900 dark:bg-zinc-950 dark:text-zinc-50 font-sans antialiased transition-colors duration-300 min-h-screen flex flex-col justify-between">
+
+  <!-- TOP HEADER / NAVIGATION -->
+  <header class="sticky top-0 z-50 w-full border-b border-slate-200/80 bg-white/80 backdrop-blur-md dark:border-zinc-800/80 dark:bg-zinc-950/80 transition-colors duration-300">
+    <div class="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
+      
+      <!-- Brand Logo -->
+      <div class="flex items-center gap-2">
+        <a href="index.html" class="flex items-center gap-2">
+          <div class="flex h-9 w-9 items-center justify-center rounded-lg bg-xbox text-white shadow-lg shadow-xbox/20">
+            <!-- Rocket Icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-5 h-5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.63 8.41m11.2 5.8a15.005 15.005 0 01-12.13 6.16m12.13-6.16a14.98 14.98 0 01-6.16-12.12M13.5 10.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z" />
+            </svg>
+          </div>
+          <span class="font-display text-xl font-bold tracking-tight text-slate-900 dark:text-white">
+            Xstream<span class="text-xbox text-glow">flex</span>
+          </span>
+        </a>
+      </div>
+
+      <!-- MANDATORY GLOBAL HEADER NAVIGATION -->
+      <nav class="hidden md:flex items-center gap-1">
+        <a href="index.html" class="px-4 py-2 rounded-lg text-sm font-semibold text-xbox bg-slate-100 dark:bg-zinc-900 transition-all">Home</a>
+        <a href="about.html" class="px-4 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-xbox dark:text-zinc-400 dark:hover:text-xbox transition-all">About</a>
+        <a href="products.html" class="px-4 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-xbox dark:text-zinc-400 dark:hover:text-xbox transition-all">Products</a>
+        <a href="blog.html" class="px-4 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-xbox dark:text-zinc-400 dark:hover:text-xbox transition-all">Blog</a>
+        <a href="contact.html" class="px-4 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-xbox dark:text-zinc-400 dark:hover:text-xbox transition-all">Contact</a>
+      </nav>
+
+      <!-- Utility Control & Dark Mode -->
+      <div class="flex items-center gap-3">
+        <!-- Theme Toggle -->
+        <button id="theme-toggle" class="p-2.5 rounded-lg bg-slate-100 dark:bg-zinc-900 text-slate-600 dark:text-zinc-400 hover:text-xbox transition-all" aria-label="Toggle Theme">
+          <svg id="theme-toggle-dark-icon" class="hidden w-4.5 h-4.5" fill="currentColor" viewBox="0 0 20 20">
+            <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+          </svg>
+          <svg id="theme-toggle-light-icon" class="hidden w-4.5 h-4.5" fill="currentColor" viewBox="0 0 20 20">
+            <path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zm-5.05-3.464l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zm2.12-10.607a1 1 0 010-1.414l.706-.707a1 1 0 111.414 1.414l-.707.707a1 1 0 01-1.414 0zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"></path>
+          </svg>
+        </button>
+
+        <a href="#pricing-grid" class="hidden sm:inline-flex items-center justify-center rounded-lg bg-xbox text-xs font-bold uppercase tracking-wider text-white hover:bg-xbox-dark px-4 py-2 transition-all shadow-md shadow-xbox/20">
+          Get Started
+        </a>
+
+        <!-- Mobile Navigation Menu Toggle -->
+        <button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg text-slate-600 dark:text-zinc-400 hover:text-xbox" aria-label="Toggle Menu">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobile-menu" class="hidden md:hidden border-t border-slate-200 dark:border-zinc-800 bg-white dark:bg-zinc-950 px-4 py-4 space-y-2 transition-all duration-300">
+      <a href="index.html" class="block px-4 py-2 rounded-lg text-sm font-semibold text-slate-600 hover:text-xbox dark:text-zinc-400 dark:hover:text-xbox">Home</a>
+      <a href="about.html" class="block px-4 py-2 rounded-lg text-sm font-semibold text-slate-600 hover:text-xbox dark:text-zinc-400 dark:hover:text-xbox">About</a>
+      <a href="products.html" class="block px-4 py-2 rounded-lg text-sm font-semibold text-xbox bg-slate-100 dark:bg-zinc-900">Products</a>
+      <a href="blog.html" class="block px-4 py-2 rounded-lg text-sm font-semibold text-slate-600 hover:text-xbox dark:text-zinc-400 dark:hover:text-xbox">Blog</a>
+      <a href="contact.html" class="block px-4 py-2 rounded-lg text-sm font-semibold text-slate-600 hover:text-xbox dark:text-zinc-400 dark:hover:text-xbox">Contact</a>
+    </div>
+  </header>
+
+  <!-- MAIN WRAPPER -->
+  <main class="flex-grow">
     
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;family=Space+Grotesk:wght@500;700&amp;display=swap" rel="stylesheet">
-    
-    <!-- Inline styles for scrollbar & custom focus states -->
-    <style>
-        body {
-            font-family: 'Plus Jakarta Sans', sans-serif;
-        }
-        .heading-font {
-            font-family: 'Space Grotesk', sans-serif;
-        }
-        /* Custom scrollbar to match Xbox Theme */
-        ::-webkit-scrollbar {
-            width: 8px;
-        }
-        ::-webkit-scrollbar-track {
-            background: #0f172a;
-        }
-        ::-webkit-scrollbar-thumb {
-            background: #107C11;
-            border-radius: 4px;
-        }
-        ::-webkit-scrollbar-thumb:hover {
-            background: #22c55e;
-        }
-    </style>
-<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:Plus Jakarta Sans, Inter, sans-serif;font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border-width:0}.pointer-events-none{pointer-events:none}.absolute{position:absolute}.relative{position:relative}.sticky{position:sticky}.inset-0{inset:0px}.top-0{top:0px}.z-10{z-index:10}.z-50{z-index:50}.mx-auto{margin-left:auto;margin-right:auto}.mb-10{margin-bottom:2.5rem}.mb-12{margin-bottom:3rem}.mb-16{margin-bottom:4rem}.mb-2{margin-bottom:0.5rem}.mb-3{margin-bottom:0.75rem}.mb-4{margin-bottom:1rem}.mb-6{margin-bottom:1.5rem}.mb-8{margin-bottom:2rem}.mt-12{margin-top:3rem}.mt-2{margin-top:0.5rem}.mt-4{margin-top:1rem}.mt-8{margin-top:2rem}.block{display:block}.flex{display:flex}.inline-flex{display:inline-flex}.grid{display:grid}.hidden{display:none}.h-10{height:2.5rem}.h-12{height:3rem}.h-2{height:0.5rem}.h-20{height:5rem}.h-3\.5{height:0.875rem}.h-4{height:1rem}.h-5{height:1.25rem}.h-6{height:1.5rem}.h-8{height:2rem}.max-h-48{max-height:12rem}.min-h-screen{min-height:100vh}.w-10{width:2.5rem}.w-12{width:3rem}.w-2{width:0.5rem}.w-3\.5{width:0.875rem}.w-4{width:1rem}.w-5{width:1.25rem}.w-6{width:1.5rem}.w-8{width:2rem}.w-full{width:100%}.max-w-2xl{max-width:42rem}.max-w-3xl{max-width:48rem}.max-w-5xl{max-width:64rem}.max-w-7xl{max-width:80rem}.max-w-sm{max-width:24rem}.flex-grow{flex-grow:1}@keyframes pulse{50%{opacity:.5}}.animate-pulse-slow{animation:pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite}.grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-center{align-items:center}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-1{gap:0.25rem}.gap-1\.5{gap:0.375rem}.gap-12{gap:3rem}.gap-2{gap:0.5rem}.gap-2\.5{gap:0.625rem}.gap-4{gap:1rem}.gap-8{gap:2rem}.space-y-1 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.25rem * var(--tw-space-y-reverse))}.space-y-2 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.5rem * var(--tw-space-y-reverse))}.space-y-3 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.75rem * var(--tw-space-y-reverse))}.space-y-4 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem * var(--tw-space-y-reverse))}.space-y-6 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.5rem * var(--tw-space-y-reverse))}.overflow-hidden{overflow:hidden}.overflow-y-auto{overflow-y:auto}.overflow-x-hidden{overflow-x:hidden}.rounded-2xl{border-radius:1rem}.rounded-3xl{border-radius:1.5rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:0.5rem}.rounded-xl{border-radius:0.75rem}.border{border-width:1px}.border-b{border-bottom-width:1px}.border-t{border-top-width:1px}.border-xbox{--tw-border-opacity:1;border-color:rgb(16 124 17 / var(--tw-border-opacity, 1))}.border-zinc-700{--tw-border-opacity:1;border-color:rgb(63 63 70 / var(--tw-border-opacity, 1))}.border-zinc-800{--tw-border-opacity:1;border-color:rgb(39 39 42 / var(--tw-border-opacity, 1))}.border-zinc-900{--tw-border-opacity:1;border-color:rgb(24 24 27 / var(--tw-border-opacity, 1))}.border-zinc-950{--tw-border-opacity:1;border-color:rgb(9 9 11 / var(--tw-border-opacity, 1))}.bg-zinc-950{--tw-bg-opacity:1;background-color:rgb(9 9 11 / var(--tw-bg-opacity, 1))}.bg-black\/50{background-color:rgb(0 0 0 / 0.5)}.bg-green-500{--tw-bg-opacity:1;background-color:rgb(34 197 94 / var(--tw-bg-opacity, 1))}.bg-red-500{--tw-bg-opacity:1;background-color:rgb(239 68 68 / var(--tw-bg-opacity, 1))}.bg-xbox{--tw-bg-opacity:1;background-color:rgb(16 124 17 / var(--tw-bg-opacity, 1))}.bg-xbox-glow{--tw-bg-opacity:1;background-color:rgb(57 255 20 / var(--tw-bg-opacity, 1))}.bg-xbox\/10{background-color:rgb(16 124 17 / 0.1)}.bg-yellow-500{--tw-bg-opacity:1;background-color:rgb(234 179 8 / var(--tw-bg-opacity, 1))}.bg-zinc-800{--tw-bg-opacity:1;background-color:rgb(39 39 42 / var(--tw-bg-opacity, 1))}.bg-zinc-900{--tw-bg-opacity:1;background-color:rgb(24 24 27 / var(--tw-bg-opacity, 1))}.bg-zinc-950\/80{background-color:rgb(9 9 11 / 0.8)}.bg-\[linear-gradient\(to_right\2c \#1f2937_1px\2c transparent_1px\)\2c linear-gradient\(to_bottom\2c \#1f2937_1px\2c transparent_1px\)\]{background-image:linear-gradient(to right,#1f2937 1px,transparent 1px),linear-gradient(to bottom,#1f2937 1px,transparent 1px)}.bg-\[radial-gradient\(ellipse_80\%_80\%_at_50\%_-20\%\2c rgba\(16\2c 124\2c 17\2c 0\.15\)\2c rgba\(0\2c 0\2c 0\2c 0\)\)\]{background-image:radial-gradient(ellipse 80% 80% at 50% -20%,rgba(16,124,17,0.15),rgba(0,0,0,0))}.bg-\[radial-gradient\(ellipse_at_bottom\2c rgba\(16\2c 124\2c 17\2c 0\.1\)\2c transparent\)\]{background-image:radial-gradient(ellipse at bottom,rgba(16,124,17,0.1),transparent)}.bg-gradient-to-b{background-image:linear-gradient(to bottom, var(--tw-gradient-stops))}.from-transparent{--tw-gradient-from:transparent var(--tw-gradient-from-position);--tw-gradient-to:rgb(0 0 0 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.to-zinc-950{--tw-gradient-to:#09090b var(--tw-gradient-to-position)}.bg-\[size\:4rem_4rem\]{background-size:4rem 4rem}.p-2{padding:0.5rem}.p-4{padding:1rem}.p-6{padding:1.5rem}.p-8{padding:2rem}.px-2\.5{padding-left:0.625rem;padding-right:0.625rem}.px-3{padding-left:0.75rem;padding-right:0.75rem}.px-4{padding-left:1rem;padding-right:1rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.px-8{padding-left:2rem;padding-right:2rem}.py-1{padding-top:0.25rem;padding-bottom:0.25rem}.py-1\.5{padding-top:0.375rem;padding-bottom:0.375rem}.py-12{padding-top:3rem;padding-bottom:3rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.py-2\.5{padding-top:0.625rem;padding-bottom:0.625rem}.py-20{padding-top:5rem;padding-bottom:5rem}.py-3{padding-top:0.75rem;padding-bottom:0.75rem}.py-3\.5{padding-top:0.875rem;padding-bottom:0.875rem}.py-4{padding-top:1rem;padding-bottom:1rem}.pb-4{padding-bottom:1rem}.pb-6{padding-bottom:1.5rem}.pt-2{padding-top:0.5rem}.pt-4{padding-top:1rem}.pt-8{padding-top:2rem}.text-center{text-align:center}.font-mono{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-4xl{font-size:2.25rem;line-height:2.5rem}.text-base{font-size:1rem;line-height:1.5rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:0.75rem;line-height:1rem}.font-bold{font-weight:700}.font-extrabold{font-weight:800}.font-medium{font-weight:500}.font-normal{font-weight:400}.font-semibold{font-weight:600}.uppercase{text-transform:uppercase}.leading-relaxed{line-height:1.625}.leading-tight{line-height:1.25}.tracking-tight{letter-spacing:-0.025em}.tracking-wider{letter-spacing:0.05em}.tracking-widest{letter-spacing:0.1em}.text-zinc-100{--tw-text-opacity:1;color:rgb(244 244 245 / var(--tw-text-opacity, 1))}.text-slate-600{--tw-text-opacity:1;color:rgb(71 85 105 / var(--tw-text-opacity, 1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.text-xbox{--tw-text-opacity:1;color:rgb(16 124 17 / var(--tw-text-opacity, 1))}.text-xbox-glow{--tw-text-opacity:1;color:rgb(57 255 20 / var(--tw-text-opacity, 1))}.text-xbox-light{--tw-text-opacity:1;color:rgb(34 197 94 / var(--tw-text-opacity, 1))}.text-zinc-300{--tw-text-opacity:1;color:rgb(212 212 216 / var(--tw-text-opacity, 1))}.text-zinc-400{--tw-text-opacity:1;color:rgb(161 161 170 / var(--tw-text-opacity, 1))}.text-zinc-500{--tw-text-opacity:1;color:rgb(113 113 122 / var(--tw-text-opacity, 1))}.text-zinc-600{--tw-text-opacity:1;color:rgb(82 82 91 / var(--tw-text-opacity, 1))}.underline{-webkit-text-decoration-line:underline;text-decoration-line:underline}.decoration-xbox\/50{-webkit-text-decoration-color:rgb(16 124 17 / 0.5);text-decoration-color:rgb(16 124 17 / 0.5)}.decoration-wavy{-webkit-text-decoration-style:wavy;text-decoration-style:wavy}.opacity-30{opacity:0.3}.opacity-50{opacity:0.5}.shadow-2xl{--tw-shadow:0 25px 50px -12px rgb(0 0 0 / 0.25);--tw-shadow-colored:0 25px 50px -12px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-\[0_0_15px_rgba\(16\2c 124\2c 17\2c 0\.4\)\]{--tw-shadow:0 0 15px rgba(16,124,17,0.4);--tw-shadow-colored:0 0 15px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-\[0_0_30px_rgba\(16\2c 124\2c 17\2c 0\.4\)\]{--tw-shadow:0 0 30px rgba(16,124,17,0.4);--tw-shadow-colored:0 0 30px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-\[0_4px_15px_rgba\(16\2c 124\2c 17\2c 0\.3\)\]{--tw-shadow:0 4px 15px rgba(16,124,17,0.3);--tw-shadow-colored:0 4px 15px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-\[0_4px_20px_rgba\(16\2c 124\2c 17\2c 0\.3\)\]{--tw-shadow:0 4px 20px rgba(16,124,17,0.3);--tw-shadow-colored:0 4px 20px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-lg{--tw-shadow:0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-md{--tw-shadow:0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-xbox\/30{--tw-shadow-color:rgb(16 124 17 / 0.3);--tw-shadow:var(--tw-shadow-colored)}.backdrop-blur-md{--tw-backdrop-blur:blur(12px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-colors{transition-property:color, background-color, border-color, fill, stroke, -webkit-text-decoration-color;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, -webkit-text-decoration-color;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-transform{transition-property:transform;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.duration-200{transition-duration:200ms}.duration-300{transition-duration:300ms}.\[mask-image\:radial-gradient\(ellipse_60\%_50\%_at_50\%_0\%\2c \#000_70\%\2c transparent_100\%\)\]{-webkit-mask-image:radial-gradient(ellipse 60% 50% at 50% 0%,#000 70%,transparent 100%);mask-image:radial-gradient(ellipse 60% 50% at 50% 0%,#000 70%,transparent 100%)}.selection\:bg-xbox *::selection{--tw-bg-opacity:1;background-color:rgb(16 124 17 / var(--tw-bg-opacity, 1))}.selection\:text-white *::selection{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.selection\:bg-xbox::selection{--tw-bg-opacity:1;background-color:rgb(16 124 17 / var(--tw-bg-opacity, 1))}.selection\:text-white::selection{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.hover\:scale-\[1\.02\]:hover{--tw-scale-x:1.02;--tw-scale-y:1.02;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.hover\:border-xbox:hover{--tw-border-opacity:1;border-color:rgb(16 124 17 / var(--tw-border-opacity, 1))}.hover\:border-xbox\/50:hover{border-color:rgb(16 124 17 / 0.5)}.hover\:border-zinc-700:hover{--tw-border-opacity:1;border-color:rgb(63 63 70 / var(--tw-border-opacity, 1))}.hover\:bg-slate-100:hover{--tw-bg-opacity:1;background-color:rgb(241 245 249 / var(--tw-bg-opacity, 1))}.hover\:bg-xbox-hover:hover{--tw-bg-opacity:1;background-color:rgb(24 158 26 / var(--tw-bg-opacity, 1))}.hover\:bg-zinc-900:hover{--tw-bg-opacity:1;background-color:rgb(24 24 27 / var(--tw-bg-opacity, 1))}.hover\:text-slate-900:hover{--tw-text-opacity:1;color:rgb(15 23 42 / var(--tw-text-opacity, 1))}.hover\:text-white:hover{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.hover\:text-zinc-400:hover{--tw-text-opacity:1;color:rgb(161 161 170 / var(--tw-text-opacity, 1))}.hover\:shadow-\[0_0_20px_rgba\(16\2c 124\2c 17\2c 0\.1\)\]:hover{--tw-shadow:0 0 20px rgba(16,124,17,0.1);--tw-shadow-colored:0 0 20px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.hover\:shadow-\[0_4px_25px_rgba\(16\2c 124\2c 17\2c 0\.5\)\]:hover{--tw-shadow:0 4px 25px rgba(16,124,17,0.5);--tw-shadow-colored:0 4px 25px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.focus\:border-xbox:focus{--tw-border-opacity:1;border-color:rgb(16 124 17 / var(--tw-border-opacity, 1))}.focus\:outline-none:focus{outline:2px solid transparent;outline-offset:2px}.group:hover .group-hover\:translate-x-2{--tw-translate-x:0.5rem;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.group:hover .group-hover\:scale-110{--tw-scale-x:1.1;--tw-scale-y:1.1;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.group:hover .group-hover\:text-xbox-light{--tw-text-opacity:1;color:rgb(34 197 94 / var(--tw-text-opacity, 1))}.dark\:text-xbox-light:is(.dark *){--tw-text-opacity:1;color:rgb(34 197 94 / var(--tw-text-opacity, 1))}.dark\:text-zinc-300:is(.dark *){--tw-text-opacity:1;color:rgb(212 212 216 / var(--tw-text-opacity, 1))}.dark\:hover\:bg-neutral-900:hover:is(.dark *){--tw-bg-opacity:1;background-color:rgb(23 23 23 / var(--tw-bg-opacity, 1))}.dark\:hover\:text-white:hover:is(.dark *){--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}@media (min-width: 640px){.sm\:inline{display:inline}.sm\:w-auto{width:auto}.sm\:flex-row{flex-direction:row}.sm\:p-12{padding:3rem}.sm\:px-6{padding-left:1.5rem;padding-right:1.5rem}.sm\:text-5xl{font-size:3rem;line-height:1}.sm\:text-6xl{font-size:3.75rem;line-height:1}.sm\:text-base{font-size:1rem;line-height:1.5rem}.sm\:text-xl{font-size:1.25rem;line-height:1.75rem}}@media (min-width: 768px){.md\:col-span-2{grid-column:span 2 / span 2}.md\:flex{display:flex}.md\:hidden{display:none}.md\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.md\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.md\:grid-cols-4{grid-template-columns:repeat(4, minmax(0, 1fr))}}@media (min-width: 1024px){.lg\:col-span-5{grid-column:span 5 / span 5}.lg\:col-span-7{grid-column:span 7 / span 7}.lg\:grid-cols-12{grid-template-columns:repeat(12, minmax(0, 1fr))}.lg\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.lg\:gap-2{gap:0.5rem}.lg\:px-8{padding-left:2rem;padding-right:2rem}.lg\:py-32{padding-top:8rem;padding-bottom:8rem}.lg\:text-7xl{font-size:4.5rem;line-height:1}}</style></head>
-<body class="bg-zinc-950 text-zinc-100 min-h-screen selection:bg-xbox selection:text-white flex flex-col overflow-x-hidden">
-
-    <!-- Global Header -->
-    <header class="border-b border-zinc-900 bg-zinc-950/80 backdrop-blur-md sticky top-0 z-50 transition-all duration-300">
-        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div class="flex h-20 items-center justify-between">
-                
-                <!-- Logo -->
-                <a href="index.html" class="flex items-center gap-2.5 group">
-                    <div class="flex h-10 w-10 items-center justify-center rounded-xl bg-xbox text-white font-bold transition-transform duration-300 group-hover:scale-110 shadow-[0_0_15px_rgba(16,124,17,0.4)]">
-                        <!-- Tiny Rocket -->
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="h-5 w-5 animate-pulse-slow">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.59 14.37a6 6 0 0 1-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 0 0 6.16-12.12A14.98 14.98 0 0 0 9.63 8.41m5.96 5.96a14.96 14.96 0 0 1-10.43 3.42L12 12m0 0h-.01M21 3s-1.8 3.6-4 4.5"></path>
-                        </svg>
-                    </div>
-                    <span class="heading-font text-xl font-bold tracking-wider text-white transition-colors duration-300 group-hover:text-xbox-light">Xstreamflex</span>
-                </a>
-
-                <!-- Exact Nav Bar Block As Requested -->
-                <nav class="hidden md:flex items-center gap-1 lg:gap-2">
-                <a href="index.html" class="rounded-lg px-3 py-2 text-sm font-semibold text-xbox dark:text-xbox-light bg-xbox/10">Home</a>
-                <a href="about.html" class="rounded-lg px-3 py-2 text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-100 dark:text-zinc-300 dark:hover:text-white dark:hover:bg-neutral-900 transition-all">About Us</a>
-                <a href="products.html" class="rounded-lg px-3 py-2 text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-100 dark:text-zinc-300 dark:hover:text-white dark:hover:bg-neutral-900 transition-all">Products</a>
-                <a href="blog.html" class="rounded-lg px-3 py-2 text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-100 dark:text-zinc-300 dark:hover:text-white dark:hover:bg-neutral-900 transition-all">Blog</a>
-                <a href="contact.html" class="rounded-lg px-3 py-2 text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-100 dark:text-zinc-300 dark:hover:text-white dark:hover:bg-neutral-900 transition-all">Contact</a>
-            </nav>
-
-                <!-- Right Action Button -->
-                <div class="hidden md:flex items-center gap-4">
-                    <a href="#xsite-details" class="text-xs uppercase tracking-wider text-zinc-400 hover:text-white transition-colors">See Core Features</a>
-                    <a href="contact.html" class="heading-font inline-flex items-center justify-center rounded-lg bg-xbox px-4 py-2.5 text-sm font-bold text-white transition-all duration-200 hover:bg-xbox-hover shadow-[0_4px_20px_rgba(16,124,17,0.3)] hover:shadow-[0_4px_25px_rgba(16,124,17,0.5)]">
-                        Launch Free
-                    </a>
-                </div>
-
-                <!-- Mobile Menu Toggle -->
-                <button type="button" id="mobile-menu-btn" class="inline-flex items-center justify-center rounded-lg p-2 text-zinc-400 hover:bg-zinc-900 hover:text-white focus:outline-none md:hidden" aria-controls="mobile-menu" aria-expanded="false">
-                    <span class="sr-only">Open main menu</span>
-                    <!-- Icon Open -->
-                    <svg id="hamburger-icon" class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
-                    </svg>
-                    <!-- Icon Close -->
-                    <svg id="close-icon" class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
-                    </svg>
-                </button>
-            </div>
+    <!-- HERO / DISRUPTIVE CRY SECTION -->
+    <section class="relative overflow-hidden pt-16 pb-12 sm:pt-24 sm:pb-16 lg:pt-32">
+      <!-- Background Glow Details -->
+      <div class="absolute top-1/4 left-1/2 -z-10 h-[400px] w-[800px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-xbox/10 blur-[120px] dark:bg-xbox/20"></div>
+      
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
+        <!-- Subtitle Badge -->
+        <div class="inline-flex items-center gap-1.5 rounded-full border border-xbox/30 bg-xbox/10 px-3.5 py-1 text-xs font-semibold uppercase tracking-widest text-xbox dark:text-xbox-light mb-6">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-3.5 h-3.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.63 8.41m11.2 5.8a15.005 15.005 0 01-12.13 6.16m12.13-6.16a14.98 14.98 0 01-6.16-12.12M13.5 10.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z" />
+          </svg>
+          LAUNCH FASTER THAN AN ORBITAL THRUSTER
         </div>
 
-        <!-- Mobile Menu Panel -->
-        <div class="hidden md:hidden bg-zinc-950 border-b border-zinc-900 px-4 pt-2 pb-6 space-y-2 transition-all duration-300" id="mobile-menu">
-            <a href="index.html" class="block rounded-lg px-3 py-3 text-base font-semibold text-xbox bg-xbox/10">Home</a>
-            <a href="about.html" class="block rounded-lg px-3 py-3 text-base font-medium text-zinc-300 hover:bg-zinc-900 hover:text-white transition-all">About Us</a>
-            <a href="products.html" class="block rounded-lg px-3 py-3 text-base font-medium text-zinc-300 hover:bg-zinc-900 hover:text-white transition-all">Products</a>
-            <a href="blog.html" class="block rounded-lg px-3 py-3 text-base font-medium text-zinc-300 hover:bg-zinc-900 hover:text-white transition-all">Blog</a>
-            <a href="contact.html" class="block rounded-lg px-3 py-3 text-base font-medium text-zinc-300 hover:bg-zinc-900 hover:text-white transition-all">Contact</a>
-            <div class="pt-4 border-t border-zinc-900">
-                <a href="contact.html" class="heading-font w-full inline-flex items-center justify-center rounded-lg bg-xbox py-3 text-base font-bold text-white shadow-[0_4px_15px_rgba(16,124,17,0.3)]">
-                    Launch Free Now
-                </a>
-            </div>
+        <h1 class="font-display text-4xl sm:text-6xl font-extrabold tracking-tight text-slate-900 dark:text-white max-w-4xl mx-auto leading-none mb-6">
+          Simple, Transparent Plans.<br>
+          <span class="text-xbox text-glow">Unlimited Ownership.</span>
+        </h1>
+        
+        <p class="text-base sm:text-lg text-slate-600 dark:text-zinc-400 max-w-2xl mx-auto mb-10 leading-relaxed">
+          From a total beginner (or a 12-year-old kid) to elite builders, get a complete live web footprint instantly. No subscription trap. Free deployment, fully custom files, and custom-engineered freedom.
+        </p>
+
+        <!-- Dynamic Quick Email Form -->
+        <div class="max-w-md mx-auto p-4 bg-white dark:bg-zinc-900 rounded-2xl border border-slate-200 dark:border-zinc-800 shadow-xl mb-6">
+          <p class="text-xs font-semibold text-slate-500 dark:text-zinc-400 mb-3 text-left pl-1">
+            ⚡ All that is required to get started is an email:
+          </p>
+          <form onsubmit="handleQuickLaunch(event)" class="flex flex-col sm:flex-row gap-2">
+            <input type="email" id="quick-email" required placeholder="Enter your email to deploy instantly" class="w-full rounded-xl bg-slate-50 dark:bg-zinc-950 px-4 py-3 text-sm text-slate-950 dark:text-white outline-none border border-slate-200 dark:border-zinc-800 focus:border-xbox dark:focus:border-xbox transition-all">
+            <button type="submit" class="shrink-0 w-full sm:w-auto inline-flex items-center justify-center rounded-xl bg-xbox hover:bg-xbox-dark text-white text-sm font-semibold py-3 px-5 transition-all glow-hover">
+              Launch Xsite
+            </button>
+          </form>
+          <!-- Toast Container inside -->
+          <div id="email-toast" class="hidden mt-3 text-xs text-xbox font-semibold text-left pl-1 fade-in"></div>
         </div>
-    </header>
+      </div>
+    </section>
 
-    <!-- Main Content Area -->
-    <main class="flex-grow">
+    <!-- PRICING TIERS SECTION -->
+    <section id="pricing-grid" class="py-12 sm:py-20 bg-slate-100 dark:bg-zinc-900/50 transition-colors duration-300">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center mb-16">
+          <h2 class="font-display text-3xl font-extrabold tracking-tight text-slate-900 dark:text-white sm:text-4xl">
+            Choose Your Xsite Trajectory
+          </h2>
+          <p class="mt-4 text-sm text-slate-500 dark:text-zinc-400 max-w-lg mx-auto">
+            Never pay for 5 different systems. Select a plan below and scale as your traffic hits high altitude.
+          </p>
+        </div>
 
-        <!-- Hero Section: The Disruptive Product Suite -->
-        <section class="relative py-20 lg:py-32 overflow-hidden bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(16,124,17,0.15),rgba(0,0,0,0))]">
-            <!-- Grid decorative background -->
-            <div class="absolute inset-0 bg-[linear-gradient(to_right,#1f2937_1px,transparent_1px),linear-gradient(to_bottom,#1f2937_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] opacity-30"></div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6 items-stretch">
+          
+          <!-- TIER 0 (FREE) -->
+          <div class="flex flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 dark:border-zinc-800 dark:bg-zinc-950 transition-all hover:scale-[1.02] relative">
+            <div>
+              <div class="mb-4">
+                <span class="inline-block rounded-full bg-slate-100 dark:bg-zinc-900 px-3 py-1 text-xs font-semibold tracking-wider text-slate-600 dark:text-zinc-400">
+                  Tier 0
+                </span>
+              </div>
+              <h3 class="font-display text-xl font-bold text-slate-900 dark:text-white">Free</h3>
+              <div class="mt-4 flex items-baseline">
+                <span class="text-3xl font-extrabold tracking-tight text-slate-900 dark:text-white">$0</span>
+                <span class="ml-1 text-xs text-slate-400 dark:text-zinc-500">/mo</span>
+              </div>
+              <p class="mt-2 text-xs text-slate-500 dark:text-zinc-400">The essential sandbox to launch your side project instantly.</p>
+              
+              <!-- Features -->
+              <ul class="mt-6 space-y-3.5 text-xs">
+                <li class="flex items-center gap-2">
+                  <span class="text-xbox font-bold">✓</span>
+                  <span class="text-slate-600 dark:text-zinc-300">3 pages / mo</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <span class="text-xbox font-bold">✓</span>
+                  <span class="text-slate-600 dark:text-zinc-300">Infinite Edits</span>
+                </li>
+                <li class="flex items-center gap-2 text-amber-500 dark:text-amber-400">
+                  <span class="font-bold">!</span>
+                  <span>Watermark Tag</span>
+                </li>
+              </ul>
+            </div>
             
-            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-                <!-- Tagline Badge -->
-                <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-zinc-900 border border-zinc-800 text-xs font-bold text-xbox-glow uppercase tracking-wider mb-6 animate-pulse-slow">
-                    <span class="flex h-2 w-2 rounded-full bg-xbox-glow"></span>
-                    No Templates. Absolute Freedom.
-                </div>
-                
-                <h1 class="heading-font text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight text-white mb-6">
-                    Launch in <span class="text-xbox-light underline decoration-xbox/50 decoration-wavy">Minutes</span>,<br class="hidden sm:inline"> Own Your Code Forever.
-                </h1>
-                
-                <p class="max-w-3xl mx-auto text-lg sm:text-xl text-zinc-400 leading-relaxed mb-10">
-                    Traditional builders lock you in a black box. Xstreamflex breaks the chain. Get a fully operational, responsive, and hosted website straight from a simple brain dump. 
-                </p>
-
-                <!-- Dual CTAs -->
-                <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
-                    <a href="#simulator" class="w-full sm:w-auto heading-font inline-flex items-center justify-center gap-2 rounded-xl bg-xbox px-8 py-4 text-base font-bold text-white transition-all duration-300 hover:bg-xbox-hover shadow-[0_0_30px_rgba(16,124,17,0.4)] hover:scale-[1.02]">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.59 14.37a6 6 0 0 1-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 0 0 6.16-12.12A14.98 14.98 0 0 0 9.63 8.41m5.96 5.96a14.96 14.96 0 0 1-10.43 3.42L12 12m0 0h-.01M21 3s-1.8 3.6-4 4.5"></path>
-                        </svg>
-                        Test Run Xsite Simulator
-                    </a>
-                    <a href="#integrations" class="w-full sm:w-auto inline-flex items-center justify-center rounded-xl bg-zinc-900 border border-zinc-800 hover:border-zinc-700 px-8 py-4 text-base font-semibold text-zinc-300 hover:text-white transition-all duration-300">
-                        View Ecosystem Addons
-                    </a>
-                </div>
+            <div class="mt-8 pt-4">
+              <button onclick="simulateSignup('Free', '$0')" class="w-full rounded-lg bg-slate-100 dark:bg-zinc-900 py-2.5 text-center text-xs font-semibold text-slate-900 dark:text-white hover:bg-xbox hover:text-white transition-all">
+                Select Free
+              </button>
             </div>
-        </section>
+          </div>
 
-        <!-- Product Block 1: Xsite (Flagship Engine) -->
-        <section id="xsite-details" class="py-20 bg-zinc-950 border-t border-zinc-900 relative">
-            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-                
-                <!-- Section Header -->
-                <div class="mb-16 max-w-3xl">
-                    <h2 class="heading-font text-3xl sm:text-5xl font-extrabold text-white tracking-tight">
-                        <span class="text-xbox-light block mb-2 text-lg sm:text-xl font-bold uppercase tracking-wider">The Flagship Project</span>
-                        Xsite: Brain Dump to Live Repo
-                    </h2>
-                    <p class="text-zinc-400 text-lg leading-relaxed mt-4">
-                        Unlike restricted drag-and-drop engines, Xsite generates fully fleshed out, standard compliance HTML code linked to <span class="text-white font-medium">Terms, Privacy, About, Product, Contact, and Blog pages</span>. One launch, zero manual configuration.
-                    </p>
-                </div>
-
-                <!-- 3-Step Work Flow Cards -->
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    
-                    <!-- Step 1 Card -->
-                    <div class="relative group bg-zinc-900 border border-zinc-800 rounded-2xl p-8 hover:border-xbox/50 transition-all duration-300 flex flex-col justify-between">
-                        <div>
-                            <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-zinc-950 text-xbox border border-zinc-800 font-extrabold text-xl mb-6 group-hover:scale-110 transition-transform">
-                                01
-                            </div>
-                            <h3 class="heading-font text-xl font-bold text-white mb-3">Brain Dump Your Idea</h3>
-                            <p class="text-sm text-zinc-400 leading-relaxed">
-                                Write naturally. Describe your target customer, colors, business models, brand values, or any messy, unstructured inspiration you have. 
-                            </p>
-                        </div>
-                        <div class="mt-8 text-xs font-semibold text-xbox-light flex items-center gap-1 group-hover:translate-x-2 transition-transform">
-                            No tech jargon required →
-                        </div>
-                    </div>
-
-                    <!-- Step 2 Card -->
-                    <div class="relative group bg-zinc-900 border border-zinc-800 rounded-2xl p-8 hover:border-xbox/50 transition-all duration-300 flex flex-col justify-between">
-                        <div>
-                            <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-zinc-950 text-xbox border border-zinc-800 font-extrabold text-xl mb-6 group-hover:scale-110 transition-transform">
-                                02
-                            </div>
-                            <h3 class="heading-font text-xl font-bold text-white mb-3">Instant Site Inter-Wiring</h3>
-                            <p class="text-sm text-zinc-400 leading-relaxed">
-                                Xsite instantly creates a custom-built environment. Home, About, Product page, customized Legal forms, Contact, and structural Blog pages are generated instantly.
-                            </p>
-                        </div>
-                        <div class="mt-8 text-xs font-semibold text-xbox-light flex items-center gap-1 group-hover:translate-x-2 transition-transform">
-                            Complete set of pages →
-                        </div>
-                    </div>
-
-                    <!-- Step 3 Card -->
-                    <div class="relative group bg-zinc-900 border border-zinc-800 rounded-2xl p-8 hover:border-xbox/50 transition-all duration-300 flex flex-col justify-between">
-                        <div>
-                            <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-zinc-950 text-xbox border border-zinc-800 font-extrabold text-xl mb-6 group-hover:scale-110 transition-transform">
-                                03
-                            </div>
-                            <h3 class="heading-font text-xl font-bold text-white mb-3">Auto Deploy to GitHub</h3>
-                            <p class="text-sm text-zinc-400 leading-relaxed">
-                                We push clean HTML code directly into your GitHub repository and trigger live hosting. The result is a live, custom website with completely uncensored control.
-                            </p>
-                        </div>
-                        <div class="mt-8 text-xs font-semibold text-xbox-light flex items-center gap-1 group-hover:translate-x-2 transition-transform">
-                            Own all of your source files →
-                        </div>
-                    </div>
-
-                </div>
+          <!-- STARTER -->
+          <div class="flex flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 dark:border-zinc-800 dark:bg-zinc-950 transition-all hover:scale-[1.02]">
+            <div>
+              <div class="mb-4">
+                <span class="inline-block rounded-full bg-slate-100 dark:bg-zinc-900 px-3 py-1 text-xs font-semibold tracking-wider text-slate-600 dark:text-zinc-400">
+                  7 Pages
+                </span>
+              </div>
+              <h3 class="font-display text-xl font-bold text-slate-900 dark:text-white">Starter</h3>
+              <div class="mt-4 flex items-baseline">
+                <span class="text-3xl font-extrabold tracking-tight text-slate-900 dark:text-white">$5</span>
+                <span class="ml-1 text-xs text-slate-400 dark:text-zinc-500">/mo</span>
+              </div>
+              <p class="mt-2 text-xs text-slate-500 dark:text-zinc-400">Perfect for solid niche landing systems &amp; personal setups.</p>
+              
+              <!-- Features -->
+              <ul class="mt-6 space-y-3.5 text-xs">
+                <li class="flex items-center gap-2">
+                  <span class="text-xbox font-bold">✓</span>
+                  <span class="text-slate-600 dark:text-zinc-300">7 pages / mo</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <span class="text-xbox font-bold">✓</span>
+                  <span class="text-slate-600 dark:text-zinc-300">Infinite Edits</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <span class="text-xbox font-bold">✓</span>
+                  <span class="text-slate-600 dark:text-zinc-300">No Watermark</span>
+                </li>
+              </ul>
             </div>
-        </section>
-
-        <!-- Interactive Sandbox/Simulator Section -->
-        <section id="simulator" class="py-20 bg-zinc-900 relative">
-            <div class="absolute inset-0 bg-gradient-to-b from-transparent to-zinc-950 opacity-50"></div>
-            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
-                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-                    
-                    <!-- Text side -->
-                    <div class="lg:col-span-5 space-y-6">
-                        <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-xbox/10 text-xbox-light text-xs font-bold uppercase tracking-wider">
-                            Interactive Previewer
-                        </div>
-                        <h2 class="heading-font text-3xl sm:text-5xl font-extrabold text-white leading-tight">
-                            Try the Brain-Dump Experience
-                        </h2>
-                        <p class="text-zinc-400 text-base leading-relaxed">
-                            We designed Xsite to be so simple a grandmother or a twelve-year-old kid could launch a system on their first attempt. Pick a pre-made inspiration block below or type yours to watch how the files structure instantly.
-                        </p>
-
-                        <!-- Presets buttons -->
-                        <div class="space-y-3 pt-2">
-                            <label class="text-xs font-bold text-zinc-400 uppercase tracking-widest block">Inspiration Presets</label>
-                            <div class="flex flex-wrap gap-2">
-                                <button onclick="setBrainDump('grandma')" class="px-3 py-2 bg-zinc-800 border border-zinc-700 hover:border-xbox text-xs rounded-lg text-zinc-300 font-semibold transition-colors">
-                                    🧶 Grandma's Knitting Shop
-                                </button>
-                                <button onclick="setBrainDump('kid')" class="px-3 py-2 bg-zinc-800 border border-zinc-700 hover:border-xbox text-xs rounded-lg text-zinc-300 font-semibold transition-colors">
-                                    🎮 Kid's Minecraft Server Help
-                                </button>
-                                <button onclick="setBrainDump('sidehustle')" class="px-3 py-2 bg-zinc-800 border border-zinc-700 hover:border-xbox text-xs rounded-lg text-zinc-300 font-semibold transition-colors">
-                                    🚀 Solo SaaS Startup
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Simulator Console side -->
-                    <div class="lg:col-span-7 bg-zinc-950 border border-zinc-800 rounded-3xl p-6 shadow-2xl relative overflow-hidden">
-                        <div class="flex items-center justify-between border-b border-zinc-900 pb-4 mb-6">
-                            <div class="flex items-center gap-2">
-                                <span class="h-3.5 w-3.5 rounded-full bg-red-500"></span>
-                                <span class="h-3.5 w-3.5 rounded-full bg-yellow-500"></span>
-                                <span class="h-3.5 w-3.5 rounded-full bg-green-500"></span>
-                            </div>
-                            <span class="text-xs text-zinc-500 font-mono">xsite-launch-simulator.exe</span>
-                        </div>
-
-                        <!-- Textarea input -->
-                        <div class="space-y-4">
-                            <div>
-                                <label class="block text-xs font-bold uppercase text-zinc-400 tracking-wider mb-2">Write / Select Your Company Concept</label>
-                                <textarea id="brain-dump-input" rows="4" class="w-full bg-zinc-900 border border-zinc-800 rounded-xl p-4 text-sm font-medium text-white focus:outline-none focus:border-xbox transition-colors" placeholder="Type a raw, messy paragraph about your business or brand dream..."></textarea>
-                            </div>
-
-                            <!-- Mock Generation Button -->
-                            <button onclick="simulateDeploy()" class="w-full bg-xbox hover:bg-xbox-hover text-white text-sm font-bold py-3.5 rounded-xl transition-all duration-300 shadow-md flex items-center justify-center gap-2">
-                                <span>Compile and Deploy Instantly</span>
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path>
-                                </svg>
-                            </button>
-
-                            <!-- Virtual Output Log -->
-                            <div id="output-console" class="hidden bg-black/50 rounded-xl p-4 border border-zinc-900 font-mono text-xs text-zinc-400 space-y-1 max-h-48 overflow-y-auto">
-                                <p class="text-xbox-light">[SYSTEM] Initiating Xsite neural engine compiler...</p>
-                                <p class="text-zinc-500">[SYSTEM] De-structuring messy input...</p>
-                                <p class="text-zinc-500">[COMPILER] Extracted theme: Dynamic Modern Creative.</p>
-                                <p class="text-zinc-500">[FILES] Generated: index.html (Home page wired)</p>
-                                <p class="text-zinc-500">[FILES] Generated: products.html (Product detail ready)</p>
-                                <p class="text-zinc-500">[FILES] Generated: privacy.html &amp; terms.html</p>
-                                <p class="text-xbox-glow">[DEPLOY] Repository connected on GitHub.</p>
-                                <p class="text-xbox-glow">[LIVE] Production deployment successful: Live status OK</p>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
+            
+            <div class="mt-8 pt-4">
+              <button onclick="simulateSignup('Starter', '$5')" class="w-full rounded-lg bg-xbox text-white py-2.5 text-center text-xs font-semibold hover:bg-xbox-dark transition-all">
+                Subscribe $5
+              </button>
             </div>
-        </section>
+          </div>
 
-        <!-- Feature Spotlight Grid: Disruptive Freedom Cry -->
-        <section class="py-20 bg-zinc-950">
-            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-                
-                <div class="text-center max-w-3xl mx-auto mb-16">
-                    <h2 class="heading-font text-3xl sm:text-5xl font-extrabold text-white">
-                        Your Launch, Your Legacy
-                    </h2>
-                    <p class="text-zinc-400 text-base mt-4 leading-relaxed">
-                        We don't rent you custom websites. We build the rocket, hand you the complete keys, and let you steer wherever the path takes you.
-                    </p>
-                </div>
-
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    
-                    <!-- Freedom Feature 1 -->
-                    <div class="p-8 rounded-2xl bg-zinc-900 border border-zinc-800 hover:border-zinc-700 transition-all flex flex-col justify-between">
-                        <div>
-                            <div class="h-10 w-10 rounded-lg bg-xbox/10 border border-xbox text-xbox flex items-center justify-center mb-6">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 10.5V6.75a4.5 4.5 0 119 0v3.75M3.75 21.75h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H3.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 00-2.25 2.25z"></path>
-                                </svg>
-                            </div>
-                            <h3 class="heading-font text-lg font-bold text-white mb-2">No Locked Black Box</h3>
-                            <p class="text-sm text-zinc-400 leading-relaxed">
-                                Traditional hosts threaten to turn off your site if you stop paying. Since we export your complete system straight to GitHub, your code is 100% yours forever.
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- Freedom Feature 2 -->
-                    <div class="p-8 rounded-2xl bg-zinc-900 border border-zinc-800 hover:border-zinc-700 transition-all flex flex-col justify-between">
-                        <div>
-                            <div class="h-10 w-10 rounded-lg bg-xbox/10 border border-xbox text-xbox flex items-center justify-center mb-6">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9s2.015-9 4.5-9m0 18c-1.11 0-2.08-.402-2.799-1.066M11.25 3.75h-.008v.008h.008V3.75zm.47 1.24h-.008v.008h.008v-.008zm.28 1.48h-.008v.008h.008v-.008z"></path>
-                                </svg>
-                            </div>
-                            <h3 class="heading-font text-lg font-bold text-white mb-2">Uncapped Portability</h3>
-                            <p class="text-sm text-zinc-400 leading-relaxed">
-                                Move your static assets to AWS, Cloudflare, Netlify, or Vercel with zero re-building. When scale happens, migration can occur with only host configuration changes.
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- Freedom Feature 3 -->
-                    <div class="p-8 rounded-2xl bg-zinc-900 border border-zinc-800 hover:border-zinc-700 transition-all flex flex-col justify-between">
-                        <div>
-                            <div class="h-10 w-10 rounded-lg bg-xbox/10 border border-xbox text-xbox flex items-center justify-center mb-6">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M10.05 4.575a1.518 1.518 0 00-3.185 0A1.518 1.518 0 003 6.075v.077c0 .131.05.257.14.35l3.96 3.957a1.545 1.545 0 002.1-.1l3.96-3.957a.5.5 0 00.14-.35v-.077a1.518 1.518 0 00-3.29-1.5z"></path>
-                                </svg>
-                            </div>
-                            <h3 class="heading-font text-lg font-bold text-white mb-2">All Core Trust Pages Live</h3>
-                            <p class="text-sm text-zinc-400 leading-relaxed">
-                                Why hire expensive legal consultants? Xsite generates dynamic privacy and terms documents based on standard global internet requirements instantly.
-                            </p>
-                        </div>
-                    </div>
-
-                </div>
+          <!-- PRO (Highly Popular) -->
+          <div class="flex flex-col justify-between rounded-2xl border-2 border-xbox bg-white p-6 dark:bg-zinc-950 transition-all hover:scale-[1.02] relative shadow-lg shadow-xbox/10">
+            <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 rounded-full bg-xbox px-3.5 py-0.5 text-[10px] font-bold uppercase tracking-wider text-white">
+              POPULAR
             </div>
-        </section>
-
-        <!-- Up Next Roadmap Section -->
-        <section id="integrations" class="py-20 bg-zinc-900 border-t border-zinc-950 relative">
-            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-                
-                <div class="max-w-3xl mb-12">
-                    <span class="text-xs font-bold uppercase tracking-widest text-xbox-glow">Next Steps &amp; Future Horizon</span>
-                    <h2 class="heading-font text-3xl sm:text-5xl font-extrabold text-white mt-2">
-                        Upcoming Seamless Add-ons
-                    </h2>
-                    <p class="text-zinc-400 text-sm sm:text-base leading-relaxed mt-4">
-                        We are currently shipping direct automated integrations designed to establish a fully responsive web presence, sales architecture, and messaging support platform with zero coding hassle.
-                    </p>
-                </div>
-
-                <!-- Roadmap cards -->
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    
-                    <!-- Roadmap 1 -->
-                    <div class="bg-zinc-950 rounded-2xl border border-zinc-800 p-8 hover:shadow-[0_0_20px_rgba(16,124,17,0.1)] transition-all">
-                        <div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-xbox/10 text-xbox-light text-xs font-bold uppercase tracking-wider mb-6">
-                            Coming Q2
-                        </div>
-                        <h3 class="heading-font text-lg font-bold text-white mb-2">Auto-Custom Domains</h3>
-                        <p class="text-xs text-zinc-400 leading-relaxed">
-                            No more confusing DNS records, A-names, or dynamic verification steps. Point your external domain or acquire yours instantly directly through our launch system dashboard.
-                        </p>
-                    </div>
-
-                    <!-- Roadmap 2 -->
-                    <div class="bg-zinc-950 rounded-2xl border border-zinc-800 p-8 hover:shadow-[0_0_20px_rgba(16,124,17,0.1)] transition-all">
-                        <div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-xbox/10 text-xbox-light text-xs font-bold uppercase tracking-wider mb-6">
-                            Coming Q2
-                        </div>
-                        <h3 class="heading-font text-lg font-bold text-white mb-2">One-Click Stripe Guides</h3>
-                        <p class="text-xs text-zinc-400 leading-relaxed">
-                            Learn exactly how to connect checkout portals, capture dynamic payment transactions, and establish subscription schedules without managing intricate APIs.
-                        </p>
-                    </div>
-
-                    <!-- Roadmap 3 -->
-                    <div class="bg-zinc-950 rounded-2xl border border-zinc-800 p-8 hover:shadow-[0_0_20px_rgba(16,124,17,0.1)] transition-all">
-                        <div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-xbox/10 text-xbox-light text-xs font-bold uppercase tracking-wider mb-6">
-                            Coming Q3
-                        </div>
-                        <h3 class="heading-font text-lg font-bold text-white mb-2">Email Auto-Responder Hook</h3>
-                        <p class="text-xs text-zinc-400 leading-relaxed">
-                            Gather early user feedback, capture newsletter leads, and broadcast auto-replies to secure retention rates and build audience momentum directly from launch.
-                        </p>
-                    </div>
-
-                </div>
+            <div>
+              <div class="mb-4">
+                <span class="inline-block rounded-full bg-xbox/10 dark:bg-xbox/20 px-3 py-1 text-xs font-semibold tracking-wider text-xbox">
+                  14 Pages
+                </span>
+              </div>
+              <h3 class="font-display text-xl font-bold text-slate-900 dark:text-white">Pro</h3>
+              <div class="mt-4 flex items-baseline">
+                <span class="text-3xl font-extrabold tracking-tight text-slate-900 dark:text-white">$9</span>
+                <span class="ml-1 text-xs text-slate-400 dark:text-zinc-500">/mo</span>
+              </div>
+              <p class="mt-2 text-xs text-slate-500 dark:text-zinc-400">Excellent package for builders with multi-niche active funnels.</p>
+              
+              <!-- Features -->
+              <ul class="mt-6 space-y-3.5 text-xs">
+                <li class="flex items-center gap-2">
+                  <span class="text-xbox font-bold">✓</span>
+                  <span class="text-slate-600 dark:text-zinc-300">14 pages / mo</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <span class="text-xbox font-bold">✓</span>
+                  <span class="text-slate-600 dark:text-zinc-300">Infinite Edits</span>
+                </li>
+                <li class="flex items-center gap-2 text-xbox dark:text-xbox-light font-medium">
+                  <span class="font-bold">✓</span>
+                  <span>15% Topup Off</span>
+                </li>
+              </ul>
             </div>
-        </section>
-
-        <!-- CTA Pricing Block -->
-        <section class="py-20 bg-zinc-950 border-t border-zinc-900 relative">
-            <div class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 bg-zinc-900 border border-zinc-800 rounded-3xl p-8 sm:p-12 text-center relative overflow-hidden">
-                <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom,rgba(16,124,17,0.1),transparent)] pointer-events-none"></div>
-                
-                <h2 class="heading-font text-3xl sm:text-5xl font-extrabold text-white mb-4">
-                    Ready to Claim Complete Web Identity?
-                </h2>
-                <p class="max-w-2xl mx-auto text-zinc-400 text-sm sm:text-base leading-relaxed mb-8">
-                    Get started with absolute ownership, infinite code portability, and no restrictive subscriptions. Our mission is to keep pricing simple, accessible, and friendly for solopreneurs and creators.
-                </p>
-
-                <!-- Plain Pricing Callout -->
-                <div class="inline-flex items-center gap-4 bg-zinc-950 border border-zinc-800 px-6 py-3.5 rounded-2xl mb-8">
-                    <span class="heading-font text-3xl font-extrabold text-white">$0 <span class="text-xs text-zinc-500 font-normal">Free Sandbox Tier</span></span>
-                    <span class="text-zinc-600">|</span>
-                    <span class="heading-font text-xl font-bold text-xbox-glow">$9/mo <span class="text-xs text-zinc-400 font-normal">All Pro Features</span></span>
-                </div>
-
-                <div>
-                    <a href="contact.html" class="heading-font inline-flex items-center justify-center rounded-xl bg-xbox hover:bg-xbox-hover text-white font-extrabold px-8 py-4 text-base transition-all duration-300 shadow-lg shadow-xbox/30">
-                        Launch Your Site Now
-                    </a>
-                </div>
+            
+            <div class="mt-8 pt-4">
+              <button onclick="simulateSignup('Pro', '$9')" class="w-full rounded-lg bg-xbox text-white py-2.5 text-center text-xs font-semibold hover:bg-xbox-dark transition-all glow-hover">
+                Subscribe $9
+              </button>
             </div>
-        </section>
+          </div>
 
-    </main>
+          <!-- BUSINESS -->
+          <div class="flex flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 dark:border-zinc-800 dark:bg-zinc-950 transition-all hover:scale-[1.02]">
+            <div>
+              <div class="mb-4">
+                <span class="inline-block rounded-full bg-slate-100 dark:bg-zinc-900 px-3 py-1 text-xs font-semibold tracking-wider text-slate-600 dark:text-zinc-400">
+                  50 Pages
+                </span>
+              </div>
+              <h3 class="font-display text-xl font-bold text-slate-900 dark:text-white">Business</h3>
+              <div class="mt-4 flex items-baseline">
+                <span class="text-3xl font-extrabold tracking-tight text-slate-900 dark:text-white">$29</span>
+                <span class="ml-1 text-xs text-slate-400 dark:text-zinc-500">/mo</span>
+              </div>
+              <p class="mt-2 text-xs text-slate-500 dark:text-zinc-400">Engineered for growing teams needing dedicated unique identities.</p>
+              
+              <!-- Features -->
+              <ul class="mt-6 space-y-3.5 text-xs">
+                <li class="flex items-center gap-2">
+                  <span class="text-xbox font-bold">✓</span>
+                  <span class="text-slate-600 dark:text-zinc-300">50 pages / mo</span>
+                </li>
+                <li class="flex items-center gap-2 text-xbox dark:text-xbox-light font-semibold">
+                  <span class="font-bold">✓</span>
+                  <span>Custom Domain UX</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <span class="text-xbox font-bold">✓</span>
+                  <span class="text-slate-600 dark:text-zinc-300">30% Topup Off</span>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="mt-8 pt-4">
+              <button onclick="simulateSignup('Business', '$29')" class="w-full rounded-lg bg-xbox text-white py-2.5 text-center text-xs font-semibold hover:bg-xbox-dark transition-all">
+                Subscribe $29
+              </button>
+            </div>
+          </div>
 
-    <!-- Global Footer - Exact Re-injected Footer -->
-    <footer class="bg-zinc-950 text-zinc-400 py-12 border-t border-zinc-900">
-        <div class="mx-auto max-w-7xl px-4 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-8">
-            <!-- Branding & Description -->
-            <div class="space-y-4 md:col-span-2">
+          <!-- LIFETIME (The Disruptive Ultimate Pass) -->
+          <div class="flex flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 dark:border-zinc-800 dark:bg-zinc-950 transition-all hover:scale-[1.02] relative overflow-hidden">
+            <!-- Background green stripe corner -->
+            <div class="absolute top-0 right-0 h-16 w-16 bg-xbox/10 rounded-bl-full flex items-center justify-center">
+              <span class="text-xbox text-xs font-bold">♾️</span>
+            </div>
+            <div>
+              <div class="mb-4">
+                <span class="inline-block rounded-full bg-slate-100 dark:bg-zinc-900 px-3 py-1 text-xs font-semibold tracking-wider text-slate-600 dark:text-zinc-400">
+                  Lifetime Pass
+                </span>
+              </div>
+              <h3 class="font-display text-xl font-bold text-slate-900 dark:text-white">Lifetime</h3>
+              <div class="mt-4 flex items-baseline">
+                <span class="text-3xl font-extrabold tracking-tight text-slate-900 dark:text-white">$199</span>
+                <span class="ml-1 text-xs text-slate-400 dark:text-zinc-500">once</span>
+              </div>
+              <p class="mt-2 text-xs text-slate-500 dark:text-zinc-400">Ultimate freedom. Never worry about another renewal bill.</p>
+              
+              <!-- Features -->
+              <ul class="mt-6 space-y-3.5 text-xs">
+                <li class="flex items-center gap-2">
+                  <span class="text-xbox font-bold">✓</span>
+                  <span class="text-slate-600 dark:text-zinc-300">50 pgs / mo Forever</span>
+                </li>
+                <li class="flex items-center gap-2 text-xbox dark:text-xbox-light font-semibold">
+                  <span class="font-bold">✓</span>
+                  <span>Custom Domain</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <span class="text-xbox font-bold">✓</span>
+                  <span class="text-slate-600 dark:text-zinc-300">50% Topup Off</span>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="mt-8 pt-4">
+              <button onclick="simulateSignup('Lifetime', '$199')" class="w-full rounded-lg bg-zinc-900 dark:bg-white text-white dark:text-zinc-950 py-2.5 text-center text-xs font-bold hover:bg-xbox dark:hover:bg-xbox dark:hover:text-white transition-all">
+                Get Lifetime
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+        <p class="mt-12 text-center text-xs text-slate-400 dark:text-zinc-500">
+          Need custom enterprise volume? Drop us a prompt inside the <a href="contact.html" class="underline text-xbox">contact page</a>.
+        </p>
+      </div>
+    </section>
+
+    <!-- THE BRAIN DUMP DEMO ENGINE (Interactive Sandbox) -->
+    <section class="py-16 sm:py-24 bg-white dark:bg-zinc-950 transition-colors duration-300 overflow-hidden">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          
+          <div class="lg:col-span-6 space-y-6">
+            <div class="inline-flex items-center gap-1.5 rounded-full bg-xbox/10 px-3 py-1 text-xs font-semibold text-xbox">
+              ⚡ LIVE ENGINE PREVIEW
+            </div>
+            <h2 class="font-display text-3xl font-extrabold tracking-tight text-slate-900 dark:text-white sm:text-4xl">
+              Turn a Brain Dump into a Live Site Instantly.
+            </h2>
+            <p class="text-slate-600 dark:text-zinc-400 text-sm sm:text-base leading-relaxed">
+              Unlike traditional block web builders, Xsite builds complete web identity suites. It constructs your main pages (Home, About, Products, Contact, Blog, terms, and privacy pages) based entirely on a simple profile or brain-dump of your project. Then, it publishes to a GitHub repo to make it live instantly.
+            </p>
+            <div class="space-y-3">
+              <div class="flex items-start gap-2.5 text-sm">
+                <span class="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-xbox text-white text-xs font-bold">1</span>
+                <p class="text-slate-600 dark:text-zinc-300"><strong>No Template Gridlock:</strong> Every layout matches your brand's unique character.</p>
+              </div>
+              <div class="flex items-start gap-2.5 text-sm">
+                <span class="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-xbox text-white text-xs font-bold">2</span>
+                <p class="text-slate-600 dark:text-zinc-300"><strong>Auto Deployment:</strong> Fully integrated to spin up GitHub repositories on autopilot.</p>
+              </div>
+              <div class="flex items-start gap-2.5 text-sm">
+                <span class="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-xbox text-white text-xs font-bold">3</span>
+                <p class="text-slate-600 dark:text-zinc-300"><strong>Absolute Freedom:</strong> Take your raw code anywhere whenever you scale.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Interactive Sandbox Widget -->
+          <div class="lg:col-span-6">
+            <div class="relative rounded-2xl bg-slate-900 p-6 shadow-2xl border border-zinc-800 text-zinc-300">
+              <div class="flex items-center justify-between border-b border-zinc-800 pb-4 mb-4">
                 <div class="flex items-center gap-2">
-                    <div class="flex h-8 w-8 items-center justify-center rounded-lg bg-xbox text-white font-bold">
-                        <!-- Tiny Rocket -->
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="h-4 w-4">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.59 14.37a6 6 0 0 1-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 0 0 6.16-12.12A14.98 14.98 0 0 0 9.63 8.41m5.96 5.96a14.96 14.96 0 0 1-10.43 3.42L12 12m0 0h-.01M21 3s-1.8 3.6-4 4.5"></path>
-                        </svg>
-                    </div>
-                    <span class="heading-font text-lg font-bold text-white tracking-wider">Xstreamflex</span>
+                  <div class="h-3 w-3 rounded-full bg-rose-500"></div>
+                  <div class="h-3 w-3 rounded-full bg-amber-500"></div>
+                  <div class="h-3 w-3 rounded-full bg-emerald-500"></div>
                 </div>
-                <p class="text-xs text-zinc-500 max-w-sm leading-relaxed">
-                    Xstreamflex is on a mission to democratize the web. We build tools that bypass technical boundaries, enabling anybody to establish their digital footprint with total code and structural ownership.
-                </p>
-            </div>
+                <span class="text-[10px] font-bold text-zinc-500 uppercase tracking-widest">XSITE CO-COMPILER</span>
+              </div>
 
-            <!-- Page Navigation -->
-            <div class="space-y-3">
-                <h4 class="text-xs font-bold uppercase tracking-widest text-white">Ecosystem Links</h4>
-                <ul class="space-y-2 text-xs">
-                    <li><a href="index.html" class="hover:text-white transition-colors">Home Landing</a></li>
-                    <li><a href="about.html" class="hover:text-white transition-colors">About Mission</a></li>
-                    <li><a href="products.html" class="hover:text-white transition-colors">Xsite Products</a></li>
-                    <li><a href="blog.html" class="hover:text-white transition-colors">Resource Blog</a></li>
-                    <li><a href="contact.html" class="hover:text-white transition-colors">Launch Crew Contact</a></li>
-                </ul>
-            </div>
+              <label class="block text-xs font-bold text-zinc-400 mb-2 uppercase tracking-wide">Write your business brain dump:</label>
+              <textarea id="sandbox-dump" class="w-full h-28 rounded-xl bg-zinc-950 p-3.5 text-xs text-white border border-zinc-800 focus:border-xbox focus:outline-none transition-all resize-none" placeholder="e.g., I want to launch an online coffee startup called OrbitBean. Bold green/dark style, custom products for high caffeine pods, geared towards software builders, include terms and quick pricing."></textarea>
+              
+              <div class="mt-4 flex flex-wrap gap-2">
+                <button onclick="setSandboxPreset('A modern dog walking service called Happy Paws in Seattle. Fresh bright designs with an active booking link.')" class="rounded-full bg-zinc-800 px-3 py-1.5 text-[10px] hover:bg-xbox hover:text-white transition-all">Preset: Dog Walker</button>
+                <button onclick="setSandboxPreset('An indie developer studio named MicroBuild. Sleek, dark mode, showcasing three minimal SaaS products, connected contact form.')" class="rounded-full bg-zinc-800 px-3 py-1.5 text-[10px] hover:bg-xbox hover:text-white transition-all">Preset: SaaS Agency</button>
+              </div>
 
-            <!-- Legal Documents -->
-            <div class="space-y-3">
-                <h4 class="text-xs font-bold uppercase tracking-widest text-white">Trust &amp; Compliance</h4>
-                <ul class="space-y-2 text-xs">
-                    <li><a href="terms.html" class="hover:text-white transition-colors">Terms of Service</a></li>
-                    <li><a href="privacy.html" class="hover:text-white transition-colors">Privacy Policy</a></li>
-                </ul>
+              <div class="mt-6">
+                <button onclick="compileSimulate()" class="w-full inline-flex items-center justify-center gap-2 rounded-xl bg-xbox hover:bg-xbox-dark py-3 text-xs font-bold uppercase tracking-wider text-white transition-all">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-4 h-4">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.63 8.41m11.2 5.8a15.005 15.005 0 01-12.13 6.16m12.13-6.16a14.98 14.98 0 01-6.16-12.12M13.5 10.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z" />
+                  </svg>
+                  Generate live website preview
+                </button>
+              </div>
+
+              <!-- Output Box simulation -->
+              <div id="sim-output" class="hidden mt-6 rounded-xl bg-zinc-950 p-4 border border-zinc-800/80 text-[11px] font-mono space-y-2 fade-in">
+                <div class="flex items-center justify-between mb-1.5 border-b border-zinc-900 pb-1.5">
+                  <span class="text-zinc-500">Processing Logs:</span>
+                  <span class="text-xbox animate-pulse">Running Engine</span>
+                </div>
+                <div id="log-1" class="text-zinc-500">⚡ Starting compilation of brand variables...</div>
+                <div id="log-2" class="text-zinc-500 hidden">📦 Constructing pages: Home, About, Product, Blog, Terms, Privacy...</div>
+                <div id="log-3" class="text-zinc-500 hidden">🌐 Bundling custom styles &amp; dark mode frameworks...</div>
+                <div id="log-4" class="text-xbox hidden">🚀 Deployed to GitHub repository successfully! Live at: https://username.github.io/my-site/</div>
+              </div>
             </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- TRUST & SPECIFICATION BLOCK -->
+    <section class="py-16 sm:py-24 bg-slate-100 dark:bg-zinc-900/40 border-t border-slate-200 dark:border-zinc-900 transition-colors duration-300">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="font-display text-2xl font-bold text-slate-900 dark:text-white sm:text-3xl mb-4">
+          Ultimate Independence — No Code Locking
+        </h2>
+        <p class="text-slate-500 dark:text-zinc-400 text-sm max-w-2xl mx-auto mb-12">
+          Your launch belongs entirely to you. Download your compiled site instantly, host it for free on GitHub pages, or route it straight to any target provider without re-writing a single element.
+        </p>
+
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 text-left">
+          <div class="p-6 rounded-xl bg-white dark:bg-zinc-950 border border-slate-200 dark:border-zinc-800">
+            <h3 class="font-display text-lg font-semibold text-slate-900 dark:text-white mb-2">Stripe Integrations</h3>
+            <p class="text-xs text-slate-500 dark:text-zinc-400 leading-relaxed">
+              We provide simplified configuration maps to attach checkout nodes, allowing you to collect orders from day one.
+            </p>
+          </div>
+          <div class="p-6 rounded-xl bg-white dark:bg-zinc-950 border border-slate-200 dark:border-zinc-800">
+            <h3 class="font-display text-lg font-semibold text-slate-900 dark:text-white mb-2">Automated Responders</h3>
+            <p class="text-xs text-slate-500 dark:text-zinc-400 leading-relaxed">
+              Plug straight into leading email pipelines to nurture initial leads, and launch client communications without separate dashboards.
+            </p>
+          </div>
+          <div class="p-6 rounded-xl bg-white dark:bg-zinc-950 border border-slate-200 dark:border-zinc-800">
+            <h3 class="font-display text-lg font-semibold text-slate-900 dark:text-white mb-2">Custom Domain Mapping</h3>
+            <p class="text-xs text-slate-500 dark:text-zinc-400 leading-relaxed">
+              Deploy pages dynamically onto custom domain pathways with auto-configured security tags ready right inside our system.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- MODAL CHECKOUT DIALOGUE -->
+  <div id="checkout-modal" class="hidden fixed inset-0 z-50 overflow-y-auto bg-black/60 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="bg-white dark:bg-zinc-900 rounded-2xl border border-slate-200 dark:border-zinc-800 max-w-md w-full p-6 shadow-2xl text-left fade-in">
+      <div class="flex justify-between items-start mb-4">
+        <div>
+          <h3 class="text-lg font-display font-bold text-slate-900 dark:text-white">Secure Xsite Deployment</h3>
+          <p class="text-xs text-slate-500 dark:text-zinc-400">Deploying your chosen trajectory instantly.</p>
+        </div>
+        <button onclick="closeModal()" class="text-slate-400 hover:text-slate-950 dark:hover:text-white">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+      </div>
+
+      <div class="rounded-xl bg-slate-50 dark:bg-zinc-950 p-4 mb-4 border border-slate-200 dark:border-zinc-800">
+        <div class="flex justify-between text-xs font-semibold mb-2 text-slate-600 dark:text-zinc-300">
+          <span>Tier Selected:</span>
+          <span id="modal-tier-name" class="text-xbox">Pro</span>
+        </div>
+        <div class="flex justify-between text-xs font-semibold text-slate-600 dark:text-zinc-300">
+          <span>Total Cost:</span>
+          <span id="modal-tier-cost" class="text-slate-950 dark:text-white">$9 /mo</span>
+        </div>
+      </div>
+
+      <form onsubmit="handleModalSubmit(event)" class="space-y-4">
+        <div>
+          <label class="block text-xs font-semibold text-slate-500 dark:text-zinc-400 mb-1.5">Your email address:</label>
+          <input type="email" required id="modal-email" class="w-full rounded-lg bg-slate-50 dark:bg-zinc-950 border border-slate-200 dark:border-zinc-800 text-slate-950 dark:text-white text-xs p-3 focus:border-xbox focus:outline-none transition-all" placeholder="name@yourhustle.com">
+        </div>
+        
+        <div class="p-3 bg-xbox/10 text-[11px] text-xbox rounded-lg font-semibold leading-relaxed">
+          💡 No upfront commitment card needed. Verify email to initialize page generations instantly.
         </div>
 
-        <div class="mx-auto max-w-7xl px-4 lg:px-8 mt-12 pt-8 border-t border-zinc-900 flex flex-col sm:flex-row items-center justify-between text-xs text-zinc-600 gap-4">
-            <p>© <span id="current-year">2026</span> Xstreamflex Network. Built with absolute love for independent creators.</p>
-            <div class="flex gap-4">
-                <span class="hover:text-zinc-400">Version 1.4 Live</span>
-                <span>•</span>
-                <span class="hover:text-zinc-400">Deploy Status: Active</span>
+        <button type="submit" class="w-full rounded-xl bg-xbox text-white text-xs font-bold py-3 uppercase tracking-wider hover:bg-xbox-dark transition-all">
+          Initialize Hub
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- MANDATORY GLOBAL FOOTER -->
+  <footer class="border-t border-slate-200/80 bg-white dark:border-zinc-800 dark:bg-zinc-950 py-16 transition-colors duration-300">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-8 mb-12">
+        
+        <!-- Company Block -->
+        <div class="md:col-span-4 space-y-4">
+          <div class="flex items-center gap-2">
+            <div class="flex h-8 w-8 items-center justify-center rounded-lg bg-xbox text-white">
+              <!-- Rocket Icon Small -->
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4.5 h-4.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.63 8.41m11.2 5.8a15.005 15.005 0 01-12.13 6.16m12.13-6.16a14.98 14.98 0 01-6.16-12.12M13.5 10.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"></path>
+              </svg>
             </div>
+            <span class="font-display text-xl font-bold tracking-tight text-slate-900 dark:text-white">
+              Xstream<span class="text-xbox">flex</span>
+            </span>
+          </div>
+          <p class="text-xs text-slate-500 dark:text-zinc-400 leading-relaxed">
+            Giving side-hustles, creators, and solopreneurs the professional foundation they need to launch businesses in record time. Simple, accessible, complete, and unrestricted.
+          </p>
         </div>
-    </footer>
 
-    <!-- Interactive script helper for simulator & mobile menu -->
-    <script>
-        // Dynamically set current footer year
-        document.getElementById('current-year').textContent = new Date().getFullYear();
+        <!-- Quick Links -->
+        <div class="md:col-span-2 space-y-3">
+          <h4 class="text-xs font-bold text-slate-400 dark:text-zinc-500 uppercase tracking-widest">Platform</h4>
+          <ul class="space-y-2 text-xs">
+            <li><a href="index.html" class="text-slate-600 dark:text-zinc-300 hover:text-xbox">Home</a></li>
+            <li><a href="products.html" class="text-slate-600 dark:text-zinc-300 hover:text-xbox">Products &amp; Tiers</a></li>
+            <li><a href="about.html" class="text-slate-600 dark:text-zinc-300 hover:text-xbox">Our Mission</a></li>
+          </ul>
+        </div>
 
-        // Mobile Nav Logic
-        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-        const mobileMenu = document.getElementById('mobile-menu');
-        const hamburgerIcon = document.getElementById('hamburger-icon');
-        const closeIcon = document.getElementById('close-icon');
+        <!-- Resources -->
+        <div class="md:col-span-2 space-y-3">
+          <h4 class="text-xs font-bold text-slate-400 dark:text-zinc-500 uppercase tracking-widest">Resources</h4>
+          <ul class="space-y-2 text-xs">
+            <li><a href="blog.html" class="text-slate-600 dark:text-zinc-300 hover:text-xbox">Blog articles</a></li>
+            <li><a href="contact.html" class="text-slate-600 dark:text-zinc-300 hover:text-xbox">Support Contact</a></li>
+            <li><a href="#features" class="text-slate-600 dark:text-zinc-300 hover:text-xbox">Engine Spec</a></li>
+          </ul>
+        </div>
 
-        mobileMenuBtn.addEventListener('click', () => {
-            const isExpanded = mobileMenu.classList.contains('hidden');
-            if (isExpanded) {
-                mobileMenu.classList.remove('hidden');
-                hamburgerIcon.classList.add('hidden');
-                closeIcon.classList.remove('hidden');
-                mobileMenuBtn.setAttribute('aria-expanded', 'true');
-            } else {
-                mobileMenu.classList.add('hidden');
-                hamburgerIcon.classList.remove('hidden');
-                closeIcon.classList.add('hidden');
-                mobileMenuBtn.setAttribute('aria-expanded', 'false');
-            }
-        });
+        <!-- Compliance & Legal -->
+        <div class="md:col-span-4 space-y-3">
+          <h4 class="text-xs font-bold text-slate-400 dark:text-zinc-500 uppercase tracking-widest">Legal Guardrails</h4>
+          <p class="text-[11px] text-slate-400 dark:text-zinc-500 leading-normal">
+            Every Xsite engine generation dynamically compiles clean local pages of the resources listed below.
+          </p>
+          <ul class="space-y-2 text-xs">
+            <li><a href="terms.html" class="text-slate-600 dark:text-zinc-300 hover:text-xbox">Terms of Service</a></li>
+            <li><a href="privacy.html" class="text-slate-600 dark:text-zinc-300 hover:text-xbox">Privacy Policy</a></li>
+          </ul>
+        </div>
 
-        // Brain dump simulator preset dictionary
-        const presets = {
-            grandma: "My name is Linda and I make absolute high-grade cozy socks, mittens, and custom wool hats from my home workshop in Oregon. I want soft warm pastel colors, trustful messaging, and a blog showing my knitting process so my local customers and online supporters feel loved.",
-            kid: "I am Jason, I am 12 and I build customized Minecraft worlds and plugins. I want a cool green and black futuristic design that lets people book my custom developer sessions, view a products gallery, and check my community news announcements.",
-            sidehustle: "A modern automated subscription service offering high speed developer feedback loops on landing page layout design, using bold color templates, custom contact form, and high quality documentation repository layouts."
-        };
+      </div>
 
-        function setBrainDump(presetName) {
-            const inputField = document.getElementById('brain-dump-input');
-            if (presets[presetName]) {
-                inputField.value = presets[presetName];
-            }
+      <!-- Legal Bottom -->
+      <div class="border-t border-slate-200/50 dark:border-zinc-800/50 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-slate-400 dark:text-zinc-500">
+        <p>© 2026 Xstreamflex. All systems, templates, and compiled landing pages are fully owned by their respective generative users. All rights reserved.</p>
+        <div class="flex items-center gap-2">
+          <span>Target Host:</span>
+          <a href="https://xstreamflex.com/" class="underline hover:text-xbox">xstreamflex.com</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- SCRIPTING LOGIC -->
+  <script>
+    // Theme Toggle Functionality
+    const themeToggleDarkIcon = document.getElementById('theme-toggle-dark-icon');
+    const themeToggleLightIcon = document.getElementById('theme-toggle-light-icon');
+    const themeToggleBtn = document.getElementById('theme-toggle');
+
+    if (localStorage.getItem('color-theme') === 'light' || (!('color-theme' in localStorage) && !window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.classList.remove('dark');
+      themeToggleDarkIcon.classList.remove('hidden');
+    } else {
+      document.documentElement.classList.add('dark');
+      themeToggleLightIcon.classList.remove('hidden');
+    }
+
+    themeToggleBtn.addEventListener('click', function() {
+      themeToggleDarkIcon.classList.toggle('hidden');
+      themeToggleLightIcon.classList.toggle('hidden');
+
+      if (localStorage.getItem('color-theme')) {
+        if (localStorage.getItem('color-theme') === 'light') {
+          document.documentElement.classList.add('dark');
+          localStorage.setItem('color-theme', 'dark');
+        } else {
+          document.documentElement.classList.remove('dark');
+          localStorage.setItem('color-theme', 'light');
         }
-
-        // Deploy Simulation script
-        function simulateDeploy() {
-            const consoleOutput = document.getElementById('output-console');
-            const input = document.getElementById('brain-dump-input').value.trim();
-            
-            if (input === "") {
-                alert("Please select a preset or type something in the input box first!");
-                return;
-            }
-
-            consoleOutput.classList.remove('hidden');
-            consoleOutput.innerHTML = `
-                <p class="text-xbox-light">[SYSTEM] Initiating Xsite neural engine compiler...</p>
-                <p class="text-zinc-400">[PARSING] Reading company profile: "${input.substring(0, 50)}..."</p>
-                <p class="text-zinc-500">[COMPILER] Successfully extracted user intent and metadata.</p>
-                <p class="text-zinc-500">[ASSETS] Building accessible color palette with responsive scaling.</p>
-                <p class="text-zinc-500">[FILES] index.html - generated successfully.</p>
-                <p class="text-zinc-500">[FILES] about.html - content dynamic output complete.</p>
-                <p class="text-zinc-500">[FILES] terms.html &amp; privacy.html - trust documents linked.</p>
-                <p class="text-zinc-500">[GIT] Committing to remote repository...</p>
-                <p class="text-xbox-glow animate-pulse">[DEPLOY] Live status OK: Custom website is active and published!</p>
-            `;
-            
-            consoleOutput.scrollIntoView({ behavior: 'smooth' });
+      } else {
+        if (document.documentElement.classList.contains('dark')) {
+          document.documentElement.classList.remove('dark');
+          localStorage.setItem('color-theme', 'light');
+        } else {
+          document.documentElement.classList.add('dark');
+          localStorage.setItem('color-theme', 'dark');
         }
-    </script>
+      }
+    });
 
-</body></html>
+    // Mobile Navigation Button Toggle
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    mobileMenuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Quick Launch Email Handlers
+    function handleQuickLaunch(event) {
+      event.preventDefault();
+      const email = document.getElementById('quick-email').value;
+      const toast = document.getElementById('email-toast');
+      toast.classList.remove('hidden');
+      toast.innerText = '🚀 Connecting repository link to: ' + email + '. Preparing setup...';
+      
+      setTimeout(() => {
+        toast.innerText = '✨ Link initialized! Please complete setup on github or your dashboard.';
+      }, 2500);
+    }
+
+    // Interactive Simulator sandbox
+    function setSandboxPreset(text) {
+      document.getElementById('sandbox-dump').value = text;
+    }
+
+    function compileSimulate() {
+      const input = document.getElementById('sandbox-dump').value.trim();
+      const outBox = document.getElementById('sim-output');
+      
+      if (!input) {
+        alert('Please fill in some brain dump information to run simulator.');
+        return;
+      }
+
+      outBox.classList.remove('hidden');
+      
+      const log1 = document.getElementById('log-1');
+      const log2 = document.getElementById('log-2');
+      const log3 = document.getElementById('log-3');
+      const log4 = document.getElementById('log-4');
+
+      // Reset
+      log1.classList.remove('hidden');
+      log2.classList.add('hidden');
+      log3.classList.add('hidden');
+      log4.classList.add('hidden');
+
+      log1.innerText = '⚡ Initializing generation engine with prompt variables...';
+
+      setTimeout(() => {
+        log2.classList.remove('hidden');
+        log2.innerText = '📦 Compiled fully fleshed out pages: Home, About, Product, Contact, Blog!';
+      }, 1200);
+
+      setTimeout(() => {
+        log3.classList.remove('hidden');
+        log3.innerText = '🌐 Embedded legal systems: Privacy Guardrails, Terms, Custom CSS layout.';
+      }, 2400);
+
+      setTimeout(() => {
+        log4.classList.remove('hidden');
+        log4.innerText = '🚀 Rocket success! Live GitHub deploy finished at: https://stream.github.io/sandbox-site';
+      }, 3600);
+    }
+
+    // Modal Simulation Setup
+    const checkoutModal = document.getElementById('checkout-modal');
+    const modalTierName = document.getElementById('modal-tier-name');
+    const modalTierCost = document.getElementById('modal-tier-cost');
+
+    function simulateSignup(tier, price) {
+      modalTierName.innerText = tier;
+      modalTierCost.innerText = price;
+      checkoutModal.classList.remove('hidden');
+    }
+
+    function closeModal() {
+      checkoutModal.classList.add('hidden');
+    }
+
+    function handleModalSubmit(event) {
+      event.preventDefault();
+      const email = document.getElementById('modal-email').value;
+      alert('Verification link dispatched to ' + email + '! Let\'s launch your project to orbit.');
+      closeModal();
+    }
+  </script>
+</body>
+</html>
