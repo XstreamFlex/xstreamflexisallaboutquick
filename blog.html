@@ -1,545 +1,609 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="en" class="scroll-smooth">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Xstreamflex | Launch Your Venture in Minutes, Not Months</title>
-    <meta name="description" content="Xstreamflex &amp; Xsite empower creators, solopreneurs, and absolute beginners to deploy full-scale, customizable live websites from a single brain dump. No black box, complete ownership.">
-    
-    <!-- TailWind CSS & Config -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            darkMode: 'class',
-            theme: {
-                extend: {
-                    colors: {
-                        xbox: {
-                            DEFAULT: '#107C11',
-                            hover: '#189e1a',
-                            light: '#22c55e',
-                            glow: '#39ff14',
-                            dark: '#0b520b',
-                            deep: '#073007'
-                        }
-                    },
-                    fontFamily: {
-                        sans: ['Plus Jakarta Sans', 'Inter', 'sans-serif'],
-                    },
-                    animation: {
-                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
-                        'float': 'float 6s ease-in-out infinite',
-                    },
-                    keyframes: {
-                        float: {
-                            '0%, 100%': { transform: 'translateY(0px)' },
-                            '50%': { transform: 'translateY(-10px)' },
-                        }
-                    }
-                }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Xstreamflex - Launch Your Business in Record Time with Xsite</title>
+  <meta name="description" content="The ultimate one-stop shop for side hustles, solopreneurs, and creators to launch professional, fully-coded websites instantly with a simple brain dump. No code, pure ownership.">
+  <link rel="canonical" href="https://xstreamflex.com/blog.html" />
+  
+  <!-- Tailwind CSS Play CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            xbox: {
+              DEFAULT: '#107C11',
+              dark: '#0e6b0e',
+              light: '#1cd11c',
+              neon: '#22c55e',
+              glow: '#00ff00'
             }
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            display: ['Space Grotesk', 'sans-serif'],
+          }
         }
-    </script>
-    
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;family=Space+Grotesk:wght@500;700&amp;display=swap" rel="stylesheet">
-    
-    <!-- Inline styles for scrollbar & custom focus states -->
-    <style>
-        body {
-            font-family: 'Plus Jakarta Sans', sans-serif;
-        }
-        .heading-font {
-            font-family: 'Space Grotesk', sans-serif;
-        }
-        /* Custom scrollbar to match Xbox Theme */
-        ::-webkit-scrollbar {
-            width: 8px;
-        }
-        ::-webkit-scrollbar-track {
-            background: #0f172a;
-        }
-        ::-webkit-scrollbar-thumb {
-            background: #107C11;
-            border-radius: 4px;
-        }
-        ::-webkit-scrollbar-thumb:hover {
-            background: #22c55e;
-        }
-    </style>
+      }
+    }
+  </script>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght=300;400;500;600;700;800&amp;family=Space+Grotesk:wght=500;600;700&amp;display=swap" rel="stylesheet">
+
+  <style>
+    /* Premium glow effects and smooth transitions */
+    .glow-hover:hover {
+      box-shadow: 0 0 25px rgba(16, 124, 17, 0.45);
+    }
+    .text-glow {
+      text-shadow: 0 0 12px rgba(34, 197, 94, 0.4);
+    }
+    /* Simple interactive slider/fade transition helper */
+    .fade-in {
+      animation: fadeIn 0.4s ease-in-out forwards;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
 </head>
-<body class="bg-zinc-950 text-zinc-100 selection:bg-xbox/30 selection:text-white min-h-screen flex flex-col">
+<body class="bg-slate-50 text-slate-900 dark:bg-zinc-950 dark:text-zinc-50 transition-colors duration-300 font-sans antialiased selection:bg-xbox selection:text-white">
 
-    <!-- GLOBAL HEADER NAVIGATION WRAPPER -->
-    <header class="sticky top-0 z-50 w-full border-b border-zinc-900 bg-zinc-950/80 backdrop-blur-md transition-all">
-        <div class="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 lg:px-8">
-            <!-- Brand Logo -->
-            <div class="flex items-center gap-2">
-                <a href="index.html" class="flex items-center gap-2 group">
-                    <div class="flex h-9 w-9 items-center justify-center rounded-lg bg-xbox text-white transition-transform group-hover:scale-105 shadow-[0_0_15px_rgba(16,124,17,0.4)]">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="h-4.5 w-4.5 animate-float">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.59 14.37a6 6 0 0 1-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 0 0 6.16-12.12A14.98 14.98 0 0 0 9.63 8.41m5.96 5.96a14.96 14.96 0 0 1-10.43 3.42L12 12m0 0h-.01M21 3s-1.8 3.6-4 4.5" />
-                        </svg>
-                    </div>
-                    <span class="heading-font text-lg font-bold text-white tracking-wider">Xstreamflex</span>
-                </a>
-            </div>
-
-            <!-- Injecting Exact Navigation Element -->
-            <nav class="hidden md:flex items-center gap-1 lg:gap-2">
-                <a href="index.html" class="rounded-lg px-3 py-2 text-sm font-semibold text-xbox dark:text-xbox-light bg-xbox/10">Home</a>
-                <a href="about.html" class="rounded-lg px-3 py-2 text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-100 dark:text-zinc-300 dark:hover:text-white dark:hover:bg-neutral-900 transition-all">About Us</a>
-                <a href="products.html" class="rounded-lg px-3 py-2 text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-100 dark:text-zinc-300 dark:hover:text-white dark:hover:bg-neutral-900 transition-all">Products</a>
-                <a href="blog.html" class="rounded-lg px-3 py-2 text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-100 dark:text-zinc-300 dark:hover:text-white dark:hover:bg-neutral-900 transition-all">Blog</a>
-                <a href="contact.html" class="rounded-lg px-3 py-2 text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-100 dark:text-zinc-300 dark:hover:text-white dark:hover:bg-neutral-900 transition-all">Contact</a>
-            </nav>
-
-            <!-- Launch Button and Mobile Toggle -->
-            <div class="flex items-center gap-3">
-                <a href="index.html#launch" class="hidden sm:inline-flex items-center justify-center rounded-lg bg-xbox px-4 py-2 text-xs font-semibold text-white shadow-lg shadow-xbox/20 hover:bg-xbox-hover hover:shadow-xbox/40 transition-all duration-200">
-                    Launch in 5 Mins
-                </a>
-                <button id="mobile-menu-btn" type="button" class="inline-flex items-center justify-center rounded-lg p-2 text-zinc-400 hover:bg-zinc-900 hover:text-white md:hidden">
-                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                        <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                    </svg>
-                </button>
-            </div>
+  <!-- GLOBAL HEADER -->
+  <header class="sticky top-0 z-50 border-b border-slate-200/80 bg-white/80 backdrop-blur-md dark:border-zinc-800 dark:bg-zinc-950/80 transition-colors duration-300">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      
+      <!-- Logo Block -->
+      <a href="index.html" class="flex items-center gap-2 group">
+        <div class="flex h-9 w-9 items-center justify-center rounded-lg bg-xbox text-white transition-transform group-hover:rotate-12">
+          <!-- Rocket Icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-5 h-5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.63 8.41m11.2 5.8a15.005 15.005 0 01-12.13 6.16m12.13-6.16a14.98 14.98 0 01-6.16-12.12M13.5 10.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z" />
+          </svg>
         </div>
+        <span class="font-display text-2xl font-bold tracking-tight text-slate-900 dark:text-white">
+          Xstream<span class="text-xbox">flex</span>
+        </span>
+      </a>
 
-        <!-- Mobile Menu Container -->
-        <div id="mobile-menu" class="hidden border-b border-zinc-900 bg-zinc-950 px-4 py-4 md:hidden">
-            <nav class="flex flex-col gap-2">
-                <a href="index.html" class="rounded-lg px-3 py-2 text-sm font-semibold text-white bg-zinc-900">Home</a>
-                <a href="about.html" class="rounded-lg px-3 py-2 text-sm font-medium text-zinc-300 hover:bg-zinc-900 hover:text-white">About Us</a>
-                <a href="products.html" class="rounded-lg px-3 py-2 text-sm font-medium text-zinc-300 hover:bg-zinc-900 hover:text-white">Products</a>
-                <a href="blog.html" class="rounded-lg px-3 py-2 text-sm font-medium text-xbox bg-xbox/10">Blog</a>
-                <a href="contact.html" class="rounded-lg px-3 py-2 text-sm font-medium text-zinc-300 hover:bg-zinc-900 hover:text-white">Contact</a>
-                <a href="index.html#launch" class="mt-2 w-full inline-flex items-center justify-center rounded-lg bg-xbox py-2.5 text-sm font-semibold text-white shadow-lg">Launch Free</a>
-            </nav>
+      <!-- GLOBAL HEADER NAVIGATION -->
+      <nav class="hidden md:flex items-center gap-1">
+        <a href="index.html" class="px-4 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-xbox dark:text-zinc-400 dark:hover:text-xbox transition-all">Home</a>
+        <a href="about.html" class="px-4 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-xbox dark:text-zinc-400 dark:hover:text-xbox transition-all">About</a>
+        <a href="products.html" class="px-4 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-xbox dark:text-zinc-400 dark:hover:text-xbox transition-all">Products</a>
+        <a href="blog.html" class="px-4 py-2 rounded-lg text-sm font-semibold text-xbox bg-slate-100 dark:bg-zinc-900 transition-all">Blog</a>
+        <a href="contact.html" class="px-4 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-xbox dark:text-zinc-400 dark:hover:text-xbox transition-all">Contact</a>
+      </nav>
+
+      <!-- Right Utility Actions -->
+      <div class="flex items-center gap-3">
+        <!-- Interactive Theme Switcher -->
+        <button id="theme-btn" class="p-2 rounded-lg border border-slate-200 dark:border-zinc-800 text-slate-500 dark:text-zinc-400 hover:bg-slate-100 dark:hover:bg-zinc-900 transition-all" aria-label="Toggle Theme">
+          <svg id="sun-icon" class="hidden w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707m12.728 0l-.707-.707M6.343 6.364l-.707-.707M12 8a4 4 0 100 8 4 4 0 000-8z" />
+          </svg>
+          <svg id="moon-icon" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+          </svg>
+        </button>
+
+        <a href="index.html#get-started" class="hidden sm:inline-flex items-center justify-center px-4 py-2 rounded-lg bg-xbox text-white text-sm font-semibold hover:bg-xbox-dark glow-hover transition-all">
+          Launch Live Web identity
+        </a>
+
+        <!-- Mobile Menu Trigger -->
+        <button id="mobile-toggle" class="md:hidden p-2 rounded-lg text-slate-600 dark:text-zinc-400 hover:bg-slate-100 dark:hover:bg-zinc-900 transition-all">
+          <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobile-nav" class="hidden md:hidden border-t border-slate-200 dark:border-zinc-800 bg-white dark:bg-zinc-950 px-4 py-6 space-y-3 transition-colors duration-300">
+      <a href="index.html" class="block px-4 py-2.5 rounded-lg text-base font-medium text-slate-700 dark:text-zinc-300 hover:bg-slate-50 dark:hover:bg-zinc-900 hover:text-xbox">Home</a>
+      <a href="about.html" class="block px-4 py-2.5 rounded-lg text-base font-medium text-slate-700 dark:text-zinc-300 hover:bg-slate-50 dark:hover:bg-zinc-900 hover:text-xbox">About</a>
+      <a href="products.html" class="block px-4 py-2.5 rounded-lg text-base font-medium text-slate-700 dark:text-zinc-300 hover:bg-slate-50 dark:hover:bg-zinc-900 hover:text-xbox">Products</a>
+      <a href="blog.html" class="block px-4 py-2.5 rounded-lg text-base font-semibold text-xbox bg-slate-50 dark:bg-zinc-900">Blog</a>
+      <a href="contact.html" class="block px-4 py-2.5 rounded-lg text-base font-medium text-slate-700 dark:text-zinc-300 hover:bg-slate-50 dark:hover:bg-zinc-900 hover:text-xbox">Contact</a>
+      <a href="index.html#get-started" class="block text-center px-4 py-3 rounded-lg bg-xbox text-white text-base font-semibold hover:bg-xbox-dark transition-all">Launch Live Web identity</a>
+    </div>
+  </header>
+
+  <!-- BLOG HERO HEADER -->
+  <main class="min-h-screen">
+    <section class="relative overflow-hidden py-20 lg:py-28 bg-slate-100 dark:bg-zinc-900/40 border-b border-slate-200/60 dark:border-zinc-800/60 transition-colors duration-300">
+      <!-- Decorative Background Elements -->
+      <div class="absolute -right-1/4 -top-1/4 w-96 h-96 rounded-full bg-xbox/10 blur-3xl pointer-events-none"></div>
+      <div class="absolute -left-1/4 -bottom-1/4 w-96 h-96 rounded-full bg-emerald-500/10 blur-3xl pointer-events-none"></div>
+      
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative">
+        <div class="max-w-3xl">
+          <!-- Rocket Badge -->
+          <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-xbox/10 text-xbox dark:bg-xbox/20 dark:text-xbox-light text-xs font-bold uppercase tracking-wider mb-6">
+            <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 10V3L4 14h7v7l9-11h-7z" />
+            </svg>
+            Xstreamflex Chronicle
+          </div>
+          <h1 class="font-display text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-slate-900 dark:text-white leading-[1.1]">
+            Side Hustle <span class="text-xbox dark:text-xbox-light text-glow">Intelligence</span> Hub
+          </h1>
+          <p class="mt-6 text-lg sm:text-xl text-slate-600 dark:text-zinc-300 leading-relaxed font-light">
+            We write for the rebels, the builders, the 12-year-old geniuses, and the grandmothers setting up business empires. Cut through subscription bloat, code barriers, and operational lag.
+          </p>
         </div>
-    </header>
+      </div>
+    </section>
 
-    <!-- MAIN BODY SECTION -->
-    <main class="flex-grow">
+    <!-- INTERACTIVE FILTER & SEARCH SYSTEM -->
+    <section class="py-12 bg-white dark:bg-zinc-950 border-b border-slate-200/50 dark:border-zinc-900/50 transition-colors duration-300">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+          
+          <!-- Filter Tags -->
+          <div class="flex flex-wrap gap-2" id="filter-container">
+            <button data-category="all" class="px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider bg-xbox text-white border border-xbox transition-all">
+              All Articles
+            </button>
+            <button data-category="launch-strategies" class="px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider bg-slate-100 text-slate-600 hover:text-xbox dark:bg-zinc-900 dark:text-zinc-400 dark:hover:text-xbox-light border border-transparent transition-all">
+              Launch Strategies
+            </button>
+            <button data-category="tech-demystified" class="px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider bg-slate-100 text-slate-600 hover:text-xbox dark:bg-zinc-900 dark:text-zinc-400 dark:hover:text-xbox-light border border-transparent transition-all">
+              Tech Demystified
+            </button>
+            <button data-category="creator-economy" class="px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider bg-slate-100 text-slate-600 hover:text-xbox dark:bg-zinc-900 dark:text-zinc-400 dark:hover:text-xbox-light border border-transparent transition-all">
+              Creator Economy
+            </button>
+            <button data-category="design" class="px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider bg-slate-100 text-slate-600 hover:text-xbox dark:bg-zinc-900 dark:text-zinc-400 dark:hover:text-xbox-light border border-transparent transition-all">
+              Design
+            </button>
+          </div>
+
+          <!-- Live Search Bar -->
+          <div class="relative max-w-md w-full">
+            <span class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none text-slate-400">
+              <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+              </svg>
+            </span>
+            <input type="text" id="blog-search" placeholder="Search insights & systems..." class="w-full pl-10 pr-4 py-2.5 bg-slate-50 dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-xbox focus:border-transparent transition-all placeholder-slate-400 dark:placeholder-zinc-500" />
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED ARTICLE CARD -->
+    <section class="py-16 bg-slate-50 dark:bg-zinc-950/60" id="featured-section">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <h2 class="text-xs font-bold text-slate-400 dark:text-zinc-500 uppercase tracking-widest mb-8">Featured Broadcaster</h2>
         
-        <!-- Hero Section -->
-        <section class="relative overflow-hidden py-16 lg:py-24 border-b border-zinc-900">
-            <!-- Background grids and absolute light bursts -->
-            <div class="absolute inset-0 -z-10 bg-[linear-gradient(to_right,#1f293710_1px,transparent_1px),linear-gradient(to_bottom,#1f293710_1px,transparent_1px)] bg-[size:4rem_4rem]"></div>
-            <div class="absolute top-1/4 left-1/2 -z-10 h-96 w-96 -translate-x-1/2 rounded-full bg-xbox/5 blur-3xl"></div>
-            
-            <div class="mx-auto max-w-7xl px-4 lg:px-8 text-center">
-                <div class="inline-flex items-center gap-2 rounded-full border border-xbox/30 bg-xbox/5 px-3 py-1 text-xs font-semibold text-xbox-light uppercase tracking-wider mb-6 animate-pulse-slow">
-                    🚀 The Rocket Fuel Blog
-                </div>
-                
-                <h1 class="heading-font text-4xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight leading-none mb-6">
-                    Launch Tactics, No-Code Truths & <br class="hidden sm:inline" />
-                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-xbox via-xbox-light to-xbox-glow">Disruptive Freedom Cries</span>
-                </h1>
-                
-                <p class="mx-auto max-w-2xl text-base sm:text-lg text-zinc-400 leading-relaxed">
-                    Practical, incredibly simple resources designed for absolute beginners, solopreneurs, and creators ready to control their web identity without high costs or locked-in black boxes.
-                </p>
-
-                <!-- Dynamic Search & Filter Controls -->
-                <div class="mx-auto mt-12 max-w-2xl">
-                    <div class="relative flex items-center">
-                        <div class="absolute left-4 text-zinc-500">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="h-5 w-5">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.637 10.636Z" />
-                            </svg>
-                        </div>
-                        <input id="blog-search" type="text" placeholder="Search guides, secrets, or launch strategies..." 
-                               class="w-full rounded-2xl border border-zinc-800 bg-zinc-900/60 py-4 pl-12 pr-4 text-sm text-white placeholder-zinc-500 focus:border-xbox focus:outline-none focus:ring-1 focus:ring-xbox transition-all" />
-                    </div>
-
-                    <!-- Category Tags -->
-                    <div class="mt-6 flex flex-wrap justify-center gap-2" id="filter-buttons">
-                        <button data-filter="all" class="filter-btn rounded-xl px-4 py-2 text-xs font-semibold bg-xbox text-white shadow-md shadow-xbox/10 transition-all duration-150">
-                            All Posts
-                        </button>
-                        <button data-filter="ownership" class="filter-btn rounded-xl px-4 py-2 text-xs font-semibold bg-zinc-900 text-zinc-400 hover:text-white hover:bg-zinc-800 transition-all duration-150">
-                            Code Ownership
-                        </button>
-                        <button data-filter="guides" class="filter-btn rounded-xl px-4 py-2 text-xs font-semibold bg-zinc-900 text-zinc-400 hover:text-white hover:bg-zinc-800 transition-all duration-150">
-                            Launch Guides
-                        </button>
-                        <button data-filter="freedom" class="filter-btn rounded-xl px-4 py-2 text-xs font-semibold bg-zinc-900 text-zinc-400 hover:text-white hover:bg-zinc-800 transition-all duration-150">
-                            Freedom Cry
-                        </button>
-                    </div>
-                </div>
+        <article class="grid grid-cols-1 lg:grid-cols-12 gap-8 bg-white dark:bg-zinc-900 rounded-3xl border border-slate-200/80 dark:border-zinc-800/80 overflow-hidden shadow-xl shadow-slate-100/40 dark:shadow-none hover:border-xbox/40 dark:hover:border-xbox/40 transition-all duration-300">
+          <!-- Featured Image Area -->
+          <div class="lg:col-span-7 relative min-h-[320px] lg:min-h-full bg-slate-900 flex items-center justify-center overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-tr from-xbox/30 via-slate-900/90 to-transparent z-10"></div>
+            <!-- Matrix/Rocket Pattern Graphic -->
+            <div class="absolute inset-0 opacity-20 bg-[radial-gradient(#107c11_1px,transparent_1px)] [background-size:16px_16px]"></div>
+            <div class="relative z-20 p-8 sm:p-12 text-white flex flex-col justify-end h-full">
+              <span class="px-3 py-1 rounded-full bg-xbox text-xs font-bold uppercase tracking-widest w-fit mb-4">Launch Strategies</span>
+              <h3 class="font-display text-2xl sm:text-4xl font-bold leading-tight">From Brain Dump to Live Repo: How to Launch Your First Xsite in Under 3 Minutes</h3>
+              <p class="mt-4 text-sm text-slate-300 font-light line-clamp-2 max-w-xl">
+                We put Xsite to the ultimate test: compiling an entire digital enterprise identity from raw brain-dump bullet points directly to a dynamic, live GitHub deployment. Here are the mechanics.
+              </p>
             </div>
-        </section>
-
-        <!-- Featured Article Section -->
-        <section class="py-12 bg-zinc-950/40 border-b border-zinc-900" id="featured-section">
-            <div class="mx-auto max-w-7xl px-4 lg:px-8">
-                <div class="group relative overflow-hidden rounded-3xl border border-zinc-800 bg-zinc-900/40 p-6 lg:p-8 hover:border-xbox/40 transition-all duration-300">
-                    <div class="absolute top-0 right-0 h-48 w-48 -z-10 rounded-full bg-xbox/5 blur-3xl group-hover:bg-xbox/10 transition-colors"></div>
-                    
-                    <div class="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
-                        <!-- Left Side Image Placeholder/Pattern -->
-                        <div class="w-full lg:w-1/2 aspect-[16/10] bg-zinc-950 rounded-2xl relative overflow-hidden flex items-center justify-center border border-zinc-800">
-                            <!-- Complex Glowing Abstract Background -->
-                            <div class="absolute inset-0 bg-gradient-to-tr from-xbox-dark/30 to-zinc-950"></div>
-                            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-xbox/20 scale-150">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-32 w-32 animate-pulse-slow">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.59 14.37a6 6 0 0 1-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 0 0 6.16-12.12A14.98 14.98 0 0 0 9.63 8.41m5.96 5.96a14.96 14.96 0 0 1-10.43 3.42L12 12m0 0h-.01M21 3s-1.8 3.6-4 4.5" />
-                                </svg>
-                            </div>
-                            <span class="absolute bottom-4 left-4 inline-flex items-center gap-1 rounded bg-xbox px-2 py-1 text-[10px] font-bold text-white tracking-widest uppercase">
-                                MUST READ
-                            </span>
-                        </div>
-
-                        <!-- Right Side Content -->
-                        <div class="w-full lg:w-1/2 space-y-4">
-                            <span class="text-xs font-bold uppercase tracking-widest text-xbox-light">Featured Launch Story</span>
-                            <h2 class="heading-font text-2xl sm:text-3xl font-bold text-white hover:text-xbox-light transition-colors leading-tight">
-                                Say Goodbye to Proprietary Black Boxes: Why You Deserve Complete Code Ownership
-                            </h2>
-                            <p class="text-sm text-zinc-400 leading-relaxed">
-                                Most traditional page builders trap your data, restrict customizations, and keep your website hostaged behind an expensive monthly subscription. Xstreamflex flips the script. Learn how to launch modern, clean landing pages to GitHub completely unlocked, giving you absolute freedom to build, move, and scale your brand as you please.
-                            </p>
-                            <div class="pt-2 flex items-center justify-between">
-                                <div class="flex items-center gap-3">
-                                    <div class="h-10 w-10 rounded-full bg-zinc-800 border border-zinc-700 flex items-center justify-center font-bold text-xbox-light text-sm">X</div>
-                                    <div>
-                                        <p class="text-xs font-semibold text-white">Xstreamflex Core Team</p>
-                                        <p class="text-[10px] text-zinc-500">March 31, 2026 • 6 Min Read</p>
-                                    </div>
-                                </div>
-                                <a href="index.html#launch" class="inline-flex items-center gap-1 text-xs font-bold text-xbox-glow hover:text-white transition-colors">
-                                    Launch Free <span class="transition-transform group-hover:translate-x-1">→</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Main Blog Articles Grid -->
-        <section class="py-16">
-            <div class="mx-auto max-w-7xl px-4 lg:px-8">
-                
-                <!-- Articles Grid -->
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="blog-grid">
-                    
-                    <!-- Post 1 -->
-                    <article data-category="guides" class="blog-card group flex flex-col justify-between rounded-2xl border border-zinc-900 bg-zinc-900/20 p-5 hover:border-zinc-800 hover:shadow-[0_0_20px_rgba(16,124,17,0.1)] transition-all duration-300">
-                        <div class="space-y-4">
-                            <div class="aspect-[16/10] rounded-xl bg-zinc-950 border border-zinc-900 relative overflow-hidden flex items-center justify-center">
-                                <div class="absolute inset-0 bg-gradient-to-br from-xbox/10 to-zinc-950"></div>
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-12 w-12 text-zinc-800 group-hover:text-xbox/40 transition-colors">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" />
-                                </svg>
-                                <span class="absolute bottom-3 left-3 rounded-md bg-zinc-900 px-2.5 py-1 text-[10px] font-bold text-zinc-400 tracking-wider uppercase">LAUNCH GUIDE</span>
-                            </div>
-                            <span class="text-[11px] font-bold uppercase tracking-widest text-xbox-light">No Tech Experience Required</span>
-                            <h3 class="heading-font text-lg font-bold text-white hover:text-xbox-light transition-colors">
-                                Going from Zero to Live Site on GitHub in 5 Minutes flat
-                            </h3>
-                            <p class="text-xs text-zinc-400 leading-relaxed">
-                                You don't need to know HTML, Git, or terminal commands. We show you how Xsite pushes clean code straight to GitHub and deploys it live in moments.
-                            </p>
-                        </div>
-                        <div class="mt-6 pt-4 border-t border-zinc-900/60 flex items-center justify-between text-xs text-zinc-500">
-                            <span>Author: Solopreneur Lab</span>
-                            <span>4 Min Read</span>
-                        </div>
-                    </article>
-
-                    <!-- Post 2 -->
-                    <article data-category="ownership" class="blog-card group flex flex-col justify-between rounded-2xl border border-zinc-900 bg-zinc-900/20 p-5 hover:border-zinc-800 hover:shadow-[0_0_20px_rgba(16,124,17,0.1)] transition-all duration-300">
-                        <div class="space-y-4">
-                            <div class="aspect-[16/10] rounded-xl bg-zinc-950 border border-zinc-900 relative overflow-hidden flex items-center justify-center">
-                                <div class="absolute inset-0 bg-gradient-to-br from-xbox/10 to-zinc-950"></div>
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-12 w-12 text-zinc-800 group-hover:text-xbox/40 transition-colors">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M14.25 9.75L16.5 12l-2.25 2.25m-4.5 0L7.5 12l2.25-2.25M6 20.25h12A2.25 2.25 0 0020.25 18V6A2.25 2.25 0 0018 3.75H6A2.25 2.25 0 003.75 6v12A2.25 2.25 0 006 20.25z" />
-                                </svg>
-                                <span class="absolute bottom-3 left-3 rounded-md bg-zinc-900 px-2.5 py-1 text-[10px] font-bold text-zinc-400 tracking-wider uppercase">OWNERSHIP</span>
-                            </div>
-                            <span class="text-[11px] font-bold uppercase tracking-widest text-xbox-light">No Subscription Hell</span>
-                            <h3 class="heading-font text-lg font-bold text-white hover:text-xbox-light transition-colors">
-                                Why We Built a Code-Exporting Machine Instead of Another Web Builder
-                            </h3>
-                            <p class="text-xs text-zinc-400 leading-relaxed">
-                                Most no-code web platforms restrict your files. If they close, your site dies. With Xstreamflex, you export a fully working, self-contained project.
-                            </p>
-                        </div>
-                        <div class="mt-6 pt-4 border-t border-zinc-900/60 flex items-center justify-between text-xs text-zinc-500">
-                            <span>Author: Tech Freedom Dev</span>
-                            <span>5 Min Read</span>
-                        </div>
-                    </article>
-
-                    <!-- Post 3 -->
-                    <article data-category="freedom" class="blog-card group flex flex-col justify-between rounded-2xl border border-zinc-900 bg-zinc-900/20 p-5 hover:border-zinc-800 hover:shadow-[0_0_20px_rgba(16,124,17,0.1)] transition-all duration-300">
-                        <div class="space-y-4">
-                            <div class="aspect-[16/10] rounded-xl bg-zinc-950 border border-zinc-900 relative overflow-hidden flex items-center justify-center">
-                                <div class="absolute inset-0 bg-gradient-to-br from-xbox/10 to-zinc-950"></div>
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-12 w-12 text-zinc-800 group-hover:text-xbox/40 transition-colors">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m0-10.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.75c0 5.592 3.824 10.29 9 11.622 5.176-13.322 9-6.03 9-11.622 0-1.31-.21-2.57-.598-3.75h-.152c-3.196 0-6.1-1.249-8.25-3.286zm0 13.036h.008v.008H12v-.008z" />
-                                </svg>
-                                <span class="absolute bottom-3 left-3 rounded-md bg-zinc-900 px-2.5 py-1 text-[10px] font-bold text-zinc-400 tracking-wider uppercase">FREEDOM CRY</span>
-                            </div>
-                            <span class="text-[11px] font-bold uppercase tracking-widest text-xbox-light">Escape the Trap</span>
-                            <h3 class="heading-font text-lg font-bold text-white hover:text-xbox-light transition-colors">
-                                Five Software Subscriptions You Can Safely Cancel Right Now
-                            </h3>
-                            <p class="text-xs text-zinc-400 leading-relaxed">
-                                Solo builders lose hundreds every month on unnecessary page hosting, domain tunnels, and auto-responders. Simplify down to a unified stack.
-                            </p>
-                        </div>
-                        <div class="mt-6 pt-4 border-t border-zinc-900/60 flex items-center justify-between text-xs text-zinc-500">
-                            <span>Author: Anti-Bloat advocate</span>
-                            <span>7 Min Read</span>
-                        </div>
-                    </article>
-
-                    <!-- Post 4 -->
-                    <article data-category="guides" class="blog-card group flex flex-col justify-between rounded-2xl border border-zinc-900 bg-zinc-900/20 p-5 hover:border-zinc-800 hover:shadow-[0_0_20px_rgba(16,124,17,0.1)] transition-all duration-300">
-                        <div class="space-y-4">
-                            <div class="aspect-[16/10] rounded-xl bg-zinc-950 border border-zinc-900 relative overflow-hidden flex items-center justify-center">
-                                <div class="absolute inset-0 bg-gradient-to-br from-xbox/10 to-zinc-950"></div>
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-12 w-12 text-zinc-800 group-hover:text-xbox/40 transition-colors">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0 1 21 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0 1 12 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 0 1 3 12c0-.778.099-1.533.284-2.253" />
-                                </svg>
-                                <span class="absolute bottom-3 left-3 rounded-md bg-zinc-900 px-2.5 py-1 text-[10px] font-bold text-zinc-400 tracking-wider uppercase">LAUNCH GUIDE</span>
-                            </div>
-                            <span class="text-[11px] font-bold uppercase tracking-widest text-xbox-light">Fast-Tracking Domain Authority</span>
-                            <h3 class="heading-font text-lg font-bold text-white hover:text-xbox-light transition-colors">
-                                Connecting Custom Domains with Absolute Zero Stress
-                            </h3>
-                            <p class="text-xs text-zinc-400 leading-relaxed">
-                                DNS settings can terrify any solopreneur. Here is a visual guide on pointing your chosen registrar directly to your exported GitHub pages code.
-                            </p>
-                        </div>
-                        <div class="mt-6 pt-4 border-t border-zinc-900/60 flex items-center justify-between text-xs text-zinc-500">
-                            <span>Author: Xsite Tech Lab</span>
-                            <span>4 Min Read</span>
-                        </div>
-                    </article>
-
-                    <!-- Post 5 -->
-                    <article data-category="ownership" class="blog-card group flex flex-col justify-between rounded-2xl border border-zinc-900 bg-zinc-900/20 p-5 hover:border-zinc-800 hover:shadow-[0_0_20px_rgba(16,124,17,0.1)] transition-all duration-300">
-                        <div class="space-y-4">
-                            <div class="aspect-[16/10] rounded-xl bg-zinc-950 border border-zinc-900 relative overflow-hidden flex items-center justify-center">
-                                <div class="absolute inset-0 bg-gradient-to-br from-xbox/10 to-zinc-950"></div>
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-12 w-12 text-zinc-800 group-hover:text-xbox/40 transition-colors">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z" />
-                                </svg>
-                                <span class="absolute bottom-3 left-3 rounded-md bg-zinc-900 px-2.5 py-1 text-[10px] font-bold text-zinc-400 tracking-wider uppercase">OWNERSHIP</span>
-                            </div>
-                            <span class="text-[11px] font-bold uppercase tracking-widest text-xbox-light">No Restriction Policy</span>
-                            <h3 class="heading-font text-lg font-bold text-white hover:text-xbox-light transition-colors">
-                                Zero-Lockin: Porting Your Landing Pages Anywhere You Go
-                            </h3>
-                            <p class="text-xs text-zinc-400 leading-relaxed">
-                                Build here, launch instantly, but keep full access to your source code. You own the HTML files entirely to package and hosting however you desire.
-                            </p>
-                        </div>
-                        <div class="mt-6 pt-4 border-t border-zinc-900/60 flex items-center justify-between text-xs text-zinc-500">
-                            <span>Author: Open Source Alliance</span>
-                            <span>3 Min Read</span>
-                        </div>
-                    </article>
-
-                    <!-- Post 6 -->
-                    <article data-category="freedom" class="blog-card group flex flex-col justify-between rounded-2xl border border-zinc-900 bg-zinc-900/20 p-5 hover:border-zinc-800 hover:shadow-[0_0_20px_rgba(16,124,17,0.1)] transition-all duration-300">
-                        <div class="space-y-4">
-                            <div class="aspect-[16/10] rounded-xl bg-zinc-950 border border-zinc-900 relative overflow-hidden flex items-center justify-center">
-                                <div class="absolute inset-0 bg-gradient-to-br from-xbox/10 to-zinc-950"></div>
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-12 w-12 text-zinc-800 group-hover:text-xbox/40 transition-colors">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.3 16.2L21 21M12 18a6 6 0 110-12 6 6 0 010 12z" />
-                                </svg>
-                                <span class="absolute bottom-3 left-3 rounded-md bg-zinc-900 px-2.5 py-1 text-[10px] font-bold text-zinc-400 tracking-wider uppercase">FREEDOM CRY</span>
-                            </div>
-                            <span class="text-[11px] font-bold uppercase tracking-widest text-xbox-light">The Solopreneur Way</span>
-                            <h3 class="heading-font text-lg font-bold text-white hover:text-xbox-light transition-colors">
-                                Building for the Left-Behind: Demystifying Tech Barriers
-                            </h3>
-                            <p class="text-xs text-zinc-400 leading-relaxed">
-                                Modern SaaS has forgotten simplicity. Why we obsessively test our platform against absolute non-technical profiles so anyone can confidently run digital spaces.
-                            </p>
-                        </div>
-                        <div class="mt-6 pt-4 border-t border-zinc-900/60 flex items-center justify-between text-xs text-zinc-500">
-                            <span>Author: Solopreneur Council</span>
-                            <span>5 Min Read</span>
-                        </div>
-                    </article>
-
-                </div>
-
-                <!-- Empty State Message -->
-                <div id="empty-state" class="hidden text-center py-16">
-                    <p class="text-zinc-500 text-lg">No posts matching your filter. Try searching for "zero" or changing categories!</p>
-                </div>
-
-            </div>
-        </section>
-
-        <!-- Newsletter & Dynamic Alert Center -->
-        <section class="py-16 bg-zinc-950 border-t border-zinc-900 relative">
-            <div class="absolute inset-0 -z-10 bg-[linear-gradient(to_bottom,#1f293708_1px,transparent_1px)] bg-[size:4rem_4rem]"></div>
-            <div class="mx-auto max-w-4xl px-4 lg:px-8">
-                <div class="rounded-3xl border border-zinc-800/80 bg-zinc-900/40 p-8 sm:p-12 text-center relative overflow-hidden">
-                    <div class="absolute top-0 left-1/2 -translate-x-1/2 h-32 w-32 -z-10 bg-xbox/5 rounded-full blur-2xl"></div>
-                    
-                    <h2 class="heading-font text-2xl sm:text-3xl font-bold text-white mb-4">Never Miss a Freedom Blueprint</h2>
-                    <p class="mx-auto max-w-md text-sm text-zinc-400 leading-relaxed mb-8">
-                        Join other solopreneurs, builders, and grandmothers breaking past tech limits. Receive weekly guides, early product roadmaps, and Stripe link setups directly.
-                    </p>
-
-                    <form class="mx-auto max-w-md flex flex-col sm:flex-row gap-3">
-                        <input type="email" required placeholder="Enter your best email address..." 
-                               class="flex-grow rounded-xl border border-zinc-800 bg-zinc-950 py-3 px-4 text-sm text-white placeholder-zinc-500 focus:border-xbox focus:outline-none focus:ring-1 focus:ring-xbox transition-all" />
-                        <button type="submit" class="rounded-xl bg-xbox hover:bg-xbox-hover text-white text-xs font-bold uppercase tracking-wider py-3 px-6 transition-all duration-150 whitespace-nowrap shadow-lg shadow-xbox/20">
-                            Subscribe Instantly
-                        </button>
-                    </form>
-
-                    <p class="text-[10px] text-zinc-600 mt-4">We zero-tolerance spam. Unsubscribe with one click anytime.</p>
-                </div>
-            </div>
-        </section>
-
-    </main>
-
-    <!-- GLOBAL FOOTER -->
-    <footer class="bg-zinc-950 text-zinc-400 py-12 border-t border-zinc-900">
-        <div class="mx-auto max-w-7xl px-4 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-8">
-            <!-- Branding & Description -->
-            <div class="space-y-4 md:col-span-2">
-                <div class="flex items-center gap-2">
-                    <div class="flex h-8 w-8 items-center justify-center rounded-lg bg-xbox text-white font-bold">
-                        <!-- Tiny Rocket -->
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="h-4 w-4">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.59 14.37a6 6 0 0 1-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 0 0 6.16-12.12A14.98 14.98 0 0 0 9.63 8.41m5.96 5.96a14.96 14.96 0 0 1-10.43 3.42L12 12m0 0h-.01M21 3s-1.8 3.6-4 4.5"></path>
-                        </svg>
-                    </div>
-                    <span class="heading-font text-lg font-bold text-white tracking-wider">Xstreamflex</span>
-                </div>
-                <p class="text-xs text-zinc-500 max-w-sm leading-relaxed">
-                    Xstreamflex is on a mission to democratize the web. We build tools that bypass technical boundaries, enabling anybody to establish their digital footprint with total code and structural ownership.
-                </p>
-            </div>
-
-            <!-- Page Navigation -->
-            <div class="space-y-3">
-                <h4 class="text-xs font-bold uppercase tracking-widest text-white">Ecosystem Links</h4>
-                <ul class="space-y-2 text-xs">
-                    <li><a href="index.html" class="hover:text-white transition-colors">Home Landing</a></li>
-                    <li><a href="about.html" class="hover:text-white transition-colors">About Mission</a></li>
-                    <li><a href="products.html" class="hover:text-white transition-colors">Xsite Products</a></li>
-                    <li><a href="blog.html" class="hover:text-white transition-colors">Resource Blog</a></li>
-                    <li><a href="contact.html" class="hover:text-white transition-colors">Launch Crew Contact</a></li>
-                </ul>
-            </div>
-
-            <!-- Legal Documents -->
-            <div class="space-y-3">
-                <h4 class="text-xs font-bold uppercase tracking-widest text-white">Trust &amp; Compliance</h4>
-                <ul class="space-y-2 text-xs">
-                    <li><a href="terms.html" class="hover:text-white transition-colors">Terms of Service</a></li>
-                    <li><a href="privacy.html" class="hover:text-white transition-colors">Privacy Policy</a></li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="mx-auto max-w-7xl px-4 lg:px-8 mt-12 pt-8 border-t border-zinc-900 flex flex-col sm:flex-row items-center justify-between text-xs text-zinc-600 gap-4">
-            <p>© <span id="current-year"></span> Xstreamflex Network. Built with absolute love for independent creators.</p>
-            <div class="flex gap-4">
-                <span class="hover:text-zinc-400">Version 1.4 Live</span>
+          </div>
+          
+          <!-- Featured Meta & Teaser -->
+          <div class="lg:col-span-5 p-8 sm:p-10 flex flex-col justify-between">
+            <div class="space-y-6">
+              <div class="flex items-center gap-3 text-xs text-slate-500 dark:text-zinc-400">
+                <span class="font-medium text-xbox dark:text-xbox-neon">3 min read</span>
                 <span>•</span>
-                <span class="hover:text-zinc-400">Deploy Status: Active</span>
+                <span>January 24, 2026</span>
+              </div>
+              <p class="text-sm text-slate-600 dark:text-zinc-400 leading-relaxed">
+                The modern web builder is broken. Drag-and-drop systems promise freedom, but force you into expensive recurring ecosystems that own your data and restrict your scale. 
+              </p>
+              <p class="text-sm text-slate-600 dark:text-zinc-400 leading-relaxed">
+                In this detailed review, we explore how Xsite changes everything by delivering raw compiled code, automated GitHub deployment, and standard compliant pages instantly. Absolute control is now yours right out of the box.
+              </p>
             </div>
-        </div>
-    </footer>
+            
+            <div class="mt-8 pt-6 border-t border-slate-100 dark:border-zinc-800 flex items-center justify-between">
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-full bg-xbox/10 text-xbox flex items-center justify-center font-bold text-sm">XF</div>
+                <div>
+                  <h4 class="text-xs font-bold text-slate-900 dark:text-white">Xstreamflex Editorial</h4>
+                  <p class="text-[10px] text-slate-400">Main Core Dev</p>
+                </div>
+              </div>
+              <a href="#featured-read" onclick="alert('You are seeing our responsive simulated reader view. All articles are dynamically linked through our generative engine!')" class="inline-flex items-center gap-1.5 text-xs font-bold text-xbox hover:text-xbox-dark dark:hover:text-xbox-light transition-all">
+                Read Full Insight 
+                <svg class="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
 
-    <!-- INTERACTIVE JAVASCRIPT FOR MOBILE NAV & BLOG ENGINE -->
-    <script>
-        // Set dynamic year
-        document.getElementById('current-year').textContent = new Date().getFullYear();
-
-        // Responsive mobile navigation toggle
-        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-        const mobileMenu = document.getElementById('mobile-menu');
+    <!-- DYNAMIC BLOG POSTS GRID -->
+    <section class="py-16 bg-white dark:bg-zinc-950 transition-colors duration-300">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         
-        mobileMenuBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
+        <div class="flex items-center justify-between mb-12">
+          <h2 class="text-xl sm:text-2xl font-display font-bold text-slate-900 dark:text-white">Latest Breakthroughs</h2>
+          <span id="results-count" class="text-xs font-medium text-slate-500 bg-slate-100 dark:bg-zinc-900 px-3 py-1 rounded-full">6 Articles</span>
+        </div>
 
-        // Search & Category Filter System
-        const searchInput = document.getElementById('blog-search');
-        const filterButtons = document.querySelectorAll('.filter-btn');
-        const blogCards = document.querySelectorAll('.blog-card');
-        const emptyState = document.getElementById('empty-state');
-        const featuredSection = document.getElementById('featured-section');
+        <!-- Cards Grid Container -->
+        <div id="blog-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          
+          <!-- Article Card 1 -->
+          <article data-category="creator-economy" class="blog-card flex flex-col justify-between p-6 bg-slate-50 dark:bg-zinc-900 rounded-2xl border border-slate-200/60 dark:border-zinc-800/60 hover:border-xbox/30 dark:hover:border-xbox/30 hover:shadow-lg hover:shadow-slate-100/50 dark:hover:shadow-none transition-all duration-300 fade-in">
+            <div class="space-y-4">
+              <div class="flex items-center justify-between">
+                <span class="px-2.5 py-1 rounded-md bg-purple-100 dark:bg-purple-950/40 text-purple-600 dark:text-purple-400 text-[10px] font-bold uppercase tracking-wider">Creator Economy</span>
+                <span class="text-[11px] text-slate-400">Jan 20, 2026</span>
+              </div>
+              <h3 class="font-display text-lg font-bold text-slate-900 dark:text-white leading-snug hover:text-xbox cursor-pointer">
+                Subscription Fatigue: Why Solopreneurs are Drowning in Monthly SaaS Fees
+              </h3>
+              <p class="text-xs text-slate-500 dark:text-zinc-400 leading-relaxed line-clamp-3">
+                The 5-subscription stack is killing early-stage creator ideas. Here’s why owning your raw HTML and getting automatic integrations beats complex, locked-down software platforms.
+              </p>
+            </div>
+            <div class="mt-6 pt-4 border-t border-slate-200/50 dark:border-zinc-800/50 flex items-center justify-between">
+              <span class="text-[10px] font-semibold text-slate-400">5 min read</span>
+              <button onclick="alert('Initiating direct-read mode on generative site...')" class="text-xs font-bold text-xbox hover:underline">Read Now</button>
+            </div>
+          </article>
 
-        let activeCategory = 'all';
-        let searchQuery = '';
+          <!-- Article Card 2 -->
+          <article data-category="tech-demystified" class="blog-card flex flex-col justify-between p-6 bg-slate-50 dark:bg-zinc-900 rounded-2xl border border-slate-200/60 dark:border-zinc-800/60 hover:border-xbox/30 dark:hover:border-xbox/30 hover:shadow-lg hover:shadow-slate-100/50 dark:hover:shadow-none transition-all duration-300 fade-in">
+            <div class="space-y-4">
+              <div class="flex items-center justify-between">
+                <span class="px-2.5 py-1 rounded-md bg-emerald-100 dark:bg-emerald-950/40 text-emerald-600 dark:text-emerald-400 text-[10px] font-bold uppercase tracking-wider">Tech Demystified</span>
+                <span class="text-[11px] text-slate-400">Jan 15, 2026</span>
+              </div>
+              <h3 class="font-display text-lg font-bold text-slate-900 dark:text-white leading-snug hover:text-xbox cursor-pointer">
+                Stripe & Email: Setting Up Your Automated Sales Funnel Effortlessly
+              </h3>
+              <p class="text-xs text-slate-500 dark:text-zinc-400 leading-relaxed line-clamp-3">
+                No developer needed. A simple guide to linking checkout triggers and autoresponder sequences to convert site visitors into lifelong paying customers in minutes.
+              </p>
+            </div>
+            <div class="mt-6 pt-4 border-t border-slate-200/50 dark:border-zinc-800/50 flex items-center justify-between">
+              <span class="text-[10px] font-semibold text-slate-400">6 min read</span>
+              <button onclick="alert('Initiating direct-read mode on generative site...')" class="text-xs font-bold text-xbox hover:underline">Read Now</button>
+            </div>
+          </article>
 
-        function filterPosts() {
-            let matchedCount = 0;
+          <!-- Article Card 3 -->
+          <article data-category="creator-economy" class="blog-card flex flex-col justify-between p-6 bg-slate-50 dark:bg-zinc-900 rounded-2xl border border-slate-200/60 dark:border-zinc-800/60 hover:border-xbox/30 dark:hover:border-xbox/30 hover:shadow-lg hover:shadow-slate-100/50 dark:hover:shadow-none transition-all duration-300 fade-in">
+            <div class="space-y-4">
+              <div class="flex items-center justify-between">
+                <span class="px-2.5 py-1 rounded-md bg-purple-100 dark:bg-purple-950/40 text-purple-600 dark:text-purple-400 text-[10px] font-bold uppercase tracking-wider">Creator Economy</span>
+                <span class="text-[11px] text-slate-400">Jan 09, 2026</span>
+              </div>
+              <h3 class="font-display text-lg font-bold text-slate-900 dark:text-white leading-snug hover:text-xbox cursor-pointer">
+                The Power of Pure Ownership: Why You Should Never Let a Builder Lock Up Your Code
+              </h3>
+              <p class="text-xs text-slate-500 dark:text-zinc-400 leading-relaxed line-clamp-3">
+                Traditional drag-and-drop web builders lock your layout inside closed proprietary walls. Learn why owning raw customizable static code lets you scale indefinitely.
+              </p>
+            </div>
+            <div class="mt-6 pt-4 border-t border-slate-200/50 dark:border-zinc-800/50 flex items-center justify-between">
+              <span class="text-[10px] font-semibold text-slate-400">4 min read</span>
+              <button onclick="alert('Initiating direct-read mode on generative site...')" class="text-xs font-bold text-xbox hover:underline">Read Now</button>
+            </div>
+          </article>
 
-            blogCards.forEach(card => {
-                const category = card.getAttribute('data-category');
-                const title = card.querySelector('h3').textContent.toLowerCase();
-                const description = card.querySelector('p').textContent.toLowerCase();
-                
-                const categoryMatch = (activeCategory === 'all' || category === activeCategory);
-                const searchMatch = (title.includes(searchQuery) || description.includes(searchQuery));
+          <!-- Article Card 4 -->
+          <article data-category="design" class="blog-card flex flex-col justify-between p-6 bg-slate-50 dark:bg-zinc-900 rounded-2xl border border-slate-200/60 dark:border-zinc-800/60 hover:border-xbox/30 dark:hover:border-xbox/30 hover:shadow-lg hover:shadow-slate-100/50 dark:hover:shadow-none transition-all duration-300 fade-in">
+            <div class="space-y-4">
+              <div class="flex items-center justify-between">
+                <span class="px-2.5 py-1 rounded-md bg-amber-100 dark:bg-amber-950/40 text-amber-600 dark:text-amber-400 text-[10px] font-bold uppercase tracking-wider">Design</span>
+                <span class="text-[11px] text-slate-400">Jan 02, 2026</span>
+              </div>
+              <h3 class="font-display text-lg font-bold text-slate-900 dark:text-white leading-snug hover:text-xbox cursor-pointer">
+                Build for the Brave: Designing Accessibility that Actually Empowers Everyone
+              </h3>
+              <p class="text-xs text-slate-500 dark:text-zinc-400 leading-relaxed line-clamp-3">
+                Behind our design mantra: if a 12-year-old or a grandmother cannot successfully run the launch engine, we have failed. Insights on building high-functioning sites with no skills.
+              </p>
+            </div>
+            <div class="mt-6 pt-4 border-t border-slate-200/50 dark:border-zinc-800/50 flex items-center justify-between">
+              <span class="text-[10px] font-semibold text-slate-400">7 min read</span>
+              <button onclick="alert('Initiating direct-read mode on generative site...')" class="text-xs font-bold text-xbox hover:underline">Read Now</button>
+            </div>
+          </article>
 
-                if (categoryMatch && searchMatch) {
-                    card.classList.remove('hidden');
-                    matchedCount++;
-                } else {
-                    card.classList.add('hidden');
-                }
-            });
+          <!-- Article Card 5 -->
+          <article data-category="tech-demystified" class="blog-card flex flex-col justify-between p-6 bg-slate-50 dark:bg-zinc-900 rounded-2xl border border-slate-200/60 dark:border-zinc-800/60 hover:border-xbox/30 dark:hover:border-xbox/30 hover:shadow-lg hover:shadow-slate-100/50 dark:hover:shadow-none transition-all duration-300 fade-in">
+            <div class="space-y-4">
+              <div class="flex items-center justify-between">
+                <span class="px-2.5 py-1 rounded-md bg-emerald-100 dark:bg-emerald-950/40 text-emerald-600 dark:text-emerald-400 text-[10px] font-bold uppercase tracking-wider">Tech Demystified</span>
+                <span class="text-[11px] text-slate-400">Dec 18, 2025</span>
+              </div>
+              <h3 class="font-display text-lg font-bold text-slate-900 dark:text-white leading-snug hover:text-xbox cursor-pointer">
+                Domain Mapping Made Easy: How to Configure CNAME Records
+              </h3>
+              <p class="text-xs text-slate-500 dark:text-zinc-400 leading-relaxed line-clamp-3">
+                Demystifying CNAME, custom paths, and apex records. How Xsite compiles custom domain UX directly so you never suffer from dns panic or downtime again.
+              </p>
+            </div>
+            <div class="mt-6 pt-4 border-t border-slate-200/50 dark:border-zinc-800/50 flex items-center justify-between">
+              <span class="text-[10px] font-semibold text-slate-400">3 min read</span>
+              <button onclick="alert('Initiating direct-read mode on generative site...')" class="text-xs font-bold text-xbox hover:underline">Read Now</button>
+            </div>
+          </article>
 
-            // Handle Empty State
-            if (matchedCount === 0) {
-                emptyState.classList.remove('hidden');
-            } else {
-                emptyState.classList.add('hidden');
-            }
+          <!-- Article Card 6 -->
+          <article data-category="launch-strategies" class="blog-card flex flex-col justify-between p-6 bg-slate-50 dark:bg-zinc-900 rounded-2xl border border-slate-200/60 dark:border-zinc-800/60 hover:border-xbox/30 dark:hover:border-xbox/30 hover:shadow-lg hover:shadow-slate-100/50 dark:hover:shadow-none transition-all duration-300 fade-in">
+            <div class="space-y-4">
+              <div class="flex items-center justify-between">
+                <span class="px-2.5 py-1 rounded-md bg-blue-100 dark:bg-blue-950/40 text-blue-600 dark:text-blue-400 text-[10px] font-bold uppercase tracking-wider">Launch Strategies</span>
+                <span class="text-[11px] text-slate-400">Nov 30, 2025</span>
+              </div>
+              <h3 class="font-display text-lg font-bold text-slate-900 dark:text-white leading-snug hover:text-xbox cursor-pointer">
+                The 'Brain Dump' Blueprint: Structuring Raw Company Thoughts for AI Compilation
+              </h3>
+              <p class="text-xs text-slate-500 dark:text-zinc-400 leading-relaxed line-clamp-3">
+                How to communicate effectively with high-speed compilers. Learn how to write styles, inspiration, target buyer profiles, and values so Xsite templates nothing and builds everything.
+              </p>
+            </div>
+            <div class="mt-6 pt-4 border-t border-slate-200/50 dark:border-zinc-800/50 flex items-center justify-between">
+              <span class="text-[10px] font-semibold text-slate-400">5 min read</span>
+              <button onclick="alert('Initiating direct-read mode on generative site...')" class="text-xs font-bold text-xbox hover:underline">Read Now</button>
+            </div>
+          </article>
 
-            // Hide featured section on search/filters to keep it clean, or keep it responsive
-            if (activeCategory !== 'all' || searchQuery !== '') {
-                featuredSection.classList.add('hidden');
-            } else {
-                featuredSection.classList.remove('hidden');
-            }
+        </div>
+
+        <!-- No Results state -->
+        <div id="no-results-state" class="hidden text-center py-20 bg-slate-50 dark:bg-zinc-900/50 rounded-2xl border border-dashed border-slate-200 dark:border-zinc-800">
+          <svg class="w-12 h-12 text-slate-400 dark:text-zinc-600 mx-auto mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+          <h3 class="font-display text-lg font-bold text-slate-900 dark:text-white">No breakthrough matches</h3>
+          <p class="text-sm text-slate-500 dark:text-zinc-400 mt-2 max-w-sm mx-auto">Try searching for other developer-free terms like "Stripe", "Code", "Domain", or adjust your filter tag.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- EMAIL / NEWSLETTER ACTION CONSOLE -->
+    <section class="py-20 bg-zinc-900 dark:bg-zinc-950 text-white relative overflow-hidden transition-colors duration-300">
+      <!-- Background rocket trace -->
+      <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#107c11_2px,transparent_2px)] [background-size:24px_24px]"></div>
+      
+      <div class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="text-center max-w-2xl mx-auto space-y-6">
+          <div class="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-xbox text-white text-glow">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.63 8.41m11.2 5.8a15.005 15.005 0 01-12.13 6.16m12.13-6.16a14.98 14.98 0 01-6.16-12.12M13.5 10.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z" />
+            </svg>
+          </div>
+          <h2 class="font-display text-3xl sm:text-4xl font-extrabold tracking-tight">Join the Disruptive Freedom Movement</h2>
+          <p class="text-zinc-400 text-sm sm:text-base font-light">
+            No password configurations, no complex onboarding loops. All that is required to start deploying static live business engines under your absolute control is an email.
+          </p>
+          
+          <div class="pt-4">
+            <form id="blog-subscribe-form" class="flex flex-col sm:flex-row gap-3 max-w-md mx-auto" onsubmit="handleSubscribe(event)">
+              <input type="email" required placeholder="Enter your best email address..." class="flex-grow px-5 py-3 rounded-xl bg-zinc-800 text-white placeholder-zinc-500 text-sm focus:outline-none focus:ring-2 focus:ring-xbox border border-zinc-700 transition-all" />
+              <button type="submit" class="px-6 py-3 rounded-xl bg-xbox hover:bg-xbox-dark text-white text-sm font-bold glow-hover transition-all flex items-center justify-center gap-2">
+                Join Pipeline
+                <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                </svg>
+              </button>
+            </form>
+            <p id="subscribe-feedback" class="hidden text-xs text-xbox-light font-bold mt-3 animate-pulse"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- GLOBAL FOOTER -->
+  <footer class="border-t border-slate-200/80 bg-white dark:border-zinc-800 dark:bg-zinc-950 py-16 transition-colors duration-300">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-8 mb-12">
+        
+        <!-- Company Block -->
+        <div class="md:col-span-4 space-y-4">
+          <div class="flex items-center gap-2">
+            <div class="flex h-8 w-8 items-center justify-center rounded-lg bg-xbox text-white">
+              <!-- Rocket Icon Small -->
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4.5 h-4.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.63 8.41m11.2 5.8a15.005 15.005 0 01-12.13 6.16m12.13-6.16a14.98 14.98 0 01-6.16-12.12M13.5 10.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"></path>
+              </svg>
+            </div>
+            <span class="font-display text-xl font-bold tracking-tight text-slate-900 dark:text-white">
+              Xstream<span class="text-xbox">flex</span>
+            </span>
+          </div>
+          <p class="text-xs text-slate-500 dark:text-zinc-400 leading-relaxed">
+            Giving side-hustles, creators, and solopreneurs the professional foundation they need to launch businesses in record time. Simple, accessible, complete, and unrestricted.
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="md:col-span-2 space-y-3">
+          <h4 class="text-xs font-bold text-slate-400 dark:text-zinc-500 uppercase tracking-widest">Platform</h4>
+          <ul class="space-y-2 text-xs">
+            <li><a href="index.html" class="text-slate-600 dark:text-zinc-300 hover:text-xbox">Home</a></li>
+            <li><a href="products.html" class="text-slate-600 dark:text-zinc-300 hover:text-xbox">Products &amp; Tiers</a></li>
+            <li><a href="about.html" class="text-slate-600 dark:text-zinc-300 hover:text-xbox">Our Mission</a></li>
+          </ul>
+        </div>
+
+        <!-- Resources -->
+        <div class="md:col-span-2 space-y-3">
+          <h4 class="text-xs font-bold text-slate-400 dark:text-zinc-500 uppercase tracking-widest">Resources</h4>
+          <ul class="space-y-2 text-xs">
+            <li><a href="blog.html" class="text-slate-600 dark:text-zinc-300 hover:text-xbox">Blog articles</a></li>
+            <li><a href="contact.html" class="text-slate-600 dark:text-zinc-300 hover:text-xbox">Support Contact</a></li>
+            <li><a href="#features" class="text-slate-600 dark:text-zinc-300 hover:text-xbox">Engine Spec</a></li>
+          </ul>
+        </div>
+
+        <!-- Compliance & Legal -->
+        <div class="md:col-span-4 space-y-3">
+          <h4 class="text-xs font-bold text-slate-400 dark:text-zinc-500 uppercase tracking-widest">Legal Guardrails</h4>
+          <p class="text-[11px] text-slate-400 dark:text-zinc-500 leading-normal">
+            Every Xsite engine generation dynamically compiles clean local pages of the resources listed below.
+          </p>
+          <ul class="space-y-2 text-xs">
+            <li><a href="terms.html" class="text-slate-600 dark:text-zinc-300 hover:text-xbox">Terms of Service</a></li>
+            <li><a href="privacy.html" class="text-slate-600 dark:text-zinc-300 hover:text-xbox">Privacy Policy</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Legal Bottom -->
+      <div class="border-t border-slate-200/50 dark:border-zinc-800/50 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-slate-400 dark:text-zinc-500">
+        <p>© 2026 Xstreamflex. All systems, templates, and compiled landing pages are fully owned by their respective generative users. All rights reserved.</p>
+        <div class="flex items-center gap-2">
+          <span>Target Host:</span>
+          <a href="https://xstreamflex.com/" class="underline hover:text-xbox">xstreamflex.com</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- DYNAMIC CORE JAVASCRIPT -->
+  <script>
+    // Theme Switcher & Persistence Module
+    const themeBtn = document.getElementById('theme-btn');
+    const sunIcon = document.getElementById('sun-icon');
+    const moonIcon = document.getElementById('moon-icon');
+    const htmlEl = document.documentElement;
+
+    function applyTheme(theme) {
+      if (theme === 'dark') {
+        htmlEl.classList.add('dark');
+        sunIcon.classList.remove('hidden');
+        moonIcon.classList.add('hidden');
+      } else {
+        htmlEl.classList.remove('dark');
+        sunIcon.classList.add('hidden');
+        moonIcon.classList.remove('hidden');
+      }
+    }
+
+    // Initialize Theme
+    const savedTheme = localStorage.getItem('theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    applyTheme(savedTheme);
+
+    themeBtn.addEventListener('click', () => {
+      const activeTheme = htmlEl.classList.contains('dark') ? 'light' : 'dark';
+      localStorage.setItem('theme', activeTheme);
+      applyTheme(activeTheme);
+    });
+
+    // Mobile Navigation Toggle
+    const mobileToggle = document.getElementById('mobile-toggle');
+    const mobileNav = document.getElementById('mobile-nav');
+    mobileToggle.addEventListener('click', () => {
+      mobileNav.classList.toggle('hidden');
+    });
+
+    // Filter & Search Engine logic
+    const filterButtons = document.querySelectorAll('#filter-container button');
+    const searchInput = document.getElementById('blog-search');
+    const blogCards = document.querySelectorAll('.blog-card');
+    const resultsCount = document.getElementById('results-count');
+    const noResultsState = document.getElementById('no-results-state');
+
+    let currentCategory = 'all';
+    let currentQuery = '';
+
+    function filterCards() {
+      let visibleCount = 0;
+
+      blogCards.forEach(card => {
+        const category = card.getAttribute('data-category');
+        const titleText = card.querySelector('h3').textContent.toLowerCase();
+        const bodyText = card.querySelector('p').textContent.toLowerCase();
+
+        const matchesCategory = (currentCategory === 'all' || category === currentCategory);
+        const matchesSearch = (titleText.includes(currentQuery) || bodyText.includes(currentQuery));
+
+        if (matchesCategory && matchesSearch) {
+          card.classList.remove('hidden');
+          visibleCount++;
+        } else {
+          card.classList.add('hidden');
         }
+      });
 
-        // Search Keyup Action
-        searchInput.addEventListener('input', (e) => {
-            searchQuery = e.target.value.toLowerCase();
-            filterPosts();
+      // Update Results Badge
+      resultsCount.textContent = `${visibleCount} Article${visibleCount === 1 ? '' : 's'}`;
+
+      // Update empty state view
+      if (visibleCount === 0) {
+        noResultsState.classList.remove('hidden');
+      } else {
+        noResultsState.classList.add('hidden');
+      }
+    }
+
+    // Tag button click listeners
+    filterButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        // Reset old visual active classes
+        filterButtons.forEach(b => {
+          b.classList.remove('bg-xbox', 'text-white', 'border-xbox');
+          b.classList.add('bg-slate-100', 'text-slate-600', 'dark:bg-zinc-900', 'dark:text-zinc-400', 'border-transparent');
         });
 
-        // Tag Filtering Click Action
-        filterButtons.forEach(button => {
-            button.addEventListener('click', (e) => {
-                // Update Button Visual Style
-                filterButtons.forEach(btn => {
-                    btn.className = "filter-btn rounded-xl px-4 py-2 text-xs font-semibold bg-zinc-900 text-zinc-400 hover:text-white hover:bg-zinc-800 transition-all duration-150";
-                });
-                
-                e.currentTarget.className = "filter-btn rounded-xl px-4 py-2 text-xs font-semibold bg-xbox text-white shadow-md shadow-xbox/10 transition-all duration-150";
-                
-                activeCategory = e.currentTarget.getAttribute('data-filter');
-                filterPosts();
-            });
-        });
-    </script>
+        // Add visual active state to current
+        btn.classList.add('bg-xbox', 'text-white', 'border-xbox');
+        btn.classList.remove('bg-slate-100', 'text-slate-600', 'dark:bg-zinc-900', 'dark:text-zinc-400', 'border-transparent');
+
+        currentCategory = btn.getAttribute('data-category');
+        filterCards();
+      });
+    });
+
+    // Live search listener
+    searchInput.addEventListener('input', (e) => {
+      currentQuery = e.target.value.toLowerCase().trim();
+      filterCards();
+    });
+
+    // Form submission simulation
+    function handleSubscribe(event) {
+      event.preventDefault();
+      const form = document.getElementById('blog-subscribe-form');
+      const feedback = document.getElementById('subscribe-feedback');
+      const email = form.querySelector('input').value;
+
+      if (email) {
+        feedback.textContent = `✓ Rocket fuel added! Check ${email} for deployment blueprints.`;
+        feedback.classList.remove('hidden');
+        form.reset();
+        setTimeout(() => {
+          feedback.classList.add('hidden');
+        }, 6000);
+      }
+    }
+  </script>
 </body>
 </html>
