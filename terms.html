@@ -1,438 +1,514 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en" class="dark">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Xstreamflex | Terms of Service</title>
-    <meta name="description" content="Xstreamflex &amp; Xsite empower creators, solopreneurs, and absolute beginners to deploy full-scale, customizable live websites from a single brain dump. No black box, complete ownership.">
-    
-    <!-- TailWind CSS & Config -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            darkMode: 'class',
-            theme: {
-                extend: {
-                    colors: {
-                        xbox: {
-                            DEFAULT: '#107C11',
-                            hover: '#189e1a',
-                            light: '#22c55e',
-                            glow: '#39ff14',
-                            dark: '#0b520b',
-                            deep: '#073007'
-                        }
-                    },
-                    fontFamily: {
-                        sans: ['Plus Jakarta Sans', 'Inter', 'sans-serif'],
-                    },
-                    animation: {
-                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
-                        'float': 'float 6s ease-in-out infinite',
-                    },
-                    keyframes: {
-                        float: {
-                            '0%, 100%': { transform: 'translateY(0px)' },
-                            '50%': { transform: 'translateY(-10px)' },
-                        }
-                    }
-                }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terms of Service - Xstreamflex</title>
+  <meta name="description" content="Read the Terms of Service for Xstreamflex and Xsite. Understand your absolute code ownership, zero lock-in parameters, and platform parameters.">
+  <link rel="canonical" href="https://xstreamflex.com/terms.html" />
+  
+  <!-- Tailwind CSS Play CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            xbox: {
+              DEFAULT: '#107C11',
+              dark: '#0e6b0e',
+              light: '#1cd11c',
+              neon: '#22c55e',
+              glow: '#00ff00'
             }
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            display: ['Space Grotesk', 'sans-serif'],
+          }
         }
-    </script>
-    
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;family=Space+Grotesk:wght@500;700&amp;display=swap" rel="stylesheet">
-    
-    <!-- Inline styles for scrollbar & custom focus states -->
-    <style>
-        body {
-            font-family: 'Plus Jakarta Sans', sans-serif;
-        }
-        .heading-font {
-            font-family: 'Space Grotesk', sans-serif;
-        }
-        /* Custom scrollbar to match Xbox Theme */
-        ::-webkit-scrollbar {
-            width: 8px;
-        }
-        ::-webkit-scrollbar-track {
-            background: #0f172a;
-        }
-        ::-webkit-scrollbar-thumb {
-            background: #107C11;
-            border-radius: 4px;
-        }
-        ::-webkit-scrollbar-thumb:hover {
-            background: #22c55e;
-        }
-    </style>
+      }
+    }
+  </script>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet">
+
+  <style>
+    /* Premium glow effects and smooth transitions */
+    .glow-hover:hover {
+      box-shadow: 0 0 25px rgba(16, 124, 17, 0.45);
+    }
+    .text-glow {
+      text-shadow: 0 0 12px rgba(34, 197, 94, 0.4);
+    }
+    /* Simple interactive slider/fade transition helper */
+    .fade-in {
+      animation: fadeIn 0.4s ease-in-out forwards;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    /* Smooth scroll for TOC navigation */
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
 </head>
-<body class="bg-zinc-950 text-zinc-100 antialiased selection:bg-xbox selection:text-white flex flex-col min-h-screen">
+<body class="bg-zinc-950 text-slate-100 font-sans antialiased transition-colors duration-300">
 
-    <!-- GLOBAL HEADER WRAPPER -->
-    <header class="sticky top-0 z-50 bg-zinc-950/85 backdrop-blur-md border-b border-zinc-900">
-        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div class="flex h-20 items-center justify-between gap-4">
-                
-                <!-- Branding -->
-                <a href="index.html" class="flex items-center gap-2.5 group">
-                    <div class="flex h-10 w-10 items-center justify-center rounded-xl bg-xbox text-white font-bold transition-all group-hover:scale-105 group-hover:shadow-[0_0_15px_rgba(16,124,17,0.6)]">
-                        <!-- Tiny Rocket SVG -->
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="h-5 w-5">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.59 14.37a6 6 0 0 1-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 0 0 6.16-12.12A14.98 14.98 0 0 0 9.63 8.41m5.96 5.96a14.96 14.96 0 0 1-10.43 3.42L12 12m0 0h-.01M21 3s-1.8 3.6-4 4.5"></path>
-                        </svg>
-                    </div>
-                    <div>
-                        <span class="heading-font text-xl font-bold text-white tracking-wider block">Xstreamflex</span>
-                        <span class="text-[10px] text-xbox font-semibold uppercase tracking-widest block -mt-1">Xsite Launch</span>
-                    </div>
-                </a>
+  <!-- Header Section -->
+  <header class="sticky top-0 z-50 w-full border-b border-zinc-800/80 bg-zinc-950/80 backdrop-blur transition-colors duration-300">
+    <div class="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
+      
+      <!-- Logo Block -->
+      <a href="index.html" class="flex items-center gap-2 group">
+        <div class="flex h-9 w-9 items-center justify-center rounded-lg bg-xbox text-white shadow-[0_0_15px_rgba(16,124,17,0.4)] transition-all group-hover:scale-105">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.63 8.41m11.2 5.8a15.005 15.005 0 01-12.13 6.16m12.13-6.16a14.98 14.98 0 01-6.16-12.12M13.5 10.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"></path>
+          </svg>
+        </div>
+        <span class="font-display text-2xl font-bold tracking-tight text-white">
+          Xstream<span class="text-xbox-light">flex</span>
+        </span>
+      </a>
 
-                <!-- MANDATORY GLOBAL HEADER NAVIGATION -->
-                <nav class="hidden md:flex items-center gap-1 lg:gap-2">
-                    <a href="index.html" class="rounded-lg px-3 py-2 text-sm font-semibold text-xbox dark:text-xbox-light bg-xbox/10">Home</a>
-                    <a href="about.html" class="rounded-lg px-3 py-2 text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-100 dark:text-zinc-300 dark:hover:text-white dark:hover:bg-neutral-900 transition-all">About Us</a>
-                    <a href="products.html" class="rounded-lg px-3 py-2 text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-100 dark:text-zinc-300 dark:hover:text-white dark:hover:bg-neutral-900 transition-all">Products</a>
-                    <a href="blog.html" class="rounded-lg px-3 py-2 text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-100 dark:text-zinc-300 dark:hover:text-white dark:hover:bg-neutral-900 transition-all">Blog</a>
-                    <a href="contact.html" class="rounded-lg px-3 py-2 text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-100 dark:text-zinc-300 dark:hover:text-white dark:hover:bg-neutral-900 transition-all">Contact</a>
-                </nav>
+      <!-- GLOBAL HEADER NAVIGATION (REQUIRED) -->
+      <nav class="hidden md:flex items-center gap-1">
+        <a href="index.html" class="px-4 py-2 rounded-lg text-sm font-semibold text-xbox bg-slate-100 dark:bg-zinc-900 transition-all">Home</a>
+        <a href="about.html" class="px-4 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-xbox dark:text-zinc-400 dark:hover:text-xbox transition-all">About</a>
+        <a href="products.html" class="px-4 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-xbox dark:text-zinc-400 dark:hover:text-xbox transition-all">Products</a>
+        <a href="blog.html" class="px-4 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-xbox dark:text-zinc-400 dark:hover:text-xbox transition-all">Blog</a>
+        <a href="contact.html" class="px-4 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-xbox dark:text-zinc-400 dark:hover:text-xbox transition-all">Contact</a>
+      </nav>
 
-                <!-- Action Button -->
-                <div class="hidden md:flex items-center gap-4">
-                    <a href="products.html" class="rounded-lg bg-xbox px-4 py-2.5 text-xs font-bold text-white uppercase tracking-wider transition-all hover:bg-xbox-hover hover:shadow-[0_0_20px_rgba(16,124,17,0.4)]">
-                        Launch Your Xsite
-                    </a>
-                </div>
+      <!-- CTA / Action Actions -->
+      <div class="flex items-center gap-3">
+        <a href="products.html" class="hidden sm:inline-flex items-center justify-center px-4 py-2 text-xs font-semibold uppercase tracking-wider text-white bg-xbox hover:bg-xbox-dark rounded-lg transition-all shadow-[0_0_15px_rgba(16,124,17,0.2)] glow-hover">
+          Launch Now
+        </a>
+        <button id="mobile-menu-btn" aria-label="Toggle Menu" class="md:hidden flex p-2 rounded-lg text-zinc-400 hover:bg-zinc-900 transition-colors">
+          <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+    </div>
 
-                <!-- Mobile Menu Button -->
-                <button id="mobile-menu-btn" class="md:hidden flex h-10 w-10 items-center justify-center rounded-lg border border-zinc-800 text-zinc-400 hover:text-white hover:bg-zinc-900" aria-label="Toggle menu">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                    </svg>
-                </button>
+    <!-- Mobile Navigation Menu -->
+    <div id="mobile-menu" class="hidden md:hidden border-t border-zinc-800 bg-zinc-950 px-4 py-4 space-y-2">
+      <a href="index.html" class="block px-3 py-2 rounded-lg text-base font-semibold text-xbox bg-zinc-900">Home</a>
+      <a href="about.html" class="block px-3 py-2 rounded-lg text-base font-medium text-zinc-400 hover:text-xbox-light hover:bg-zinc-900 transition-all">About</a>
+      <a href="products.html" class="block px-3 py-2 rounded-lg text-base font-medium text-zinc-400 hover:text-xbox-light hover:bg-zinc-900 transition-all">Products</a>
+      <a href="blog.html" class="block px-3 py-2 rounded-lg text-base font-medium text-zinc-400 hover:text-xbox-light hover:bg-zinc-900 transition-all">Blog</a>
+      <a href="contact.html" class="block px-3 py-2 rounded-lg text-base font-medium text-zinc-400 hover:text-xbox-light hover:bg-zinc-900 transition-all">Contact</a>
+      <a href="products.html" class="block text-center mt-4 px-4 py-2.5 text-sm font-semibold uppercase tracking-wider text-white bg-xbox rounded-lg">Launch Now</a>
+    </div>
+  </header>
 
+  <!-- Hero Section -->
+  <section class="relative overflow-hidden border-b border-zinc-900 bg-zinc-950 py-20 fade-in">
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,rgba(16,124,17,0.08),transparent_50%)]"></div>
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
+      
+      <!-- Small Tag -->
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-xbox/30 bg-xbox/10 text-xbox-light text-xs font-semibold mb-6">
+        <span class="flex h-2 w-2 rounded-full bg-xbox animate-pulse"></span>
+        Legal Guardrails
+      </div>
+
+      <h1 class="font-display text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white mb-6">
+        Terms of <span class="text-xbox-light text-glow">Service</span>
+      </h1>
+      <p class="max-w-2xl text-slate-400 text-base sm:text-lg leading-relaxed">
+        Transparent rules built for builders. Complete ownership, zero technical lock-in, and the path to ultimate sovereignty. Please read carefully before launching your next moonshot.
+      </p>
+      
+      <div class="mt-8 flex flex-wrap gap-4 text-xs text-zinc-500">
+        <span>Effective Date: January 1, 2026</span>
+        <span class="hidden sm:inline">•</span>
+        <span>Version: 2.1 (Disruptive Frontier Edition)</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Terms Content Layout -->
+  <main class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+      
+      <!-- Left Sidebar (Table of Contents - Sticky) -->
+      <aside class="lg:col-span-4 hidden lg:block">
+        <div class="sticky top-24 border border-zinc-800 bg-zinc-900/40 rounded-2xl p-6 backdrop-blur">
+          <h3 class="font-display text-lg font-bold text-white mb-4 flex items-center gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5 text-xbox-light">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+            </svg>
+            Agreement Chapters
+          </h3>
+          <nav class="space-y-1.5">
+            <a href="#acceptance" class="block px-3 py-2 text-xs font-medium text-zinc-400 hover:text-white hover:bg-zinc-800/60 rounded-md transition-all">1. Acceptance of Terms</a>
+            <a href="#accounts" class="block px-3 py-2 text-xs font-medium text-zinc-400 hover:text-white hover:bg-zinc-800/60 rounded-md transition-all">2. Simple Onboarding &amp; Accounts</a>
+            <a href="#ownership" class="block px-3 py-2 text-xs font-medium text-zinc-400 hover:text-white hover:bg-zinc-800/60 rounded-md transition-all">3. Code Sovereignty &amp; Ownership</a>
+            <a href="#tiers" class="block px-3 py-2 text-xs font-medium text-zinc-400 hover:text-white hover:bg-zinc-800/60 rounded-md transition-all">4. Subscriptions &amp; Tiers</a>
+            <a href="#github-deployments" class="block px-3 py-2 text-xs font-medium text-zinc-400 hover:text-white hover:bg-zinc-800/60 rounded-md transition-all">5. GitHub &amp; Automated Deployments</a>
+            <a href="#acceptable-use" class="block px-3 py-2 text-xs font-medium text-zinc-400 hover:text-white hover:bg-zinc-800/60 rounded-md transition-all">6. Disruptive Use &amp; Restraints</a>
+            <a href="#liability" class="block px-3 py-2 text-xs font-medium text-zinc-400 hover:text-white hover:bg-zinc-800/60 rounded-md transition-all">7. Limitation of Liability</a>
+            <a href="#governing" class="block px-3 py-2 text-xs font-medium text-zinc-400 hover:text-white hover:bg-zinc-800/60 rounded-md transition-all">8. Governing Law &amp; Arbitration</a>
+          </nav>
+          
+          <div class="mt-8 pt-6 border-t border-zinc-800/80">
+            <div class="flex items-center gap-3">
+              <div class="h-10 w-10 rounded-full bg-xbox/10 border border-xbox/30 flex items-center justify-center text-xbox-light">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+              </div>
+              <div>
+                <p class="text-xs font-bold text-white">Need custom terms?</p>
+                <p class="text-[11px] text-zinc-400">All Xsite setups self-generate baseline legal agreements.</p>
+              </div>
             </div>
+          </div>
         </div>
+      </aside>
 
-        <!-- Mobile Drawer -->
-        <div id="mobile-menu" class="hidden md:hidden border-b border-zinc-900 bg-zinc-950 px-4 py-6 space-y-3">
-            <a href="index.html" class="block rounded-lg px-4 py-2.5 text-sm font-medium text-xbox bg-xbox/10">Home</a>
-            <a href="about.html" class="block rounded-lg px-4 py-2.5 text-sm font-medium text-zinc-300 hover:bg-zinc-900">About Us</a>
-            <a href="products.html" class="block rounded-lg px-4 py-2.5 text-sm font-medium text-zinc-300 hover:bg-zinc-900">Products</a>
-            <a href="blog.html" class="block rounded-lg px-4 py-2.5 text-sm font-medium text-zinc-300 hover:bg-zinc-900">Blog</a>
-            <a href="contact.html" class="block rounded-lg px-4 py-2.5 text-sm font-medium text-zinc-300 hover:bg-zinc-900">Contact</a>
-            <hr class="border-zinc-900 my-4">
-            <a href="products.html" class="block text-center rounded-lg bg-xbox py-3 text-xs font-bold text-white uppercase tracking-wider">Launch Your Xsite</a>
-        </div>
-    </header>
-
-    <!-- HERO SECTION -->
-    <section class="relative overflow-hidden bg-zinc-950 py-16 md:py-24 border-b border-zinc-900">
-        <!-- Glowing Grid Background -->
-        <div class="absolute inset-0 bg-[linear-gradient(to_right,#107c1112_1px,transparent_1px),linear-gradient(to_bottom,#107c1112_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_50%,#000_70%,transparent_100%)]"></div>
+      <!-- Right Main Content Area -->
+      <article class="lg:col-span-8 space-y-12">
         
-        <!-- Glowing Orb -->
-        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[350px] h-[350px] rounded-full bg-xbox/10 blur-[120px]"></div>
-
-        <div class="relative mx-auto max-w-5xl px-4 text-center">
-            <div class="inline-flex items-center gap-2 rounded-full border border-xbox/30 bg-xbox/10 px-3 py-1.5 text-xs font-semibold text-xbox-glow tracking-wider uppercase mb-6">
-                🚀 Freedom Code Manifesto
-            </div>
-            <h1 class="heading-font text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-white mb-6">
-                Terms of <span class="text-xbox-glow">Service</span>
-            </h1>
-            <p class="mx-auto max-w-2xl text-base sm:text-lg text-zinc-400 leading-relaxed">
-                We believe in complete transparency, true ownership, and zero technical barriers. Our Terms of Service are designed to protect your absolute freedom to build, launch, and host your dreams.
+        <!-- Section 1 -->
+        <section id="acceptance" class="scroll-mt-24">
+          <div class="flex items-center gap-3 mb-4">
+            <span class="text-xbox-light font-display text-xl font-bold">01/</span>
+            <h2 class="text-2xl font-bold font-display text-white">Acceptance of Terms</h2>
+          </div>
+          <div class="space-y-4 text-slate-300 text-sm leading-relaxed">
+            <p>
+              Welcome to Xstreamflex. By accessing, compiling, deploying, or utilizing our software suite—including our flagship project, <span class="text-white font-semibold">Xsite</span>—you agree to enter a legally binding contract under these Terms of Service. If you do not agree, you are restricted from utilizing our engine.
             </p>
-            <div class="mt-4 text-xs text-zinc-500">
-                Last updated: October 2024 • Version 1.4 Active
+            <p>
+              These Terms apply to all users, creators, solopreneurs, side hustlers, and the occasional tech-savvy grandmother or 12-year-old developer launching their dream projects. We built this platform for the least experienced to find fast success, and these simple guardrails keep the ecosystem clean for everyone.
+            </p>
+          </div>
+        </section>
+
+        <!-- Section 2 -->
+        <section id="accounts" class="scroll-mt-24">
+          <div class="flex items-center gap-3 mb-4">
+            <span class="text-xbox-light font-display text-xl font-bold">02/</span>
+            <h2 class="text-2xl font-bold font-display text-white">Simple Onboarding &amp; Accounts</h2>
+          </div>
+          <div class="space-y-4 text-slate-300 text-sm leading-relaxed">
+            <p>
+              In our pursuit of radical simplicity, we have removed deep registration hurdles. <span class="text-xbox-light font-medium">All that is required to get started with Xstreamflex is an email address.</span> We do not require complex configuration, physical addresses, or extensive documentation upfront.
+            </p>
+            <div class="p-4 rounded-xl border border-zinc-800 bg-zinc-900/60 my-4">
+              <h4 class="text-white font-semibold mb-2 flex items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4 text-xbox-light">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                Account Integrity Parameters
+              </h4>
+              <ul class="list-disc pl-5 space-y-1 text-xs text-slate-400">
+                <li>You are solely responsible for protecting access to the email account used for authorization.</li>
+                <li>You must provide an active, functional email address. Burner or disposable emails are monitored and may result in immediate suspension.</li>
+                <li>Your account is personal; however, your generated digital assets can be shared or transferred freely.</li>
+              </ul>
             </div>
-        </div>
-    </section>
+          </div>
+        </section>
 
-    <!-- TERMS CONTENT CONTAINER -->
-    <main class="mx-auto max-w-7xl px-4 lg:px-8 py-16 flex-grow">
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
-            
-            <!-- SIDE NAVIGATION & STATS (COLUMN 1) -->
-            <div class="lg:col-span-4 space-y-8">
-                <!-- Anchor Menu -->
-                <div class="sticky top-28 bg-zinc-900/50 border border-zinc-800 rounded-2xl p-6 space-y-4">
-                    <h3 class="heading-font text-xs font-bold uppercase tracking-widest text-zinc-400 pb-3 border-b border-zinc-800">
-                        Navigation Guide
-                    </h3>
-                    <nav class="space-y-1">
-                        <a href="#acceptance" class="group flex items-center gap-3 rounded-lg px-3 py-2 text-sm text-zinc-400 hover:text-white hover:bg-zinc-800/50 transition-all">
-                            <span class="h-1.5 w-1.5 rounded-full bg-zinc-600 group-hover:bg-xbox transition-all"></span>
-                            1. Acceptance of Terms
-                        </a>
-                        <a href="#ownership" class="group flex items-center gap-3 rounded-lg px-3 py-2 text-sm text-zinc-400 hover:text-white hover:bg-zinc-800/50 transition-all">
-                            <span class="h-1.5 w-1.5 rounded-full bg-zinc-600 group-hover:bg-xbox transition-all"></span>
-                            2. Absolute Code Ownership
-                        </a>
-                        <a href="#github" class="group flex items-center gap-3 rounded-lg px-3 py-2 text-sm text-zinc-400 hover:text-white hover:bg-zinc-800/50 transition-all">
-                            <span class="h-1.5 w-1.5 rounded-full bg-zinc-600 group-hover:bg-xbox transition-all"></span>
-                            3. GitHub &amp; Deployment
-                        </a>
-                        <a href="#no-traps" class="group flex items-center gap-3 rounded-lg px-3 py-2 text-sm text-zinc-400 hover:text-white hover:bg-zinc-800/50 transition-all">
-                            <span class="h-1.5 w-1.5 rounded-full bg-zinc-600 group-hover:bg-xbox transition-all"></span>
-                            4. No Technical Traps
-                        </a>
-                        <a href="#integrations" class="group flex items-center gap-3 rounded-lg px-3 py-2 text-sm text-zinc-400 hover:text-white hover:bg-zinc-800/50 transition-all">
-                            <span class="h-1.5 w-1.5 rounded-full bg-zinc-600 group-hover:bg-xbox transition-all"></span>
-                            5. Third-Party Integrations
-                        </a>
-                        <a href="#warranties" class="group flex items-center gap-3 rounded-lg px-3 py-2 text-sm text-zinc-400 hover:text-white hover:bg-zinc-800/50 transition-all">
-                            <span class="h-1.5 w-1.5 rounded-full bg-zinc-600 group-hover:bg-xbox transition-all"></span>
-                            6. Fair Launch Guarantee
-                        </a>
-                    </nav>
-                </div>
-
-                <!-- Summary Trust Cards -->
-                <div class="bg-gradient-to-br from-zinc-900 to-zinc-950 border border-zinc-800 rounded-2xl p-6 space-y-6">
-                    <h3 class="heading-font text-sm font-bold text-white">
-                        The Xstreamflex Pledge
-                    </h3>
-                    
-                    <div class="flex gap-4">
-                        <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-xbox/10 text-xbox-glow border border-xbox/20">
-                            🛡️
-                        </div>
-                        <div>
-                            <h4 class="text-xs font-bold uppercase tracking-wider text-white">No Lock-In</h4>
-                            <p class="text-xs text-zinc-400 mt-1 leading-relaxed">
-                                Unlike typical builders, we don't hide your source code behind a proprietary gate. You can leave anytime with 100% of your website.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="flex gap-4">
-                        <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-xbox/10 text-xbox-glow border border-xbox/20">
-                            👵
-                        </div>
-                        <div>
-                            <h4 class="text-xs font-bold uppercase tracking-wider text-white">Human Readable</h4>
-                            <p class="text-xs text-zinc-400 mt-1 leading-relaxed">
-                                Structured for accessibility. We aim for terms that a grandmother or a 12-year-old developer can fully understand.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- LEGAL TEXT CONTAINER (COLUMN 2) -->
-            <div class="lg:col-span-8 space-y-12">
-                
-                <!-- Intro Notice -->
-                <div class="p-6 bg-zinc-900/30 border border-zinc-800 rounded-2xl">
-                    <p class="text-sm text-zinc-300 leading-relaxed">
-                        Welcome to Xstreamflex. We build systems like Xsite to help solopreneurs, side-hustlers, and absolute beginners launch full-scale modern landing pages from a simple brain dump. These Terms govern your access to our tools, website, and the generated assets. When we say "we", "us", or "our", we mean the Xstreamflex Network. When we say "you" or "user", we mean you, the courageous explorer of the new digital frontier.
-                    </p>
-                </div>
-
-                <!-- 1. ACCEPTANCE -->
-                <section id="acceptance" class="scroll-mt-24 space-y-4">
-                    <div class="flex items-center gap-3">
-                        <span class="text-xbox-glow font-mono font-bold text-lg">01.</span>
-                        <h2 class="heading-font text-2xl font-bold text-white">Acceptance of Terms</h2>
-                    </div>
-                    <p class="text-sm text-zinc-400 leading-relaxed">
-                        By accessing our website, platform, and tools, or by entering a brain dump into Xsite to initiate website generations, you agree to comply with and be bound by these terms. If you do not agree, you cannot use our automated deployment services. 
-                    </p>
-                    <!-- In Plain English Callout -->
-                    <div class="bg-xbox/5 border-l-4 border-xbox rounded-r-xl p-4 mt-3">
-                        <span class="text-xs font-bold text-xbox-glow uppercase tracking-wider block mb-1">💡 In Plain English</span>
-                        <p class="text-xs text-zinc-300 leading-relaxed">
-                            Using Xstreamflex means you agree to these rules. If you aren't down with that, you shouldn't use our tools.
-                        </p>
-                    </div>
-                </section>
-
-                <!-- 2. ABSOLUTE CODE OWNERSHIP -->
-                <section id="ownership" class="scroll-mt-24 space-y-4">
-                    <div class="flex items-center gap-3">
-                        <span class="text-xbox-glow font-mono font-bold text-lg">02.</span>
-                        <h2 class="heading-font text-2xl font-bold text-white">Absolute Code &amp; Asset Ownership</h2>
-                    </div>
-                    <p class="text-sm text-zinc-400 leading-relaxed">
-                        This is our core disruptive belief. When Xsite generates your HTML, CSS, Terms, Privacy, and product landing pages, **you own everything**. You have complete, unrestricted ownership of your code, design structure, and assets immediately upon generation. We assert no claims, royalties, or restrictive permissions over the files built for your brand identity.
-                    </p>
-                    <p class="text-sm text-zinc-400 leading-relaxed">
-                        If your project takes off and scales beyond our systems, you are free to download your code, migrate to other hosts, rewrite, restructure, or sell your system with zero penalties, zero buyout fees, and no rebuilding required.
-                    </p>
-                    <!-- In Plain English Callout -->
-                    <div class="bg-xbox/5 border-l-4 border-xbox rounded-r-xl p-4 mt-3">
-                        <span class="text-xs font-bold text-xbox-glow uppercase tracking-wider block mb-1">💡 In Plain English</span>
-                        <p class="text-xs text-zinc-300 leading-relaxed">
-                            You own 100% of the code we write for you. No hidden locks, no hostage pricing, and no rules stopping you from taking your files somewhere else.
-                        </p>
-                    </div>
-                </section>
-
-                <!-- 3. GITHUB & DEPLOYMENT -->
-                <section id="github" class="scroll-mt-24 space-y-4">
-                    <div class="flex items-center gap-3">
-                        <span class="text-xbox-glow font-mono font-bold text-lg">03.</span>
-                        <h2 class="heading-font text-2xl font-bold text-white">GitHub Integration &amp; Deployment</h2>
-                    </div>
-                    <p class="text-sm text-zinc-400 leading-relaxed">
-                        Xsite uses automated integrations to push your custom HTML directly to your personal or organization GitHub repositories, initiating automated live hosting. You are solely responsible for keeping your GitHub credentials safe and complying with GitHub's own Terms of Service. 
-                    </p>
-                    <p class="text-sm text-zinc-400 leading-relaxed">
-                        We do not act as an intermediary gatekeeper over your GitHub repository. Once pushed, you have complete directory access, and we are not liable for any user-end modifications that break your project's live hosting state.
-                    </p>
-                    <!-- In Plain English Callout -->
-                    <div class="bg-xbox/5 border-l-4 border-xbox rounded-r-xl p-4 mt-3">
-                        <span class="text-xs font-bold text-xbox-glow uppercase tracking-wider block mb-1">💡 In Plain English</span>
-                        <p class="text-xs text-zinc-300 leading-relaxed">
-                            We automatically push your website code directly into your GitHub account so it goes live instantly. Take care of your GitHub password—once we hand over the code, you're the captain of that repository.
-                        </p>
-                    </div>
-                </section>
-
-                <!-- 4. NO TECHNICAL TRAPS -->
-                <section id="no-traps" class="scroll-mt-24 space-y-4">
-                    <div class="flex items-center gap-3">
-                        <span class="text-xbox-glow font-mono font-bold text-lg">04.</span>
-                        <h2 class="heading-font text-2xl font-bold text-white">Anti-Black Box / No Technical Traps</h2>
-                    </div>
-                    <p class="text-sm text-zinc-400 leading-relaxed">
-                        We explicitly promise that we will never hide your code inside a closed-source ecosystem or restrict access behind custom web components that require active Xstreamflex subscriptions to display. The output code delivered is standard-compliant, universally readable HTML, Tailwind CSS, and Vanilla JavaScript.
-                    </p>
-                    <!-- In Plain English Callout -->
-                    <div class="bg-xbox/5 border-l-4 border-xbox rounded-r-xl p-4 mt-3">
-                        <span class="text-xs font-bold text-xbox-glow uppercase tracking-wider block mb-1">💡 In Plain English</span>
-                        <p class="text-xs text-zinc-300 leading-relaxed">
-                            No secret coding languages, no proprietary hosting traps. Your website is clean, open, standard HTML/CSS. If you stop using Xstreamflex, your site will still load perfectly.
-                        </p>
-                    </div>
-                </section>
-
-                <!-- 5. THIRD-PARTY INTEGRATIONS -->
-                <section id="integrations" class="scroll-mt-24 space-y-4">
-                    <div class="flex items-center gap-3">
-                        <span class="text-xbox-glow font-mono font-bold text-lg">05.</span>
-                        <h2 class="heading-font text-2xl font-bold text-white">Third-Party Integrations &amp; Custom Domains</h2>
-                    </div>
-                    <p class="text-sm text-zinc-400 leading-relaxed">
-                        Xstreamflex facilitates connections to external ecosystems including Stripe (for processing payments), custom domain providers (for personal URLs), and email autoresponder platforms. We do not manage your Stripe payments, handle client transactions, or store credit card details. You assume full legal responsibility for integrating and monitoring these commercial systems on your generated landing pages.
-                    </p>
-                    <!-- In Plain English Callout -->
-                    <div class="bg-xbox/5 border-l-4 border-xbox rounded-r-xl p-4 mt-3">
-                        <span class="text-xs font-bold text-xbox-glow uppercase tracking-wider block mb-1">💡 In Plain English</span>
-                        <p class="text-xs text-zinc-300 leading-relaxed">
-                            We provide simple guides to connect things like Stripe and custom domains, but those financial/technical systems belong to you. We don't touch your money or run your storefront.
-                        </p>
-                    </div>
-                </section>
-
-                <!-- 6. WARRANTIES & LIMITATIONS -->
-                <section id="warranties" class="scroll-mt-24 space-y-4">
-                    <div class="flex items-center gap-3">
-                        <span class="text-xbox-glow font-mono font-bold text-lg">06.</span>
-                        <h2 class="heading-font text-2xl font-bold text-white">Fair Launch &amp; Limitations of Liability</h2>
-                    </div>
-                    <p class="text-sm text-zinc-400 leading-relaxed">
-                        Xstreamflex provides the solid structural foundation for your digital journey. We do not guarantee that your side-hustle will succeed, make sales, or reach the moon on its own. We provide the vessel; you supply the engine fuel and run the business.
-                    </p>
-                    <p class="text-sm text-zinc-400 leading-relaxed">
-                        The service is provided "AS IS" without warranty of any kind, either expressed or implied. We will not be liable for any indirect, incidental, or consequential damages resulting from your use of Xsite-generated source files.
-                    </p>
-                    <!-- In Plain English Callout -->
-                    <div class="bg-xbox/5 border-l-4 border-xbox rounded-r-xl p-4 mt-3">
-                        <span class="text-xs font-bold text-xbox-glow uppercase tracking-wider block mb-1">💡 In Plain English</span>
-                        <p class="text-xs text-zinc-300 leading-relaxed">
-                            We give you high-quality gear to launch quickly, but we aren't responsible if your business idea doesn't make millions or if you break your site's custom styles after we hand over the keys.
-                        </p>
-                    </div>
-                </section>
-
-                <!-- FAQ Accent Block -->
-                <div class="border-t border-zinc-900 pt-12">
-                    <div class="bg-zinc-900/40 border border-zinc-800 rounded-2xl p-6 sm:p-8 space-y-4">
-                        <h3 class="heading-font text-lg font-bold text-white">Got questions about your rights?</h3>
-                        <p class="text-sm text-zinc-400 leading-relaxed">
-                            Our team believes that everyone deserves a shot at building an independent business without being trapped by complex contracts. If you need any clarification about your code ownership, drop our launch crew a message!
-                        </p>
-                        <div class="pt-2">
-                            <a href="contact.html" class="inline-flex items-center gap-2 text-xs font-bold text-xbox-glow hover:text-white transition-colors">
-                                Talk to the Launch Crew <span class="text-sm">→</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </main>
-
-    <!-- MANDATORY GLOBAL FOOTER -->
-    <footer class="bg-zinc-950 text-zinc-400 py-12 border-t border-zinc-900">
-        <div class="mx-auto max-w-7xl px-4 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-8">
-            <!-- Branding & Description -->
-            <div class="space-y-4 md:col-span-2">
-                <div class="flex items-center gap-2">
-                    <div class="flex h-8 w-8 items-center justify-center rounded-lg bg-xbox text-white font-bold">
-                        <!-- Tiny Rocket -->
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="h-4 w-4">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.59 14.37a6 6 0 0 1-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 0 0 6.16-12.12A14.98 14.98 0 0 0 9.63 8.41m5.96 5.96a14.96 14.96 0 0 1-10.43 3.42L12 12m0 0h-.01M21 3s-1.8 3.6-4 4.5"></path>
-                        </svg>
-                    </div>
-                    <span class="heading-font text-lg font-bold text-white tracking-wider">Xstreamflex</span>
-                </div>
-                <p class="text-xs text-zinc-500 max-w-sm leading-relaxed">
-                    Xstreamflex is on a mission to democratize the web. We build tools that bypass technical boundaries, enabling anybody to establish their digital footprint with total code and structural ownership.
+        <!-- Section 3 -->
+        <section id="ownership" class="scroll-mt-24">
+          <div class="flex items-center gap-3 mb-4">
+            <span class="text-xbox-light font-display text-xl font-bold">03/</span>
+            <h2 class="text-2xl font-bold font-display text-white">Code Sovereignty &amp; Absolute Ownership</h2>
+          </div>
+          <div class="space-y-4 text-slate-300 text-sm leading-relaxed">
+            <p>
+              Unlike traditional closed ecosystems, drag-and-drop website builders, or restrictive no-code black boxes, Xstreamflex asserts <span class="text-white font-bold">absolutely zero claim of ownership over your code.</span>
+            </p>
+            <p>
+              Once your site is generated from your initial brain dump, and launched to your GitHub repository:
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
+              <div class="p-4 border border-zinc-800/80 bg-zinc-900/40 rounded-xl">
+                <span class="text-xbox-light text-xs font-bold uppercase tracking-wider">What You Own</span>
+                <p class="text-xs text-slate-400 mt-2">
+                  All compiled HTML, CSS, JavaScript, structures, imagery arrangements, custom terms documents, and styling architectures generated by Xsite.
                 </p>
+              </div>
+              <div class="p-4 border border-zinc-800/80 bg-zinc-900/40 rounded-xl">
+                <span class="text-xbox-light text-xs font-bold uppercase tracking-wider">Zero Portability Restrictions</span>
+                <p class="text-xs text-slate-400 mt-2">
+                  When your idea takes off, you own everything and can move it to any cloud host, database setup, or server layout without rebuilding.
+                </p>
+              </div>
+            </div>
+            <p>
+              You are explicitly granted the right to customize, alter, download, sell, host, or transfer any code generated by our tools without any ongoing royalty, license fee, or systemic permission required from Xstreamflex.
+            </p>
+          </div>
+        </section>
+
+        <!-- Section 4 -->
+        <section id="tiers" class="scroll-mt-24">
+          <div class="flex items-center gap-3 mb-4">
+            <span class="text-xbox-light font-display text-xl font-bold">04/</span>
+            <h2 class="text-2xl font-bold font-display text-white">Subscriptions &amp; Product Tiers</h2>
+          </div>
+          <div class="space-y-4 text-slate-300 text-sm leading-relaxed">
+            <p>
+              Xstreamflex is designed to remain accessible and affordable for any budget tier. Our subscription structures for the flagship Xsite generator are mapped out below:
+            </p>
+
+            <!-- Pricing Grid -->
+            <div class="overflow-x-auto border border-zinc-800 rounded-xl bg-zinc-900/20 my-6">
+              <table class="w-full text-left border-collapse text-xs">
+                <thead>
+                  <tr class="border-b border-zinc-800 bg-zinc-900/60 text-slate-300">
+                    <th class="p-3 font-semibold">Tier</th>
+                    <th class="p-3 font-semibold">Cost</th>
+                    <th class="p-3 font-semibold">Allocations</th>
+                    <th class="p-3 font-semibold">Key Advantage</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-zinc-800/60 text-slate-400">
+                  <tr>
+                    <td class="p-3 font-bold text-white">Tier 0 (Free)</td>
+                    <td class="p-3 text-xbox-light font-medium">$0 /mo</td>
+                    <td class="p-3">3 pages / month</td>
+                    <td class="p-3">Infinite edits (With Watermark Tag)</td>
+                  </tr>
+                  <tr>
+                    <td class="p-3 font-bold text-white">Starter</td>
+                    <td class="p-3 text-xbox-light font-medium">$5 /mo</td>
+                    <td class="p-3">7 pages / month</td>
+                    <td class="p-3">No Watermark, Infinite edits</td>
+                  </tr>
+                  <tr>
+                    <td class="p-3 font-bold text-white">Pro</td>
+                    <td class="p-3 text-xbox-light font-medium">$9 /mo</td>
+                    <td class="p-3">14 pages / month</td>
+                    <td class="p-3">15% Topup Off, Infinite edits</td>
+                  </tr>
+                  <tr>
+                    <td class="p-3 font-bold text-white">Business</td>
+                    <td class="p-3 text-xbox-light font-medium">$29 /mo</td>
+                    <td class="p-3">50 pages / month</td>
+                    <td class="p-3">Custom Domain UX, 30% Topup Off</td>
+                  </tr>
+                  <tr class="bg-xbox/5">
+                    <td class="p-3 font-bold text-white">Lifetime Pass</td>
+                    <td class="p-3 text-xbox-light font-semibold">$199 once</td>
+                    <td class="p-3">50 pages / mo Forever</td>
+                    <td class="p-3">Custom Domain, 50% Topup Off</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
 
-            <!-- Page Navigation -->
-            <div class="space-y-3">
-                <h4 class="text-xs font-bold uppercase tracking-widest text-white">Ecosystem Links</h4>
-                <ul class="space-y-2 text-xs">
-                    <li><a href="index.html" class="hover:text-white transition-colors">Home Landing</a></li>
-                    <li><a href="about.html" class="hover:text-white transition-colors">About Mission</a></li>
-                    <li><a href="products.html" class="hover:text-white transition-colors">Xsite Products</a></li>
-                    <li><a href="blog.html" class="hover:text-white transition-colors">Resource Blog</a></li>
-                    <li><a href="contact.html" class="hover:text-white transition-colors">Launch Crew Contact</a></li>
-                </ul>
-            </div>
+            <p>
+              Subscription charges are processed automatically on a monthly cycles via standard secure payment providers. Subscriptions can be canceled at any time, instantly stopping future recurring billing. Users keep all generated codebase elements completed prior to cancellation.
+            </p>
+          </div>
+        </section>
 
-            <!-- Legal Documents -->
-            <div class="space-y-3">
-                <h4 class="text-xs font-bold uppercase tracking-widest text-white">Trust &amp; Compliance</h4>
-                <ul class="space-y-2 text-xs">
-                    <li><a href="terms.html" class="hover:text-white transition-colors">Terms of Service</a></li>
-                    <li><a href="privacy.html" class="hover:text-white transition-colors">Privacy Policy</a></li>
-                </ul>
-            </div>
+        <!-- Section 5 -->
+        <section id="github-deployments" class="scroll-mt-24">
+          <div class="flex items-center gap-3 mb-4">
+            <span class="text-xbox-light font-display text-xl font-bold">05/</span>
+            <h2 class="text-2xl font-bold font-display text-white">GitHub &amp; Automated Deployments</h2>
+          </div>
+          <div class="space-y-4 text-slate-300 text-sm leading-relaxed">
+            <p>
+              Xsite delivers more than raw static HTML files. The platform can programmatically push your generated pages into your designated GitHub repository, automatically triggering live hosting parameters on modern CDNs.
+            </p>
+            <p>
+              By authorizing Xsite to push files to your GitHub account:
+            </p>
+            <ul class="list-disc pl-5 space-y-2 text-slate-400 text-xs">
+              <li>You grant Xsite the scope-limited permission to create, access, edit, and push code files to designated repositories.</li>
+              <li>You agree to conform with GitHub's standard terms of service. Xstreamflex is an independent SaaS service and is not legally affiliated with GitHub Inc.</li>
+              <li>You recognize that automated hosting uptime, global network reliability, and repo actions are subject to GitHub's individual platform infrastructure limitations.</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- Section 6 -->
+        <section id="acceptable-use" class="scroll-mt-24">
+          <div class="flex items-center gap-3 mb-4">
+            <span class="text-xbox-light font-display text-xl font-bold">06/</span>
+            <h2 class="text-2xl font-bold font-display text-white">Disruptive Use &amp; Restraints</h2>
+          </div>
+          <div class="space-y-4 text-slate-300 text-sm leading-relaxed">
+            <p>
+              Our software tool is engineered to empower everyone—especially those who have been left behind by complex, gatekept tech frameworks. We fight for disruptive freedom, but we protect our community.
+            </p>
+            <p>
+              You agree that you will not use Xstreamflex, Xsite, or any generated site assets to:
+            </p>
+            <ul class="list-disc pl-5 space-y-2 text-slate-400 text-xs">
+              <li>Launch deceptive systems, digital phishing scams, malicious script installations, or fraudulent side hustles.</li>
+              <li>Violate the intellectual property rights, trademarks, or copyrighted assets of third-party platforms.</li>
+              <li>Distribute malware, virus injectors, or malicious payloads designed to disrupt end-user operating systems.</li>
+              <li>Host system pages that intentionally generate physical harm, direct threats of violence, or criminal acts.</li>
+            </ul>
+            <p>
+              Violation of these terms will lead to instant tier revocation, account blocklist procedures, and a clean wipe of any automated connections generated through the parent app.
+            </p>
+          </div>
+        </section>
+
+        <!-- Section 7 -->
+        <section id="liability" class="scroll-mt-24">
+          <div class="flex items-center gap-3 mb-4">
+            <span class="text-xbox-light font-display text-xl font-bold">07/</span>
+            <h2 class="text-2xl font-bold font-display text-white">Limitation of Liability</h2>
+          </div>
+          <div class="space-y-4 text-slate-300 text-sm leading-relaxed">
+            <p>
+              Xstreamflex provides code engines on an <span class="text-white font-semibold">"as-is" and "as-available" basis</span>. Because our systems generate customized structures based on your qualitative text input (brain dumps), you maintain full legal compliance responsibilities for the products, statements, and functional components you publish.
+            </p>
+            <p>
+              To the absolute maximum extent permitted by governing laws, Xstreamflex and its affiliates shall not be liable for any indirect, incidental, or special damages, including lost revenue, lost web performance, downtime on Git networks, Stripe transaction issues, or security failures stemming from third-party hosting selections.
+            </p>
+            <p>
+              Our total combined financial liability for any legal actions brought concerning Xsite shall never exceed the absolute total dollar amount paid by you to Xstreamflex over the exact 12-month period preceding the claim.
+            </p>
+          </div>
+        </section>
+
+        <!-- Section 8 -->
+        <section id="governing" class="scroll-mt-24">
+          <div class="flex items-center gap-3 mb-4">
+            <span class="text-xbox-light font-display text-xl font-bold">08/</span>
+            <h2 class="text-2xl font-bold font-display text-white">Governing Law &amp; Dispute Resolution</h2>
+          </div>
+          <div class="space-y-4 text-slate-300 text-sm leading-relaxed">
+            <p>
+              These Terms, platform operations, and service covenants are governed by the laws of the jurisdiction of execution, without reference to conflict of laws doctrines.
+            </p>
+            <p>
+              Any dispute, action, or claim arising from this infrastructure shall be negotiated directly and in good faith. If negotiations fail to resolve the dispute within thirty (30) days, all parties agree to seek resolution via binding arbitration rather than traditional court actions.
+            </p>
+          </div>
+        </section>
+
+        <!-- Dynamic Legal Banner -->
+        <div class="border border-xbox/30 bg-xbox/10 rounded-2xl p-6 relative overflow-hidden">
+          <div class="absolute top-0 right-0 h-24 w-24 bg-xbox/10 rounded-full blur-2xl"></div>
+          <h4 class="font-display text-lg font-bold text-white mb-2 flex items-center gap-2">
+            🚀 The Disruptive Freedom Guarantee
+          </h4>
+          <p class="text-xs text-slate-300 leading-relaxed">
+            Xstreamflex believes your ideas should exist in the open wild. We do not believe in walled gardens. Once your HTML pages are in your hand, they are yours. If our service ever fails to meet your speed requirements, take your clean, modern code files and set sail elsewhere. No hard feelings—just fast success.
+          </p>
         </div>
 
-        <div class="mx-auto max-w-7xl px-4 lg:px-8 mt-12 pt-8 border-t border-zinc-900 flex flex-col sm:flex-row items-center justify-between text-xs text-zinc-600 gap-4">
-            <p>© <span id="current-year"></span> Xstreamflex Network. Built with absolute love for independent creators.</p>
-            <div class="flex gap-4">
-                <span class="hover:text-zinc-400">Version 1.4 Live</span>
-                <span>•</span>
-                <span class="hover:text-zinc-400">Deploy Status: Active</span>
-            </div>
-        </div>
-    </footer>
+      </article>
+    </div>
+  </main>
 
-    <!-- Mobile Menu Handler -->
-    <script>
-        const btn = document.getElementById('mobile-menu-btn');
-        const menu = document.getElementById('mobile-menu');
+  <!-- CTA section right before footer -->
+  <section class="border-t border-zinc-900 bg-zinc-950 py-16 relative">
+    <div class="mx-auto max-w-4xl px-4 text-center">
+      <h3 class="font-display text-2xl sm:text-3xl font-bold text-white mb-4">
+        Ready to Launch Your Next <span class="text-xbox-light text-glow">Frontier</span>?
+      </h3>
+      <p class="text-sm text-slate-400 mb-8 max-w-lg mx-auto">
+        Join solopreneurs, side hustlers, and visual creators launching fully completed websites in minutes.
+      </p>
+      <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+        <a href="products.html" class="w-full sm:w-auto inline-flex items-center justify-center px-6 py-3 text-sm font-semibold uppercase tracking-wider text-white bg-xbox hover:bg-xbox-dark rounded-xl transition-all shadow-[0_0_20px_rgba(16,124,17,0.3)] glow-hover">
+          Choose a Tier
+        </a>
+        <a href="about.html" class="w-full sm:w-auto inline-flex items-center justify-center px-6 py-3 text-sm font-medium text-slate-300 hover:text-white hover:bg-zinc-900 border border-zinc-800 rounded-xl transition-all">
+          Our Core Mission
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- GLOBAL FOOTER (REQUIRED) -->
+  <footer class="border-t border-slate-200/80 bg-white dark:border-zinc-800 dark:bg-zinc-950 py-16 transition-colors duration-300">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-8 mb-12">
         
-        btn.addEventListener('click', () => {
-            menu.classList.toggle('hidden');
-        });
+        <!-- Company Block -->
+        <div class="md:col-span-4 space-y-4">
+          <div class="flex items-center gap-2">
+            <div class="flex h-8 w-8 items-center justify-center rounded-lg bg-xbox text-white">
+              <!-- Rocket Icon Small -->
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4.5 h-4.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.63 8.41m11.2 5.8a15.005 15.005 0 01-12.13 6.16m12.13-6.16a14.98 14.98 0 01-6.16-12.12M13.5 10.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"></path>
+              </svg>
+            </div>
+            <span class="font-display text-xl font-bold tracking-tight text-slate-900 dark:text-white">
+              Xstream<span class="text-xbox">flex</span>
+            </span>
+          </div>
+          <p class="text-xs text-slate-500 dark:text-zinc-400 leading-relaxed">
+            Giving side-hustles, creators, and solopreneurs the professional foundation they need to launch businesses in record time. Simple, accessible, complete, and unrestricted.
+          </p>
+        </div>
 
-        // Set dynamic year in legal footer
-        document.getElementById('current-year').textContent = new Date().getFullYear();
-    </script>
+        <!-- Quick Links -->
+        <div class="md:col-span-2 space-y-3">
+          <h4 class="text-xs font-bold text-slate-400 dark:text-zinc-500 uppercase tracking-widest">Platform</h4>
+          <ul class="space-y-2 text-xs">
+            <li><a href="index.html" class="text-slate-600 dark:text-zinc-300 hover:text-xbox">Home</a></li>
+            <li><a href="products.html" class="text-slate-600 dark:text-zinc-300 hover:text-xbox">Products &amp; Tiers</a></li>
+            <li><a href="about.html" class="text-slate-600 dark:text-zinc-300 hover:text-xbox">Our Mission</a></li>
+          </ul>
+        </div>
 
+        <!-- Resources -->
+        <div class="md:col-span-2 space-y-3">
+          <h4 class="text-xs font-bold text-slate-400 dark:text-zinc-500 uppercase tracking-widest">Resources</h4>
+          <ul class="space-y-2 text-xs">
+            <li><a href="blog.html" class="text-slate-600 dark:text-zinc-300 hover:text-xbox">Blog articles</a></li>
+            <li><a href="contact.html" class="text-slate-600 dark:text-zinc-300 hover:text-xbox">Support Contact</a></li>
+            <li><a href="#features" class="text-slate-600 dark:text-zinc-300 hover:text-xbox">Engine Spec</a></li>
+          </ul>
+        </div>
+
+        <!-- Compliance & Legal -->
+        <div class="md:col-span-4 space-y-3">
+          <h4 class="text-xs font-bold text-slate-400 dark:text-zinc-500 uppercase tracking-widest">Legal Guardrails</h4>
+          <p class="text-[11px] text-slate-400 dark:text-zinc-500 leading-normal">
+            Every Xsite engine generation dynamically compiles clean local pages of the resources listed below.
+          </p>
+          <ul class="space-y-2 text-xs">
+            <li><a href="terms.html" class="text-slate-600 dark:text-zinc-300 hover:text-xbox">Terms of Service</a></li>
+            <li><a href="privacy.html" class="text-slate-600 dark:text-zinc-300 hover:text-xbox">Privacy Policy</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Legal Bottom -->
+      <div class="border-t border-slate-200/50 dark:border-zinc-800/50 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-slate-400 dark:text-zinc-500">
+        <p>© 2026 Xstreamflex. All systems, templates, and compiled landing pages are fully owned by their respective generative users. All rights reserved.</p>
+        <div class="flex items-center gap-2">
+          <span>Target Host:</span>
+          <a href="https://xstreamflex.com/" class="underline hover:text-xbox">xstreamflex.com</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script for menu functionality -->
+  <script>
+    const mobileBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    mobileBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
 </body>
 </html>
